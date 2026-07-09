@@ -13,6 +13,69 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000000104" />
+      <entry key="MS500" value="1.005097395548205" />
+      <entry key="S2" value="2.0752209994127613" />
+      <entry key="S5" value="4.3365873383389175" />
+      <entry key="S10" value="6.51021763803673" />
+      <entry key="S30" value="14.457658676273848" />
+      <entry key="S60" value="27.903729836645205" />
+      <entry key="M2" value="47.8614925825911" />
+      <entry key="M5" value="72.02248764140217" />
+      <entry key="M10" value="83.72252926537443" />
+      <entry key="M15" value="88.16715021777048" />
+      <entry key="M30" value="92.91858171513789" />
+      <entry key="H1" value="95.41652394621092" />
+      <entry key="H2" value="96.69737402829045" />
+      <entry key="H4" value="97.34594008919599" />
+      <entry key="D1" value="97.89060636137023" />
+      <entry key="W1" value="97.98436291375596" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="9.873055685437934E-7" />
+      <entry key="MS500" value="0.06293472187854492" />
+      <entry key="S2" value="0.500867185117348" />
+      <entry key="S5" value="0.7583837726872211" />
+      <entry key="S10" value="0.8708523254187366" />
+      <entry key="S30" value="0.9549519179098857" />
+      <entry key="S60" value="0.977216413037504" />
+      <entry key="M2" value="0.9885425701695927" />
+      <entry key="M5" value="0.995401178362145" />
+      <entry key="M10" value="0.9976979394396609" />
+      <entry key="M15" value="0.9984647035250829" />
+      <entry key="M30" value="0.9992320568942347" />
+      <entry key="H1" value="0.9996159547017217" />
+      <entry key="H2" value="0.999807958910971" />
+      <entry key="H4" value="0.9999039748450703" />
+      <entry key="D1" value="0.9999839951671387" />
+      <entry key="W1" value="0.9999977135796225" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.04123462221741076" />
+      <entry key="MS500" value="0.539115247313303" />
+      <entry key="S2" value="2.194755349039067" />
+      <entry key="S5" value="4.860905621004578" />
+      <entry key="S10" value="7.2368542595403555" />
+      <entry key="S30" value="15.346649765284853" />
+      <entry key="S60" value="28.841626413917233" />
+      <entry key="M2" value="48.82721061147954" />
+      <entry key="M5" value="73.00745500642863" />
+      <entry key="M10" value="84.71471233215924" />
+      <entry key="M15" value="89.16186410232388" />
+      <entry key="M30" value="93.91589898327193" />
+      <entry key="H1" value="96.4151722112675" />
+      <entry key="H2" value="97.69669550980457" />
+      <entry key="H4" value="98.34560015969528" />
+      <entry key="D1" value="98.89054961271776" />
+      <entry key="W1" value="98.98435480450155" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -35,7 +98,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ahmed/java-workspace/data-structures",
