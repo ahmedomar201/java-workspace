@@ -13,6 +13,18 @@ public class ArrayListMain {
         List<String> names = new ArrayList<>();
         List<String> surnames = new ArrayList<>();
 
+//        List<Integer> numbers =  new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+
+
+//        numbers.add(20);
+        System.out.println("a--------------"+numbers);
+
+
+
+
         names.add("Ahmed");
         names.add("Bob");
         names.add("Mohamed");
