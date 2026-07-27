@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a00706-cc15-47ff-8720-34486bad5623" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data-structures/src/main/java/com/example/datastructures/list/LinkedListMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/main/java/com/example/datastructures/list/ArrayListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/main/java/com/example/datastructures/list/ArrayListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,61 +32,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000220566" />
-      <entry key="MS500" value="1.00762494626793" />
-      <entry key="S2" value="1.4169025984751293" />
-      <entry key="S5" value="2.068607779090888" />
-      <entry key="S10" value="2.6547692128858422" />
-      <entry key="S30" value="3.7403182307230884" />
-      <entry key="S60" value="4.270146343099526" />
-      <entry key="M2" value="4.605564852951977" />
-      <entry key="M5" value="5.13426641500664" />
-      <entry key="M10" value="8.419068545336325" />
-      <entry key="M15" value="13.111142292674472" />
-      <entry key="M30" value="24.83960609784627" />
-      <entry key="H1" value="38.040149188934194" />
-      <entry key="H2" value="58.886549504033255" />
-      <entry key="H4" value="98.28986644094597" />
-      <entry key="D1" value="196.39810427381622" />
-      <entry key="W1" value="226.42859594552507" />
+      <entry key="MS100" value="1.0000000032430563" />
+      <entry key="MS500" value="1.0233744769389936" />
+      <entry key="S2" value="2.271771516017773" />
+      <entry key="S5" value="4.824058685716834" />
+      <entry key="S10" value="6.897287321016421" />
+      <entry key="S30" value="9.536341198735705" />
+      <entry key="S60" value="10.607156612794165" />
+      <entry key="M2" value="11.255311376994845" />
+      <entry key="M5" value="11.984412472818416" />
+      <entry key="M10" value="15.318068033945497" />
+      <entry key="M15" value="20.019117617020516" />
+      <entry key="M30" value="31.7627390902053" />
+      <entry key="H1" value="44.98434833150165" />
+      <entry key="H2" value="65.8449415620576" />
+      <entry key="H4" value="105.25611065125412" />
+      <entry key="D1" value="203.38710353159303" />
+      <entry key="W1" value="233.4267893741706" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.0688105743937295E-75" />
-      <entry key="MS500" value="1.3240168018555341E-15" />
-      <entry key="S2" value="1.924227069101581E-4" />
-      <entry key="S5" value="0.039283018167918" />
-      <entry key="S10" value="0.3105637473901885" />
-      <entry key="S30" value="1.596258290089322" />
-      <entry key="S60" value="2.5056393508990165" />
-      <entry key="M2" value="3.159457569639091" />
-      <entry key="M5" value="3.7184124617020586" />
-      <entry key="M10" value="4.458811880576814" />
-      <entry key="M15" value="5.223347105393277" />
-      <entry key="M30" value="6.9817406771107855" />
-      <entry key="H1" value="8.998593195517607" />
-      <entry key="H2" value="11.843717627032254" />
-      <entry key="H4" value="16.22410308167654" />
-      <entry key="D1" value="25.740139650722412" />
-      <entry key="W1" value="28.494141397762164" />
+      <entry key="MS100" value="1.135375105575514E-95" />
+      <entry key="MS500" value="1.0257177607399183E-19" />
+      <entry key="S2" value="1.8052606451873287E-5" />
+      <entry key="S5" value="0.015244679059393064" />
+      <entry key="S10" value="0.1934672584197004" />
+      <entry key="S30" value="1.363291537101271" />
+      <entry key="S60" value="2.3155883050931005" />
+      <entry key="M2" value="3.0372736370658173" />
+      <entry key="M5" value="3.6602109770753954" />
+      <entry key="M10" value="4.423779057324099" />
+      <entry key="M15" value="5.195951308097104" />
+      <entry key="M30" value="6.96340743162783" />
+      <entry key="H1" value="8.986770795602919" />
+      <entry key="H2" value="11.835934900132868" />
+      <entry key="H4" value="16.218771625900125" />
+      <entry key="D1" value="25.738729699024066" />
+      <entry key="W1" value="28.493918420249365" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.78328765850562E-5" />
-      <entry key="MS500" value="0.13085223392547363" />
-      <entry key="S2" value="0.8099381070541397" />
-      <entry key="S5" value="1.6725742988335208" />
-      <entry key="S10" value="2.6534803361471933" />
-      <entry key="S30" value="5.146558797696715" />
-      <entry key="S60" value="6.6523850570873" />
-      <entry key="M2" value="7.693192284245102" />
-      <entry key="M5" value="8.820488567032518" />
-      <entry key="M10" value="12.859214319978285" />
-      <entry key="M15" value="18.319992333623702" />
-      <entry key="M30" value="31.811294957213867" />
-      <entry key="H1" value="47.0317133799145" />
-      <entry key="H2" value="70.72506919073682" />
-      <entry key="H4" value="114.51005463117119" />
-      <entry key="D1" value="222.13712717843038" />
-      <entry key="W1" value="254.92255890828255" />
+      <entry key="MS100" value="0.04903650611970056" />
+      <entry key="MS500" value="0.5543406983486737" />
+      <entry key="S2" value="1.9359646501587608" />
+      <entry key="S5" value="4.490829066536739" />
+      <entry key="S10" value="6.787511170380213" />
+      <entry key="S30" value="10.69559751840185" />
+      <entry key="S60" value="12.787063121604783" />
+      <entry key="M2" value="14.212513387037825" />
+      <entry key="M5" value="15.608480572820334" />
+      <entry key="M10" value="19.721091240029878" />
+      <entry key="M15" value="25.19915513214681" />
+      <entry key="M30" value="38.71537380188327" />
+      <entry key="H1" value="53.96372547965862" />
+      <entry key="H2" value="77.6754949413897" />
+      <entry key="H4" value="121.47087515978883" />
+      <entry key="D1" value="229.1247009582894" />
+      <entry key="W1" value="261.9205271339926" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -98,7 +98,10 @@
 }</component>
   <component name="ProjectId" id="3GG9qsgYVKLrIRDbHMsUmj4fOuU" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -106,6 +109,7 @@
     "Application.AraayListMain.executor": "Run",
     "Application.ArayListMain.executor": "Run",
     "Application.ArrayListMain.executor": "Run",
+    "Application.DemoApplication.executor": "Run",
     "Application.LinkedListMain.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -114,8 +118,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DemoApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
@@ -130,6 +136,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.updates",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -139,13 +146,26 @@
       <recent name="C:\Users\ahmed\java-workspace\data-structures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinkedListMain">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="ArrayListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.datastructures.list.ArrayListMain" />
       <module name="data-structures" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.datastructures.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,8 +186,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoApplication" />
+        <item itemvalue="Application.DemoApplication" />
         <item itemvalue="Application.LinkedListMain" />
         <item itemvalue="Application.ArrayListMain" />
       </list>
@@ -176,8 +212,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
       </set>
     </attachedChunks>
   </component>
