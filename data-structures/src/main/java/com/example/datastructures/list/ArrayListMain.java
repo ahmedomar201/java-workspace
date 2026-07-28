@@ -86,7 +86,7 @@ public class ArrayListMain {
 
 //    names.forEach( name->printNMEForeach(name ));
 
-    //==
+        //==
 
         names.forEach(ArrayListMain::printNMEForeach);
 
