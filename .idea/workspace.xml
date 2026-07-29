@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a00706-cc15-47ff-8720-34486bad5623" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/controllers/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/dtos/requests/StudentRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/src/main/java/com/example/datastructures/list/ArrayListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/src/main/java/com/example/datastructures/list/ArrayListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ConsumerImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ConsumerImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/LinkedListMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/LinkedListMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/MyInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/MyInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/ServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,61 +31,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000032430563" />
-      <entry key="MS500" value="1.0233744769389936" />
-      <entry key="S2" value="2.271771516017773" />
-      <entry key="S5" value="4.824058685716834" />
-      <entry key="S10" value="6.897287321016421" />
-      <entry key="S30" value="9.536341198735705" />
-      <entry key="S60" value="10.607156612794165" />
-      <entry key="M2" value="11.255311376994845" />
-      <entry key="M5" value="11.984412472818416" />
-      <entry key="M10" value="15.318068033945497" />
-      <entry key="M15" value="20.019117617020516" />
-      <entry key="M30" value="31.7627390902053" />
-      <entry key="H1" value="44.98434833150165" />
-      <entry key="H2" value="65.8449415620576" />
-      <entry key="H4" value="105.25611065125412" />
-      <entry key="D1" value="203.38710353159303" />
-      <entry key="W1" value="233.4267893741706" />
+      <entry key="MS100" value="3.1891434981319874E-95" />
+      <entry key="MS500" value="1.2610572759076053E-19" />
+      <entry key="S2" value="1.884446026368508E-5" />
+      <entry key="S5" value="0.012884675377935974" />
+      <entry key="S10" value="0.11351071440891762" />
+      <entry key="S30" value="0.48798419758472383" />
+      <entry key="S60" value="0.7888171053686448" />
+      <entry key="M2" value="1.3617838800882636" />
+      <entry key="M5" value="2.6393466261451857" />
+      <entry key="M10" value="4.051457660701632" />
+      <entry key="M15" value="5.405829331271508" />
+      <entry key="M30" value="9.299616511362979" />
+      <entry key="H1" value="16.246751215681368" />
+      <entry key="H2" value="33.087891043850384" />
+      <entry key="H4" value="72.56216638674954" />
+      <entry key="D1" value="218.73756585086468" />
+      <entry key="W1" value="276.6190516940332" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.135375105575514E-95" />
-      <entry key="MS500" value="1.0257177607399183E-19" />
-      <entry key="S2" value="1.8052606451873287E-5" />
-      <entry key="S5" value="0.015244679059393064" />
-      <entry key="S10" value="0.1934672584197004" />
-      <entry key="S30" value="1.363291537101271" />
-      <entry key="S60" value="2.3155883050931005" />
-      <entry key="M2" value="3.0372736370658173" />
-      <entry key="M5" value="3.6602109770753954" />
-      <entry key="M10" value="4.423779057324099" />
-      <entry key="M15" value="5.195951308097104" />
-      <entry key="M30" value="6.96340743162783" />
-      <entry key="H1" value="8.986770795602919" />
-      <entry key="H2" value="11.835934900132868" />
-      <entry key="H4" value="16.218771625900125" />
-      <entry key="D1" value="25.738729699024066" />
-      <entry key="W1" value="28.493918420249365" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000001665840696" />
+      <entry key="S5" value="1.0027179827426376" />
+      <entry key="S10" value="1.072584369327431" />
+      <entry key="S30" value="1.6623571823062497" />
+      <entry key="S60" value="2.233347865368171" />
+      <entry key="M2" value="3.0364968662185294" />
+      <entry key="M5" value="4.48455825412918" />
+      <entry key="M10" value="5.660851588186705" />
+      <entry key="M15" value="6.421320650208302" />
+      <entry key="M30" value="8.011569529968453" />
+      <entry key="H1" value="10.232863588802779" />
+      <entry key="H2" value="14.396237582849224" />
+      <entry key="H4" value="21.705174833231716" />
+      <entry key="D1" value="41.729359619031186" />
+      <entry key="W1" value="48.669288710628145" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04903650611970056" />
-      <entry key="MS500" value="0.5543406983486737" />
-      <entry key="S2" value="1.9359646501587608" />
-      <entry key="S5" value="4.490829066536739" />
-      <entry key="S10" value="6.787511170380213" />
-      <entry key="S30" value="10.69559751840185" />
-      <entry key="S60" value="12.787063121604783" />
-      <entry key="M2" value="14.212513387037825" />
-      <entry key="M5" value="15.608480572820334" />
-      <entry key="M10" value="19.721091240029878" />
-      <entry key="M15" value="25.19915513214681" />
-      <entry key="M30" value="38.71537380188327" />
-      <entry key="H1" value="53.96372547965862" />
-      <entry key="H2" value="77.6754949413897" />
-      <entry key="H4" value="121.47087515978883" />
-      <entry key="D1" value="229.1247009582894" />
-      <entry key="W1" value="261.9205271339926" />
+      <entry key="MS100" value="1.0815775704056447E-12" />
+      <entry key="MS500" value="0.0040440036087553794" />
+      <entry key="S2" value="0.2521881378811868" />
+      <entry key="S5" value="0.5895259865634894" />
+      <entry key="S10" value="0.929458830664344" />
+      <entry key="S30" value="2.0274035452610737" />
+      <entry key="S60" value="2.946366884057301" />
+      <entry key="M2" value="4.350394591017471" />
+      <entry key="M5" value="7.097110330483092" />
+      <entry key="M10" value="9.695435627071483" />
+      <entry key="M15" value="11.814229875791497" />
+      <entry key="M30" value="17.302874709025215" />
+      <entry key="H1" value="26.47393365201304" />
+      <entry key="H2" value="47.47934387869227" />
+      <entry key="H4" value="94.26299144261337" />
+      <entry key="D1" value="260.4652623786124" />
+      <entry key="W1" value="325.2880559731285" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -116,7 +99,6 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -147,8 +129,10 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/datastructures/list",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/Main.java",
