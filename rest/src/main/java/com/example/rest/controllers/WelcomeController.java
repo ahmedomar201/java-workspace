@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 public class WelcomeController {
 
-@GetMapping("student/{name}")
+@GetMapping("student/PathVariable/{name}")
 
     public String WelcomeStudentWithPathVarApi(@PathVariable String name){
 
@@ -18,7 +18,7 @@ public class WelcomeController {
 
       }
 
-    @GetMapping("student")
+    @GetMapping("student/requestParm")
 
     public String WelcomeStudentWithRequestParamApi(@RequestParam(name="employee",required = false) String eng){
 
@@ -27,13 +27,17 @@ public class WelcomeController {
     }
 
 
-//    @GetMapping("student")
-//
-//    public String WelcomeStudentWithRequestBodyApi(@RequestBody StudentRequest studentRequest){
-//
-//        return "Welcome "+studentRequest.getEmail()+" at this site";
-//
-//    }
+    @PostMapping("student/requestBody")
+
+    public String WelcomeStudentWithRequestBodyApi(@RequestBody StudentRequest studentRequest){
+
+        return "Welcome "+studentRequest.getName()+  " at this site\n"+
+                "age: "+studentRequest.getAge()+
+                "\nEmail: "+studentRequest.getEmail()+
+                "\nid: "+studentRequest.getId()
+                ;
+
+    }
 
 
    }

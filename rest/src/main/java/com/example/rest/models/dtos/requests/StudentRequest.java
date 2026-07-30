@@ -4,10 +4,17 @@ import java.util.Objects;
 
 public class StudentRequest {
 
-   private String name;
-   private String email;
-   private int age;
-   private int id;
+   private final String name;
+   private final String email;
+   private final int age;
+   private final int id;
+
+    public StudentRequest(String name, String email, int age, int id) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -25,21 +32,7 @@ public class StudentRequest {
         return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     @Override
     public boolean equals(Object o) {
