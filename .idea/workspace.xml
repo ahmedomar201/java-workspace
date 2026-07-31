@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a00706-cc15-47ff-8720-34486bad5623" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/RestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/dtos/requests/StudentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/dtos/requests/StudentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,61 +50,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="4.495443044558332E-77" />
-      <entry key="S2" value="8.18828829373505E-20" />
-      <entry key="S5" value="2.318874527679142E-8" />
-      <entry key="S10" value="1.522785121965388E-4" />
-      <entry key="S30" value="0.053400608805612995" />
-      <entry key="S60" value="0.2310861264384311" />
-      <entry key="M2" value="0.48512718116701775" />
-      <entry key="M5" value="1.94285494640435" />
-      <entry key="M10" value="8.78259585789848" />
-      <entry key="M15" value="16.034123626636557" />
-      <entry key="M30" value="31.231281693120245" />
-      <entry key="H1" value="47.51363275464984" />
-      <entry key="H2" value="69.63711669828182" />
-      <entry key="H4" value="111.40083061915047" />
-      <entry key="D1" value="264.64804241710385" />
-      <entry key="W1" value="326.7164189148502" />
+      <entry key="MS100" value="2.195684653479799E-241" />
+      <entry key="MS500" value="7.384379250343813E-49" />
+      <entry key="S2" value="9.277829918700774E-13" />
+      <entry key="S5" value="1.6283599360140105E-5" />
+      <entry key="S10" value="0.004879986824192826" />
+      <entry key="S30" value="0.28425943557359173" />
+      <entry key="S60" value="0.9477451319540664" />
+      <entry key="M2" value="1.9123444026354215" />
+      <entry key="M5" value="3.8671765341605138" />
+      <entry key="M10" value="7.42040684822337" />
+      <entry key="M15" value="11.060197201331937" />
+      <entry key="M30" value="21.87221551778999" />
+      <entry key="H1" value="41.07284618574794" />
+      <entry key="H2" value="69.6564058997624" />
+      <entry key="H4" value="116.31993036339962" />
+      <entry key="D1" value="284.878247001063" />
+      <entry key="W1" value="355.7987751653648" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000000000249" />
-      <entry key="S60" value="1.000000304259057" />
-      <entry key="M2" value="1.0012891554964864" />
-      <entry key="M5" value="1.2290266797760432" />
-      <entry key="M10" value="2.5197892682358924" />
-      <entry key="M15" value="4.082704225211421" />
-      <entry key="M30" value="7.902116026323545" />
-      <entry key="H1" value="12.48418347336332" />
-      <entry key="H2" value="18.30475687895694" />
-      <entry key="H4" value="26.698700589824394" />
-      <entry key="D1" value="48.797212172018874" />
-      <entry key="W1" value="56.514677427255876" />
+      <entry key="MS100" value="1.000000000000093" />
+      <entry key="MS500" value="1.0024756442978762" />
+      <entry key="S2" value="1.2366288249781" />
+      <entry key="S5" value="1.7284256975615884" />
+      <entry key="S10" value="2.1914865534013646" />
+      <entry key="S30" value="3.0900139491166656" />
+      <entry key="S60" value="3.7366127985851807" />
+      <entry key="M2" value="4.282061107843852" />
+      <entry key="M5" value="4.973865012003012" />
+      <entry key="M10" value="6.107225288850644" />
+      <entry key="M15" value="7.353456082816306" />
+      <entry key="M30" value="10.863196376526483" />
+      <entry key="H1" value="16.620155493216842" />
+      <entry key="H2" value="24.593627122753084" />
+      <entry key="H4" value="35.0949019064171" />
+      <entry key="D1" value="61.72753886835923" />
+      <entry key="W1" value="71.17023109393847" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.222861186924383E-5" />
-      <entry key="MS500" value="0.1524068867595379" />
-      <entry key="S2" value="0.6248145695353906" />
-      <entry key="S5" value="0.8285151799045604" />
-      <entry key="S10" value="0.9103710609142794" />
-      <entry key="S30" value="1.0214238276389627" />
-      <entry key="S60" value="1.2131180055364368" />
-      <entry key="M2" value="1.4760695169439444" />
-      <entry key="M5" value="3.165675406426295" />
-      <entry key="M10" value="11.295003251540681" />
-      <entry key="M15" value="20.10856290531997" />
-      <entry key="M30" value="39.12517427794491" />
-      <entry key="H1" value="59.99106468351659" />
-      <entry key="H2" value="87.93627030088842" />
-      <entry key="H4" value="138.09469177889181" />
-      <entry key="D1" value="313.44345046351043" />
-      <entry key="W1" value="383.23078753552693" />
+      <entry key="MS100" value="5.053745110519676E-9" />
+      <entry key="MS500" value="0.022616168362190495" />
+      <entry key="S2" value="0.5508640912659534" />
+      <entry key="S5" value="1.2687430538192912" />
+      <entry key="S10" value="1.8677687591073673" />
+      <entry key="S30" value="3.1883524809569184" />
+      <entry key="S60" value="4.559054487158802" />
+      <entry key="M2" value="6.117119372615504" />
+      <entry key="M5" value="8.803119741334989" />
+      <entry key="M10" value="13.501273015834881" />
+      <entry key="M15" value="18.390056349437888" />
+      <entry key="M30" value="32.71597308869068" />
+      <entry key="H1" value="57.67834090914679" />
+      <entry key="H2" value="94.23952262723286" />
+      <entry key="H4" value="151.40721026932536" />
+      <entry key="D1" value="346.60337185862113" />
+      <entry key="W1" value="426.96860083390555" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -115,67 +121,56 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AraayListMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArayListMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayListMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedListMain.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.java-workspace [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.java-workspace [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/datastructures/list&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AraayListMain.executor": "Run",
+    "Application.ArayListMain.executor": "Run",
+    "Application.ArrayListMain.executor": "Run",
+    "Application.DemoApplication.executor": "Run",
+    "Application.LinkedListMain.executor": "Run",
+    "Application.UniversityTaskApplication.executor": "Run",
+    "Maven.java-workspace [clean,install].executor": "Run",
+    "Maven.java-workspace [clean,package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DemoApplication.executor": "Run",
+    "Spring Boot.RestApplication.executor": "Run",
+    "Spring Boot.UniversityTaskApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/datastructures/list",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\java-workspace\data-structures\src\main\java\com\example\datastructures\list" />
       <recent name="C:\Users\ahmed\java-workspace\data-structures" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestApplication">
-    <configuration name="ArrayListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.datastructures.list.ArrayListMain" />
-      <module name="data-structures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.datastructures.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo" />
@@ -189,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.datastructures.list.LinkedListMain" />
-      <module name="data-structures" />
+    <configuration name="UniversityTaskApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.universitytask.UniversityTaskApplication" />
+      <module name="university-task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.datastructures.list.*" />
+          <option name="PATTERN" value="com.example.universitytask.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,13 +225,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="university-task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.universitytask.UniversityTaskApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.universitytask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UniversityTaskApplication" />
+        <item itemvalue="Application.UniversityTaskApplication" />
         <item itemvalue="Spring Boot.RestApplication" />
         <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="Application.DemoApplication" />
-        <item itemvalue="Application.LinkedListMain" />
-        <item itemvalue="Application.ArrayListMain" />
       </list>
     </recent_temporary>
   </component>

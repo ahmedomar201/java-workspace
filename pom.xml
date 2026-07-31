@@ -23,6 +23,7 @@
     <modules>
         <module>data-structures</module>
         <module>rest</module>
+        <module>university-task</module>
 
     </modules>
 
