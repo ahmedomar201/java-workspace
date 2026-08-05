@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a00706-cc15-47ff-8720-34486bad5623" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/entities/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.195684653479799E-241" />
-      <entry key="MS500" value="7.384379250343813E-49" />
-      <entry key="S2" value="9.277829918700774E-13" />
-      <entry key="S5" value="1.6283599360140105E-5" />
-      <entry key="S10" value="0.004879986824192826" />
-      <entry key="S30" value="0.28425943557359173" />
-      <entry key="S60" value="0.9477451319540664" />
-      <entry key="M2" value="1.9123444026354215" />
-      <entry key="M5" value="3.8671765341605138" />
-      <entry key="M10" value="7.42040684822337" />
-      <entry key="M15" value="11.060197201331937" />
-      <entry key="M30" value="21.87221551778999" />
-      <entry key="H1" value="41.07284618574794" />
-      <entry key="H2" value="69.6564058997624" />
-      <entry key="H4" value="116.31993036339962" />
-      <entry key="D1" value="284.878247001063" />
-      <entry key="W1" value="355.7987751653648" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000000002341" />
+      <entry key="S2" value="1.0012369475134015" />
+      <entry key="S5" value="1.0686974329312466" />
+      <entry key="S10" value="1.2621023250847907" />
+      <entry key="S30" value="1.6471685488274717" />
+      <entry key="S60" value="1.8849610764738558" />
+      <entry key="M2" value="2.2041649934027014" />
+      <entry key="M5" value="2.9585854900113744" />
+      <entry key="M10" value="3.9251926270733435" />
+      <entry key="M15" value="4.8671848037005425" />
+      <entry key="M30" value="9.142171291105619" />
+      <entry key="H1" value="22.518618538839213" />
+      <entry key="H2" value="53.93582866560914" />
+      <entry key="H4" value="110.15783590591562" />
+      <entry key="D1" value="322.74166650356057" />
+      <entry key="W1" value="420.7906514420795" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.000000000000093" />
-      <entry key="MS500" value="1.0024756442978762" />
-      <entry key="S2" value="1.2366288249781" />
-      <entry key="S5" value="1.7284256975615884" />
-      <entry key="S10" value="2.1914865534013646" />
-      <entry key="S30" value="3.0900139491166656" />
-      <entry key="S60" value="3.7366127985851807" />
-      <entry key="M2" value="4.282061107843852" />
-      <entry key="M5" value="4.973865012003012" />
-      <entry key="M10" value="6.107225288850644" />
-      <entry key="M15" value="7.353456082816306" />
-      <entry key="M30" value="10.863196376526483" />
-      <entry key="H1" value="16.620155493216842" />
-      <entry key="H2" value="24.593627122753084" />
-      <entry key="H4" value="35.0949019064171" />
-      <entry key="D1" value="61.72753886835923" />
-      <entry key="W1" value="71.17023109393847" />
+      <entry key="MS100" value="1.5076687576297913E-79" />
+      <entry key="MS500" value="1.7205257906364632E-16" />
+      <entry key="S2" value="1.1452895465096079E-4" />
+      <entry key="S5" value="0.026519548063550665" />
+      <entry key="S10" value="0.16284848844474473" />
+      <entry key="S30" value="0.5524036059366529" />
+      <entry key="S60" value="0.8184968485653674" />
+      <entry key="M2" value="1.1494587554343798" />
+      <entry key="M5" value="1.7590341290267288" />
+      <entry key="M10" value="2.563119436750958" />
+      <entry key="M15" value="3.5586585473009067" />
+      <entry key="M30" value="7.516025916679419" />
+      <entry key="H1" value="15.920542893418759" />
+      <entry key="H2" value="30.212661950508828" />
+      <entry key="H4" value="49.35990904237079" />
+      <entry key="D1" value="95.30632590845536" />
+      <entry key="W1" value="111.77484149086385" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.053745110519676E-9" />
-      <entry key="MS500" value="0.022616168362190495" />
-      <entry key="S2" value="0.5508640912659534" />
-      <entry key="S5" value="1.2687430538192912" />
-      <entry key="S10" value="1.8677687591073673" />
-      <entry key="S30" value="3.1883524809569184" />
-      <entry key="S60" value="4.559054487158802" />
-      <entry key="M2" value="6.117119372615504" />
-      <entry key="M5" value="8.803119741334989" />
-      <entry key="M10" value="13.501273015834881" />
-      <entry key="M15" value="18.390056349437888" />
-      <entry key="M30" value="32.71597308869068" />
-      <entry key="H1" value="57.67834090914679" />
-      <entry key="H2" value="94.23952262723286" />
-      <entry key="H4" value="151.40721026932536" />
-      <entry key="D1" value="346.60337185862113" />
-      <entry key="W1" value="426.96860083390555" />
+      <entry key="MS100" value="1.8387079709216075E-46" />
+      <entry key="MS500" value="7.144895875326674E-10" />
+      <entry key="S2" value="0.0064110621812610916" />
+      <entry key="S5" value="0.21230500568331193" />
+      <entry key="S10" value="0.7614676305557373" />
+      <entry key="S30" value="1.8903565742888582" />
+      <entry key="S60" value="2.532353659994221" />
+      <entry key="M2" value="3.2618151663697494" />
+      <entry key="M5" value="4.677222445509671" />
+      <entry key="M10" value="6.465517684807695" />
+      <entry key="M15" value="8.40799584653621" />
+      <entry key="M30" value="16.643098036009423" />
+      <entry key="H1" value="38.42422346770891" />
+      <entry key="H2" value="84.13446759785334" />
+      <entry key="H4" value="159.5062815189454" />
+      <entry key="D1" value="418.0441898008019" />
+      <entry key="W1" value="532.5648485686671" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -121,49 +120,49 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AraayListMain.executor": "Run",
-    "Application.ArayListMain.executor": "Run",
-    "Application.ArrayListMain.executor": "Run",
-    "Application.DemoApplication.executor": "Run",
-    "Application.LinkedListMain.executor": "Run",
-    "Application.UniversityTaskApplication.executor": "Run",
-    "Maven.java-workspace [clean,install].executor": "Run",
-    "Maven.java-workspace [clean,package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DemoApplication.executor": "Run",
-    "Spring Boot.RestApplication.executor": "Run",
-    "Spring Boot.UniversityTaskApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/datastructures/list",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.updates",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AraayListMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArayListMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayListMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.java-workspace [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.java-workspace [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/datastructures/list&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ahmed/java-workspace/data-structures/src/main/java/com/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\java-workspace\data-structures\src\main\java\com\example\datastructures\list" />

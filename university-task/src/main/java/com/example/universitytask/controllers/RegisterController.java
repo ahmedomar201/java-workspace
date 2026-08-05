@@ -1,8 +1,7 @@
 package com.example.universitytask.controllers;
 
 
-import com.example.universitytask.models.dtos.requests.LoginRequest;
-import com.example.universitytask.models.dtos.requests.RegisterRequest;
+import com.example.universitytask.models.dtos.requests.StudentRegister;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 public class RegisterController {
 
     @PostMapping("Register")
-    public String login(@RequestBody RegisterRequest registerRequest){
+    public String login(@RequestBody StudentRegister studentRegister){
 
-        return "fistName: "+registerRequest.getFirstName()+"\nlastName: "+registerRequest.getLastName()+
-                "\nusername: "+registerRequest.getUserName()+"\nemail: "+registerRequest.getEmail()+"\npassword: "+registerRequest.getPassword();
+        return "fistName: "+ studentRegister.getFirstName()+"\nlastName: "+ studentRegister.getLastName()+
+                "\nusername: "+ studentRegister.getUserName()+"\nemail: "+ studentRegister.getEmail()+"\npassword: "+ studentRegister.getPassword();
 
     }
 
