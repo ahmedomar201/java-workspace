@@ -5,11 +5,11 @@ import java.util.Objects;
 public class StudentRegister {
     private final String firstName;
     private final String secondName;
-    private final String age;
+    private final int age;
     private final String email;
     private final String password;
 
-    public StudentRegister(String firstName, String secondName, String age, String email, String password) {
+    public StudentRegister(String firstName, String secondName, Integer age, String email, String password) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
@@ -25,7 +25,7 @@ public class StudentRegister {
         return secondName;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -41,7 +41,11 @@ public class StudentRegister {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         StudentRegister that = (StudentRegister) o;
-        return Objects.equals(firstName, that.firstName) && Objects.equals(secondName, that.secondName) && Objects.equals(age, that.age) && Objects.equals(email, that.email) && Objects.equals(password, that.password);
+        return age == that.age
+                && Objects.equals(firstName, that.firstName)
+                && Objects.equals(secondName, that.secondName)
+                && Objects.equals(email, that.email)
+                && Objects.equals(password, that.password);
     }
 
     @Override
@@ -54,7 +58,7 @@ public class StudentRegister {
         return "StudentRegister{" +
                 "firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
                 ", email='" + email + '\'' +
                 '}';
     }
