@@ -5,15 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fe4c48-b77d-4d86-9db1-de3134fe90c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/CredentialsExceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/rest/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ahmedomar201"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ahmedomar201/java-workspace.git",
+    "accountId": "f90ffc3a-29b1-42ea-b5cc-d841a98a636c"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -77,7 +102,93 @@
       <entry key="W1" value="0.999999728379862" />
     </decayedShown>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3HXENpmNC2iVb4Te6O6CwFbt9j8" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.StudentController.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.UniversityTaskApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ahmed/java-workspace",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
+    <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.universitytask.controllers.StudentController" />
+      <module name="university-task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.universitytask.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="university-task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.universitytask.UniversityTaskApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.universitytask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UniversityTaskApplication" />
+        <item itemvalue="Application.StudentController" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4fe4c48-b77d-4d86-9db1-de3134fe90c5" name="Changes" comment="" />
+      <created>1786005975837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786005975837</updated>
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
