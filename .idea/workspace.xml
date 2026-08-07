@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fe4c48-b77d-4d86-9db1-de3134fe90c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/CredentialsExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/RegisterException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/rest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Exception" />
       </list>
     </option>
@@ -27,85 +25,85 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ahmedomar201"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ahmedomar201&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ahmedomar201/java-workspace.git",
-    "accountId": "f90ffc3a-29b1-42ea-b5cc-d841a98a636c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ahmedomar201/java-workspace.git&quot;,
+    &quot;accountId&quot;: &quot;f90ffc3a-29b1-42ea-b5cc-d841a98a636c&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="2.900445030102743E-24" />
+      <entry key="MS500" value="1.9610692405233342E-5" />
+      <entry key="S2" value="0.06654619556117174" />
+      <entry key="S5" value="0.33825894715947274" />
+      <entry key="S10" value="0.5816003394454474" />
+      <entry key="S30" value="0.8377107322674796" />
+      <entry key="S60" value="0.9985261379348022" />
+      <entry key="M2" value="1.592316165379348" />
+      <entry key="M5" value="4.532306973398338" />
+      <entry key="M10" value="8.507195892314705" />
+      <entry key="M15" value="10.950122407690376" />
+      <entry key="M30" value="14.953335107484099" />
+      <entry key="H1" value="22.19791624764706" />
+      <entry key="H2" value="47.019456375234505" />
+      <entry key="H4" value="93.99141051943049" />
+      <entry key="D1" value="193.35910523163605" />
+      <entry key="W1" value="220.9758706724667" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="1.0000000000000004" />
+      <entry key="MS500" value="1.0008596279429327" />
+      <entry key="S2" value="1.1712291224956957" />
+      <entry key="S5" value="1.4936635391502389" />
+      <entry key="S10" value="1.7026119406544689" />
+      <entry key="S30" value="1.8890082808110664" />
+      <entry key="S60" value="1.9442756080696628" />
+      <entry key="M2" value="2.0378238303831413" />
+      <entry key="M5" value="3.0776117160263556" />
+      <entry key="M10" value="5.290079050945419" />
+      <entry key="M15" value="7.028562301478757" />
+      <entry key="M30" value="11.193212943860772" />
+      <entry key="H1" value="19.2026667425423" />
+      <entry key="H2" value="37.265648125329385" />
+      <entry key="H4" value="66.01140806358379" />
+      <entry key="D1" value="122.78796348329016" />
+      <entry key="W1" value="138.20540324450988" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.19344562419279873" />
-      <entry key="MS500" value="0.7199656592573429" />
-      <entry key="S2" value="0.9211448863810168" />
-      <entry key="S5" value="0.9676786921934954" />
-      <entry key="S10" value="0.9837066087983223" />
-      <entry key="S30" value="0.9945391024816073" />
-      <entry key="S60" value="0.9972658133524919" />
-      <entry key="M2" value="0.9986319709244702" />
-      <entry key="M5" value="0.9994525636253587" />
-      <entry key="M10" value="0.9997262443415991" />
-      <entry key="M15" value="0.9998174878998127" />
-      <entry key="M30" value="0.999908739785693" />
-      <entry key="H1" value="0.9999543688517456" />
-      <entry key="H2" value="0.9999771841655917" />
-      <entry key="H4" value="0.9999885920177248" />
-      <entry key="D1" value="0.9999980986605831" />
-      <entry key="W1" value="0.999999728379862" />
+      <entry key="MS100" value="1.3770381884792258E-6" />
+      <entry key="MS500" value="0.06747838111541155" />
+      <entry key="S2" value="0.6926845837235727" />
+      <entry key="S5" value="1.5246184515239591" />
+      <entry key="S10" value="2.1054135190637457" />
+      <entry key="S30" value="2.6596986601265993" />
+      <entry key="S60" value="2.905522487720056" />
+      <entry key="M2" value="3.6036567036035674" />
+      <entry key="M5" value="7.583819125101844" />
+      <entry key="M10" value="13.771255009572162" />
+      <entry key="M15" value="17.955106593606228" />
+      <entry key="M30" value="26.128409462271126" />
+      <entry key="H1" value="41.38559813530746" />
+      <entry key="H2" value="84.26968290222823" />
+      <entry key="H4" value="159.98820575380708" />
+      <entry key="D1" value="316.142263342509" />
+      <entry key="W1" value="359.1804940152031" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3HXENpmNC2iVb4Te6O6CwFbt9j8" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -113,28 +111,28 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.StudentController.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.UniversityTaskApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.StudentController.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
     <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.universitytask.controllers.StudentController" />
