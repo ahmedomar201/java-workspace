@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fe4c48-b77d-4d86-9db1-de3134fe90c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/RegisterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/repositories/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/CredentialsHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/NameBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/StringUtills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/StudentValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
     </list>
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.900445030102743E-24" />
-      <entry key="MS500" value="1.9610692405233342E-5" />
-      <entry key="S2" value="0.06654619556117174" />
-      <entry key="S5" value="0.33825894715947274" />
-      <entry key="S10" value="0.5816003394454474" />
-      <entry key="S30" value="0.8377107322674796" />
-      <entry key="S60" value="0.9985261379348022" />
-      <entry key="M2" value="1.592316165379348" />
-      <entry key="M5" value="4.532306973398338" />
-      <entry key="M10" value="8.507195892314705" />
-      <entry key="M15" value="10.950122407690376" />
-      <entry key="M30" value="14.953335107484099" />
-      <entry key="H1" value="22.19791624764706" />
-      <entry key="H2" value="47.019456375234505" />
-      <entry key="H4" value="93.99141051943049" />
-      <entry key="D1" value="193.35910523163605" />
-      <entry key="W1" value="220.9758706724667" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1387585010749336E-230" />
+      <entry key="S2" value="3.268937745293177E-58" />
+      <entry key="S5" value="1.1002336349112805E-23" />
+      <entry key="S10" value="4.732661970662085E-12" />
+      <entry key="S30" value="3.854653139269459E-4" />
+      <entry key="S60" value="0.03883696226862764" />
+      <entry key="M2" value="0.393107091765504" />
+      <entry key="M5" value="1.5819437123070421" />
+      <entry key="M10" value="2.686514231487107" />
+      <entry key="M15" value="3.850490823931624" />
+      <entry key="M30" value="9.83670043223702" />
+      <entry key="H1" value="26.383628448976857" />
+      <entry key="H2" value="59.363024630562194" />
+      <entry key="H4" value="115.14165872357546" />
+      <entry key="D1" value="252.1679154604583" />
+      <entry key="W1" value="295.00209930933045" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000004" />
-      <entry key="MS500" value="1.0008596279429327" />
-      <entry key="S2" value="1.1712291224956957" />
-      <entry key="S5" value="1.4936635391502389" />
-      <entry key="S10" value="1.7026119406544689" />
-      <entry key="S30" value="1.8890082808110664" />
-      <entry key="S60" value="1.9442756080696628" />
-      <entry key="M2" value="2.0378238303831413" />
-      <entry key="M5" value="3.0776117160263556" />
-      <entry key="M10" value="5.290079050945419" />
-      <entry key="M15" value="7.028562301478757" />
-      <entry key="M30" value="11.193212943860772" />
-      <entry key="H1" value="19.2026667425423" />
-      <entry key="H2" value="37.265648125329385" />
-      <entry key="H4" value="66.01140806358379" />
-      <entry key="D1" value="122.78796348329016" />
-      <entry key="W1" value="138.20540324450988" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001396798623" />
+      <entry key="S10" value="1.0003753622497822" />
+      <entry key="S30" value="1.0843372637204018" />
+      <entry key="S60" value="1.4158571381643825" />
+      <entry key="M2" value="2.188045310998487" />
+      <entry key="M5" value="3.783111545928101" />
+      <entry key="M10" value="5.194590057178826" />
+      <entry key="M15" value="6.275019731093054" />
+      <entry key="M30" value="9.85348780997276" />
+      <entry key="H1" value="18.295528501429647" />
+      <entry key="H2" value="36.48662344340015" />
+      <entry key="H4" value="68.32748885741826" />
+      <entry key="D1" value="145.63472499778953" />
+      <entry key="W1" value="169.5455030001573" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3770381884792258E-6" />
-      <entry key="MS500" value="0.06747838111541155" />
-      <entry key="S2" value="0.6926845837235727" />
-      <entry key="S5" value="1.5246184515239591" />
-      <entry key="S10" value="2.1054135190637457" />
-      <entry key="S30" value="2.6596986601265993" />
-      <entry key="S60" value="2.905522487720056" />
-      <entry key="M2" value="3.6036567036035674" />
-      <entry key="M5" value="7.583819125101844" />
-      <entry key="M10" value="13.771255009572162" />
-      <entry key="M15" value="17.955106593606228" />
-      <entry key="M30" value="26.128409462271126" />
-      <entry key="H1" value="41.38559813530746" />
-      <entry key="H2" value="84.26968290222823" />
-      <entry key="H4" value="159.98820575380708" />
-      <entry key="D1" value="316.142263342509" />
-      <entry key="W1" value="359.1804940152031" />
+      <entry key="MS100" value="7.566575317010409E-5" />
+      <entry key="MS500" value="0.1498924892238891" />
+      <entry key="S2" value="0.6222214348016389" />
+      <entry key="S5" value="0.827138141932349" />
+      <entry key="S10" value="0.9098128625035439" />
+      <entry key="S30" value="1.0506027292438231" />
+      <entry key="S60" value="1.4301315138980495" />
+      <entry key="M2" value="2.5581345061271263" />
+      <entry key="M5" value="5.345914834350624" />
+      <entry key="M10" value="7.8671951930981034" />
+      <entry key="M15" value="10.114083267165102" />
+      <entry key="M30" value="19.680752732579087" />
+      <entry key="H1" value="44.66945160516429" />
+      <entry key="H2" value="95.83822476558463" />
+      <entry key="H4" value="183.45664698433617" />
+      <entry key="D1" value="397.7975395870008" />
+      <entry key="W1" value="464.54673573947616" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -111,28 +115,29 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.StudentController.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.StudentController.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.UniversityTaskApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ahmed/java-workspace",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
     <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.universitytask.controllers.StudentController" />
