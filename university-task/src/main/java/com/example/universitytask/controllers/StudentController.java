@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.Optional;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
+
 import static com.example.universitytask.repositories.StudentRepository.*;
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
 import static com.example.universitytask.utills.NameBuilder.buildFullName;
@@ -22,37 +25,40 @@ public class StudentController {
 
 
     @PostMapping("register")
-    public ResponseEntity <String> registerStudentApi(@RequestBody final StudentRegister studentRegister) {
+    public ResponseEntity<List<String>> registerStudentApi(@RequestBody final StudentRegister studentRegister) {
 
 
-        Optional < ResponseEntity<String>> optional= validateRegisterRequest(studentRegister);
+        final ResponseEntity<List<String>> errorsResponseEntities = validateRegisterRequest(studentRegister);
 
-        if (optional.isPresent()) {
-            return optional.get();
+
+        final List<String> errorMessages = errorsResponseEntities.getBody();
+
+        if (!errorMessages.isEmpty()) {
+            return ResponseEntity.badRequest().body(errorMessages);
         }
 
         try {
             findRegisterStudent(studentRegister);
         } catch (RegisterException e) {
-           return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body(List.of(e.getMessage()));
         }
 
 
-        final  String fullName = buildFullName(studentRegister.getFirstName(),studentRegister.getSecondName());
-        final  String hashPassword;
+        final String fullName = buildFullName(studentRegister.getFirstName(), studentRegister.getSecondName());
+        final String hashPassword;
         try {
             hashPassword = hashPassword(studentRegister.getPassword());
         } catch (CredentialsExceptions e) {
             return ResponseEntity.badRequest().build();
         }
-        final   Student student =new Student(UUID.randomUUID(),
+        final Student student = new Student(UUID.randomUUID(),
                 fullName
-                ,studentRegister.getAge(),
+                , studentRegister.getAge(),
                 studentRegister.getEmail(),
-                hashPassword,false,
+                hashPassword, false,
                 0.0F, 0.0F);
         saveStudent(student);
-        return ResponseEntity.ok("Successfully registered student with Email: " + studentRegister.getEmail());
+        return ResponseEntity.ok(List.of("Successfully registered student with Email: " + studentRegister.getEmail()));
     }
 
 

@@ -1,60 +1,66 @@
 package com.example.universitytask.utills.validators;
 
 import com.example.universitytask.models.dtos.requests.StudentRegister;
-import com.example.universitytask.models.entities.Student;
 import org.springframework.http.ResponseEntity;
 
-import java.util.Map;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 import static com.example.universitytask.utills.StringUtills.isNullOrBlank;
 
 public class StudentValidator {
 
 
-    public static Optional<ResponseEntity<String>> validateRegisterRequest(
+    public static ResponseEntity<List<String>>validateRegisterRequest(
             final StudentRegister studentRegister) {
-        if(isNullOrBlank(studentRegister.getFirstName())){
 
-            return Optional.of(ResponseEntity.badRequest().body("First name is required"));
+        final List<String> errors = new LinkedList<>();
+        if (isNullOrBlank(studentRegister.getFirstName())) {
+
+            errors.add("First name is required");
+
+
         }
 
-        if(isNullOrBlank(studentRegister.getSecondName())){
+        if (isNullOrBlank(studentRegister.getSecondName())) {
 
-            return  Optional.of(ResponseEntity.badRequest().body("Second name is required"));
+            errors.add("Second name is required");
+
         }
 
-        if(isEmailInvalid(studentRegister.getEmail())){
+        if (isEmailInvalid(studentRegister.getEmail())) {
 
-            return  Optional.of(ResponseEntity.badRequest().body("Email is required"));
+            errors.add("Email is required");
+
         }
 
-        if(isAgeMisAligned(studentRegister.getAge())){
+        if (isAgeMisAligned(studentRegister.getAge())) {
 
-            return  Optional.of(ResponseEntity.badRequest().body("Age is required"));
+            errors.add("Age is required");
+
+
         }
 
-        if(isPasswordInvalid(studentRegister.getPassword()))
-        {
-            return  Optional.of(ResponseEntity.badRequest().body("Password is required"));
+        if (isPasswordInvalid(studentRegister.getPassword())) {
+
+            errors.add("Password is required");
+
         }
-        return Optional.empty();
+        return ResponseEntity.badRequest().body(errors);
     }
 
 
-    private static boolean isPasswordInvalid(final String password){
-        return isNullOrBlank(password)|| password.length()<8||
-                password.length()>32;
+    private static boolean isPasswordInvalid(final String password) {
+        return isNullOrBlank(password) || password.length() < 8 ||
+                password.length() > 32;
     }
 
 
-    private static boolean isEmailInvalid(final String email){
+    private static boolean isEmailInvalid(final String email) {
         return isNullOrBlank(email)
                 || !email.contains("@");
     }
 
-    private static boolean isAgeMisAligned(final int age){
-        return  age < 18 || age > 25;
+    private static boolean isAgeMisAligned(final int age) {
+        return age < 18 || age > 25;
     }
 }
