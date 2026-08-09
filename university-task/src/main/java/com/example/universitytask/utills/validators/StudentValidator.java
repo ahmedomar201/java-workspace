@@ -13,31 +13,31 @@ import static com.example.universitytask.utills.StringUtills.isNullOrBlank;
 public class StudentValidator {
 
 
-    public static Optional<ResponseEntity<Map<UUID, Student>>> validateRegisterRequest(
+    public static Optional<ResponseEntity<String>> validateRegisterRequest(
             final StudentRegister studentRegister) {
         if(isNullOrBlank(studentRegister.getFirstName())){
 
-            return Optional.of(ResponseEntity.badRequest().build());
+            return Optional.of(ResponseEntity.badRequest().body("First name is required"));
         }
 
         if(isNullOrBlank(studentRegister.getSecondName())){
 
-            return  Optional.of(ResponseEntity.badRequest().build());
+            return  Optional.of(ResponseEntity.badRequest().body("Second name is required"));
         }
 
         if(isEmailInvalid(studentRegister.getEmail())){
 
-            return  Optional.of(ResponseEntity.badRequest().build());
+            return  Optional.of(ResponseEntity.badRequest().body("Email is required"));
         }
 
         if(isAgeMisAligned(studentRegister.getAge())){
 
-            return  Optional.of(ResponseEntity.badRequest().build());
+            return  Optional.of(ResponseEntity.badRequest().body("Age is required"));
         }
 
         if(isPasswordInvalid(studentRegister.getPassword()))
         {
-            return  Optional.of(ResponseEntity.badRequest().build());
+            return  Optional.of(ResponseEntity.badRequest().body("Password is required"));
         }
         return Optional.empty();
     }
@@ -57,6 +57,4 @@ public class StudentValidator {
     private static boolean isAgeMisAligned(final int age){
         return  age < 18 || age > 25;
     }
-
-
 }

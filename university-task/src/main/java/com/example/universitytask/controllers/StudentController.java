@@ -9,15 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
-
 import static com.example.universitytask.repositories.StudentRepository.*;
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
 import static com.example.universitytask.utills.NameBuilder.buildFullName;
@@ -29,10 +22,10 @@ public class StudentController {
 
 
     @PostMapping("register")
-    public ResponseEntity <Map<UUID, Student>> registerStudentApi(@RequestBody final StudentRegister studentRegister) {
+    public ResponseEntity <String> registerStudentApi(@RequestBody final StudentRegister studentRegister) {
 
 
-        Optional < ResponseEntity<Map<UUID, Student>>> optional= validateRegisterRequest(studentRegister);
+        Optional < ResponseEntity<String>> optional= validateRegisterRequest(studentRegister);
 
         if (optional.isPresent()) {
             return optional.get();
@@ -59,7 +52,7 @@ public class StudentController {
                 hashPassword,false,
                 0.0F, 0.0F);
         saveStudent(student);
-        return ResponseEntity.ok(STUDENT_DB)  ;
+        return ResponseEntity.ok("Successfully registered student with Email: " + studentRegister.getEmail());
     }
 
 
