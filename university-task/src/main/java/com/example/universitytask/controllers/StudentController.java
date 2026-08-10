@@ -2,6 +2,7 @@ package com.example.universitytask.controllers;
 
 import com.example.universitytask.errors.exceptions.CredentialsExceptions;
 import com.example.universitytask.errors.exceptions.RegisterException;
+import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.entities.Student;
 import org.springframework.http.ResponseEntity;
@@ -61,6 +62,27 @@ public class StudentController {
         return ResponseEntity.ok(List.of("Successfully registered student with Email: " + studentRegister.getEmail()));
     }
 
+
+    @PostMapping("login")
+    public ResponseEntity<List<String>> loginStudentApi(
+            @RequestBody final StudentLogin studentLogin,@RequestBody final StudentRegister studentRegister) {
+
+        final String hashPassword;
+        try {
+            hashPassword = hashPassword(studentLogin.getPassword());
+        } catch (CredentialsExceptions e) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        final Student student = new Student(UUID.randomUUID(),
+                fullName
+                , studentRegister.getAge(),
+                studentLogin.getEmail(),
+                hashPassword, false,
+                0.0F, 0.0F);
+
+        return ResponseEntity.ok(List.of("Successfully login student with Email: " + studentLogin.getEmail()));
+    }
 
 }
 //http://localhost:8080/welcome/student/mohamed
