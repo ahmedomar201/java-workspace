@@ -6,12 +6,10 @@ public class StudentLogin {
 
     private final String email;
     private final String password;
-    private final boolean isLoggedIn;
 
-    public StudentLogin(String email, String password, boolean isLoggedIn) {
+    public StudentLogin(String email, String password) {
         this.email = email;
         this.password = password;
-        this.isLoggedIn = isLoggedIn;
     }
 
     public String getEmail() {
@@ -22,20 +20,16 @@ public class StudentLogin {
         return password;
     }
 
-    public boolean isLoggedIn() {
-        return isLoggedIn;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         StudentLogin that = (StudentLogin) o;
-        return isLoggedIn == that.isLoggedIn && Objects.equals(email, that.email) && Objects.equals(password, that.password);
+        return Objects.equals(email, that.email) && Objects.equals(password, that.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(email, password, isLoggedIn);
+        return Objects.hash(email, password);
     }
 
     @Override
@@ -43,7 +37,6 @@ public class StudentLogin {
         return "StudentLogin{" +
                 "email='" + email + '\'' +
                 ", password=**********" +
-                ", isLoggedIn=" + isLoggedIn +
                 '}';
     }
 }
