@@ -7,6 +7,7 @@ import com.example.universitytask.models.entities.Student;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -36,12 +37,12 @@ public class StudentController {
             return ResponseEntity.badRequest().body(errorMessages);
         }
 
-        final Optional<Student> optionalStudent =findStudentByEmail(studentRegister.getEmail());
+        final Optional<Student> optionalStudent = findStudentByEmail(studentRegister.getEmail());
 
         if (optionalStudent.isPresent()) {
             return ResponseEntity.badRequest().body(
                     List.of("already Registered " + studentRegister.getEmail())
-                    );
+            );
         }
 
 
@@ -66,10 +67,10 @@ public class StudentController {
 
 
     @PostMapping("login")
-    public ResponseEntity <String> loginStudentApi(
+    public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
 
-        final Optional<Student> optionalStudent =findStudentByEmail(studentLogin.getEmail());
+        final Optional<Student> optionalStudent = findStudentByEmail(studentLogin.getEmail());
 
         if (optionalStudent.isEmpty()) {
             return ResponseEntity.badRequest().body(
@@ -80,7 +81,7 @@ public class StudentController {
         //عشان اعرف استخدمها في مثلا email or password
         final Student foundStudent = optionalStudent.get();
 
-        if(foundStudent.isLoggedIn()){
+        if (foundStudent.isLoggedIn()) {
             return ResponseEntity.badRequest().body("Student already logged in");
         }
         final String hashPassword;
@@ -102,7 +103,7 @@ public class StudentController {
 
 
     @PostMapping("logout")
-    public ResponseEntity <String> logoutStudentApi(
+    public ResponseEntity<String> logoutStudentApi(
             @RequestParam final String email) {
 
         final Optional<Student> optionalStudent = findStudentByEmail(email);
@@ -115,7 +116,7 @@ public class StudentController {
 
         final Student foundStudent = optionalStudent.get();
 
-        if(!foundStudent.isLoggedIn()){
+        if (!foundStudent.isLoggedIn()) {
             return ResponseEntity.badRequest().body("student not logged in");
         }
         foundStudent.setLoggedIn(false);
@@ -124,4 +125,26 @@ public class StudentController {
                 "Successfully logged out with Email: " + foundStudent.getEmail());
     }
 
+    @PostMapping("saveALL")
+    public ResponseEntity<String> saveAllStudent(@RequestBody final List<StudentRegister> students) {
+
+        students.forEach(this::registerStudentApi);
+
+        return ResponseEntity.ok("");
+
+    }
+
+    @GetMapping("getAll")
+    public ResponseEntity<Collection<Student>> finsAllStudent() {
+
+        final Collection<Student> studentList = getAll();
+
+        if (studentList.isEmpty()) {
+
+            return ResponseEntity.badRequest().build();
+        }
+
+        return ResponseEntity.ok(studentList);
+
+    }
 }

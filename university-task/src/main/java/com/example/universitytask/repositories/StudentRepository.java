@@ -3,9 +3,7 @@ package com.example.universitytask.repositories;
 import com.example.universitytask.errors.exceptions.RegisterException;
 import com.example.universitytask.models.entities.Student;
 
-import java.util.Map;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class StudentRepository {
@@ -16,9 +14,15 @@ public class StudentRepository {
 
     public static Optional<Student> findStudentByEmail(String email)
             throws RegisterException {
-      return  STUDENT_DB.values().stream().filter(
-                student ->  student.getEmail().equals(email)
+        return STUDENT_DB.values().stream().filter(
+                student -> student.getEmail().equals(email)
         ).findFirst();
+    }
+
+    public static Collection<Student> getAll() {
+
+        return STUDENT_DB.values();
+
     }
 
 
