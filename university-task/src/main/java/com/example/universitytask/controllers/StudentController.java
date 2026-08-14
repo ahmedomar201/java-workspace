@@ -3,6 +3,7 @@ package com.example.universitytask.controllers;
 import com.example.universitytask.errors.exceptions.CredentialsExceptions;
 import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
+import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import static com.example.universitytask.repositories.StudentRepository.*;
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
@@ -135,16 +137,28 @@ public class StudentController {
     }
 
     @GetMapping("getAll")
-    public ResponseEntity<Collection<Student>> finsAllStudent() {
+    public ResponseEntity<?> finsAllStudent() {
+
 
         final Collection<Student> studentList = getAll();
 
         if (studentList.isEmpty()) {
 
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body("not found Student");
         }
+        final Collection<StudentResponse> studentResponses = studentList.stream().map(
+                        StudentController::toStudentResponse)
+                .toList();
 
-        return ResponseEntity.ok(studentList);
+        return ResponseEntity.ok(studentResponses);
+
+    }
+
+    private static StudentResponse toStudentResponse(final Student student) {
+
+
+        return new StudentResponse(
+                student.getFullName(), student.getAge(), student.getEmail());
 
     }
 }
