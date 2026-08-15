@@ -12,7 +12,7 @@ public class StudentRepository {
 
     public static final Map<UUID, Student> STUDENT_DB = new ConcurrentHashMap<>();
 
-    public static Optional<Student> findStudentByEmail(String email)
+    public static Optional<Student> findByEmail(String email)
             throws RegisterException {
         return STUDENT_DB.values().stream().filter(
                 student -> student.getEmail().equals(email)
@@ -25,8 +25,15 @@ public class StudentRepository {
 
     }
 
+    public static void saveALL() {
 
-    public static void saveStudent(final Student student) {
+
+
+
+    }
+
+
+    public static void save(final Student student) {
         STUDENT_DB.put(student.getId(), student);
     }
 

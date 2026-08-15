@@ -12,7 +12,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import static com.example.universitytask.repositories.StudentRepository.*;
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
@@ -39,7 +38,7 @@ public class StudentController {
             return ResponseEntity.badRequest().body(errorMessages);
         }
 
-        final Optional<Student> optionalStudent = findStudentByEmail(studentRegister.getEmail());
+        final Optional<Student> optionalStudent = findByEmail(studentRegister.getEmail());
 
         if (optionalStudent.isPresent()) {
             return ResponseEntity.badRequest().body(
@@ -62,7 +61,7 @@ public class StudentController {
                 studentRegister.getEmail(),
                 hashPassword, false,
                 0.0F, 0.0F);
-        saveStudent(student);
+        save(student);
         return ResponseEntity.ok(List.of(
                 "Successfully registered student with Email: " + studentRegister.getEmail()));
     }
@@ -72,7 +71,7 @@ public class StudentController {
     public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
 
-        final Optional<Student> optionalStudent = findStudentByEmail(studentLogin.getEmail());
+        final Optional<Student> optionalStudent = findByEmail(studentLogin.getEmail());
 
         if (optionalStudent.isEmpty()) {
             return ResponseEntity.badRequest().body(
@@ -108,7 +107,7 @@ public class StudentController {
     public ResponseEntity<String> logoutStudentApi(
             @RequestParam final String email) {
 
-        final Optional<Student> optionalStudent = findStudentByEmail(email);
+        final Optional<Student> optionalStudent = findByEmail(email);
 
         if (optionalStudent.isEmpty()) {
             return ResponseEntity.badRequest().body(
