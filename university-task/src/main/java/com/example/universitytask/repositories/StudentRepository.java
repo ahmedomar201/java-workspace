@@ -12,12 +12,19 @@ public class StudentRepository {
 
     public static final Map<UUID, Student> STUDENT_DB = new ConcurrentHashMap<>();
 
-    public static Optional<Student> findByEmail(String email)
+    public static Optional<Student> findByEmail(final String email)
             throws RegisterException {
         return STUDENT_DB.values().stream().filter(
                 student -> student.getEmail().equals(email)
         ).findFirst();
     }
+
+
+    public static Optional<Student> findById(final UUID id)
+            throws RegisterException {
+        return Optional.ofNullable(STUDENT_DB.get(id));
+    }
+
 
     public static Collection<Student> getAll() {
 
@@ -25,17 +32,21 @@ public class StudentRepository {
 
     }
 
-    public static void saveALL() {
-
-
-
-
-    }
-
 
     public static void save(final Student student) {
         STUDENT_DB.put(student.getId(), student);
     }
+
+
+    public static void delete(final UUID id) {
+        STUDENT_DB.remove(id);
+    }
+
+
+    public static void update(final Student student) {
+        STUDENT_DB.put(student.getId(), student);
+    }
+
 
 
 }

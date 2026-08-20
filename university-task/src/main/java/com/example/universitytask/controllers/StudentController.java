@@ -5,6 +5,7 @@ import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -152,6 +153,25 @@ public class StudentController {
         return ResponseEntity.ok(studentResponses);
 
     }
+
+    @GetMapping("findById/{id}")
+    public ResponseEntity<?> findByIdApi(@PathVariable final UUID id) {
+        final Optional<Student> optionalStudent = findById(id);
+
+        if (optionalStudent.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
+        }
+
+        return ResponseEntity.ok(StudentController.toStudentResponse(optionalStudent.get()));
+    }
+
+//    @PutMapping("update/{id}")
+//    public ResponseEntity<String> updateStudentApi(
+//            @RequestBody final StudentRegister studentRegister) {
+//
+//
+//    }
+
 
     private static StudentResponse toStudentResponse(final Student student) {
 
