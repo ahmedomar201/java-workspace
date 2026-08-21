@@ -3,6 +3,7 @@ package com.example.universitytask.controllers;
 import com.example.universitytask.errors.exceptions.CredentialsExceptions;
 import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
+import com.example.universitytask.models.dtos.requests.StudentUpdate;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
 import org.springframework.http.HttpStatus;
@@ -22,7 +23,6 @@ import static com.example.universitytask.utills.validators.StudentValidator.vali
 @RestController
 @RequestMapping("student")
 public class StudentController {
-
 
     @PostMapping("register")
     public ResponseEntity<List<String>> registerStudentApi(
@@ -67,7 +67,6 @@ public class StudentController {
                 "Successfully registered student with Email: " + studentRegister.getEmail()));
     }
 
-
     @PostMapping("login")
     public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
@@ -103,7 +102,6 @@ public class StudentController {
                 "Successfully logged in with Email: " + foundStudent.getEmail());
     }
 
-
     @PostMapping("logout")
     public ResponseEntity<String> logoutStudentApi(
             @RequestParam final String email) {
@@ -132,15 +130,15 @@ public class StudentController {
 
         students.forEach(this::registerStudentApi);
 
-        return ResponseEntity.ok("");
+        return ResponseEntity.ok("Save all student Successfully");
 
     }
 
     @GetMapping("getAll")
-    public ResponseEntity<?> finsAllStudent() {
+    public ResponseEntity<?> finDAllStudent() {
 
 
-        final Collection<Student> studentList = getAll();
+        final Collection<Student> studentList = getAllSortedByAge();
 
         if (studentList.isEmpty()) {
 
@@ -165,19 +163,90 @@ public class StudentController {
         return ResponseEntity.ok(StudentController.toStudentResponse(optionalStudent.get()));
     }
 
-//    @PutMapping("update/{id}")
-//    public ResponseEntity<String> updateStudentApi(
-//            @RequestBody final StudentRegister studentRegister) {
-//
-//
-//    }
+    @PutMapping("update/{id}")
+    public ResponseEntity<String> updateStudentApi(
+            @PathVariable final UUID id, @RequestBody final StudentUpdate studentUpdate) {
+
+        final Optional<Student> optionalStudent = findById(id);
+
+        if (optionalStudent.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
+        }
+
+        final Student foundStudent = optionalStudent.get();
+
+        final String newFullName =
+                buildFullName(studentUpdate.getFirstName(), studentUpdate.getSecondName());
+
+        final String newHashPassword = hashPassword(studentUpdate.getPassword());
+
+        foundStudent.setFullName(newFullName);
+        foundStudent.setEmail(studentUpdate.getEmail());
+        foundStudent.setAge(studentUpdate.getAge());
+        foundStudent.setPassword(newHashPassword);
+        foundStudent.setScore(studentUpdate.getScore());
+
+        return ResponseEntity.ok(
+                "Successfully updated  with Email: " + foundStudent.getEmail());
+
+
+    }
+
+
+    @DeleteMapping("delete")
+    public ResponseEntity<?> deleteStudent(@RequestParam final UUID id) {
+
+        final Optional<Student> optionalStudent = findById(id);
+
+        if (optionalStudent.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
+        }
+        delete(id);
+
+        return ResponseEntity.ok(
+                "Successfully deleted Student with Email: " + optionalStudent.get().getEmail());
+
+
+    }
+
+    @DeleteMapping("deleteAll")
+    public ResponseEntity<?> deleteAllStudent() {
+
+
+        deleteAll();
+
+        return ResponseEntity.ok(
+                "Successfully deleted All Student with Email: ");
+
+
+    }
+
+
+    @GetMapping("getAllSucceedStudent")
+    public ResponseEntity<?> findAllSucceedStudentApi() {
+
+
+        final Collection<Student> allSucceedStudent = getAllSucceedStudent();
+
+        if (allSucceedStudent.isEmpty()) {
+
+            return ResponseEntity.badRequest().body("not found Student");
+        }
+        final Collection<StudentResponse> studentResponses = allSucceedStudent.stream().map(
+                        StudentController::toStudentResponse)
+                .toList();
+
+        return ResponseEntity.ok(studentResponses);
+
+    }
 
 
     private static StudentResponse toStudentResponse(final Student student) {
 
 
         return new StudentResponse(
-                student.getFullName(), student.getAge(), student.getEmail());
+                student.getFullName(), student.getAge(), student.getEmail(), student.getId());
 
     }
+
 }

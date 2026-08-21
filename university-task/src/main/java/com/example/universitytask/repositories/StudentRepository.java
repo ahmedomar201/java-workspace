@@ -26,10 +26,22 @@ public class StudentRepository {
     }
 
 
-    public static Collection<Student> getAll() {
+    public static Collection<Student> getAllSortedByAge() {
 
-        return STUDENT_DB.values();
+        return STUDENT_DB.values().stream().sorted(
+                (student1, student2) -> {
+                    return Integer.compare(student2.getAge(), student1.getAge());
+                }
+        ).toList();
+    }
 
+    public static Collection<Student> getAllSucceedStudent() {
+
+        return STUDENT_DB.values().stream().filter(
+                student ->
+                  ((student.getScore()/ student.getFinalScore())>0.5F)
+
+        ).toList();
     }
 
 
@@ -42,11 +54,12 @@ public class StudentRepository {
         STUDENT_DB.remove(id);
     }
 
+    public static void deleteAll() {
+        STUDENT_DB.clear();
+    }
+
 
     public static void update(final Student student) {
         STUDENT_DB.put(student.getId(), student);
     }
-
-
-
 }
