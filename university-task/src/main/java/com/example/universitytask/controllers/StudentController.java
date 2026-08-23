@@ -125,7 +125,7 @@ public class StudentController {
                 "Successfully logged out with Email: " + foundStudent.getEmail());
     }
 
-    @PostMapping("saveALL")
+    @PostMapping("saveAll")
     public ResponseEntity<String> saveAllStudent(@RequestBody final List<StudentRegister> students) {
 
         students.forEach(this::registerStudentApi);
