@@ -1,7 +1,7 @@
 package com.example.universitytask.controllers;
 
 import com.example.universitytask.configs.db.DbConnector;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.universitytask.configs.singleton.EagerDbConnector;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -9,28 +9,22 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("controller1")
 public class BeanInjectionController1 {
 
-    private final DbConnector dbConnector;
 
-
-    @Autowired
-    public BeanInjectionController1(DbConnector dbConnector) {
-        this.dbConnector = dbConnector;
-    }
+    private final EagerDbConnector eagerDbConnector = EagerDbConnector.getInstant();
 
     @GetMapping("dbConnector")
     public DbConnector getDbConnector() {
 
-        return dbConnector;
+        return eagerDbConnector.getDbConnector();
     }
 
     @PutMapping("update")
     public void updateDbConnectorApi(@RequestBody DbConnector dbConnector) {
-        this.dbConnector.setUsername(dbConnector.getUsername());
-        this.dbConnector.setPassword(dbConnector.getPassword());
-        this.dbConnector.setDatabase(dbConnector.getDatabase());
-        this.dbConnector.setUrl(dbConnector.getUrl());
-        this.dbConnector.setConnectionPool(dbConnector.getConnectionPool());
+        this.eagerDbConnector.getDbConnector().setUsername(dbConnector.getUsername());
+        this.eagerDbConnector.getDbConnector().setPassword(dbConnector.getPassword());
+        this.eagerDbConnector.getDbConnector().setDatabase(dbConnector.getDatabase());
+        this.eagerDbConnector.getDbConnector().setUrl(dbConnector.getUrl());
+        this.eagerDbConnector.getDbConnector().setConnectionPool(dbConnector.getConnectionPool());
     }
-
 
 }
