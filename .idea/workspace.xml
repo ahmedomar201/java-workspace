@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fe4c48-b77d-4d86-9db1-de3134fe90c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Address.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,77 +33,77 @@
     &quot;assignee&quot;: &quot;ahmedomar201&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ahmedomar201/java-workspace.git",
-    "accountId": "f90ffc3a-29b1-42ea-b5cc-d841a98a636c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ahmedomar201/java-workspace.git&quot;,
+    &quot;accountId&quot;: &quot;f90ffc3a-29b1-42ea-b5cc-d841a98a636c&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0758873793788764" />
-      <entry key="MS500" value="1.6589590831417391" />
-      <entry key="S2" value="4.142306736218389" />
-      <entry key="S5" value="9.963623345374229" />
-      <entry key="S10" value="16.952082699632868" />
-      <entry key="S30" value="27.22743694653083" />
-      <entry key="S60" value="31.193599754677784" />
-      <entry key="M2" value="33.48003241102249" />
-      <entry key="M5" value="35.07152269138089" />
-      <entry key="M10" value="36.7816907294929" />
-      <entry key="M15" value="38.6676352677702" />
-      <entry key="M30" value="43.55429414596598" />
-      <entry key="H1" value="53.29248538525506" />
-      <entry key="H2" value="74.0535907645649" />
-      <entry key="H4" value="120.6884767726145" />
-      <entry key="D1" value="496.65772487344185" />
-      <entry key="W1" value="762.9139643633149" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.434501220519278E-294" />
-      <entry key="S5" value="7.3494365726370675E-118" />
-      <entry key="S10" value="5.909064400630054E-59" />
-      <entry key="S30" value="1.608504432599203E-19" />
-      <entry key="S60" value="1.4106316404712843E-9" />
-      <entry key="M2" value="1.5115908864198573E-4" />
-      <entry key="M5" value="0.18519475699441967" />
-      <entry key="M10" value="2.1048961846137493" />
-      <entry key="M15" value="4.790647457448277" />
-      <entry key="M30" value="11.521557440642894" />
-      <entry key="H1" value="21.413953330806102" />
-      <entry key="H2" value="37.86008460497526" />
-      <entry key="H4" value="71.15641887987012" />
-      <entry key="D1" value="319.1468875728781" />
-      <entry key="W1" value="489.2831743486835" />
+      <entry key="S2" value="1.5036303732765227E-105" />
+      <entry key="S5" value="1.1772167584705813E-42" />
+      <entry key="S10" value="1.0849962020535286E-21" />
+      <entry key="S30" value="1.0275652429817143E-7" />
+      <entry key="S60" value="3.2055658519022836E-4" />
+      <entry key="M2" value="0.017904299890179283" />
+      <entry key="M5" value="0.20608456532414804" />
+      <entry key="M10" value="0.7732186980432839" />
+      <entry key="M15" value="2.137859944721045" />
+      <entry key="M30" value="9.554867632582175" />
+      <entry key="H1" value="25.481004504504707" />
+      <entry key="H2" value="52.19775073273202" />
+      <entry key="H4" value="102.0834847321531" />
+      <entry key="D1" value="484.868873826915" />
+      <entry key="W1" value="765.734930536281" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000192604375018" />
+      <entry key="S2" value="1.0662470489623301" />
+      <entry key="S5" value="1.3376498918916926" />
+      <entry key="S10" value="1.5810893454650716" />
+      <entry key="S30" value="1.858717112631519" />
+      <entry key="S60" value="2.1179625878515447" />
+      <entry key="M2" value="2.817716564595513" />
+      <entry key="M5" value="4.925196253479513" />
+      <entry key="M10" value="7.806761103517967" />
+      <entry key="M15" value="10.660069916662929" />
+      <entry key="M30" value="18.63176716206271" />
+      <entry key="H1" value="31.473317441100015" />
+      <entry key="H2" value="51.250707875918195" />
+      <entry key="H4" value="86.54696757794086" />
+      <entry key="D1" value="339.6403800781327" />
+      <entry key="W1" value="519.5405759405741" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.32481237870294977" />
-      <entry key="MS500" value="1.2025012593602202" />
-      <entry key="S2" value="3.824463838571986" />
-      <entry key="S5" value="9.773374083396561" />
-      <entry key="S10" value="16.839355899434988" />
-      <entry key="S30" value="27.18415011132956" />
-      <entry key="S60" value="31.171033386899165" />
-      <entry key="M2" value="33.46864540701981" />
-      <entry key="M5" value="35.251070105334776" />
-      <entry key="M10" value="38.8786544469149" />
-      <entry key="M15" value="43.44819284367815" />
-      <entry key="M30" value="55.06435403436107" />
-      <entry key="H1" value="74.69472460055515" />
-      <entry key="H2" value="111.90189839884093" />
-      <entry key="H4" value="191.83275997363936" />
-      <entry key="D1" value="815.7945239884895" />
-      <entry key="W1" value="1252.1948752459134" />
+      <entry key="MS100" value="5.053744939892255E-9" />
+      <entry key="MS500" value="0.021915028562319742" />
+      <entry key="S2" value="0.4161973620245213" />
+      <entry key="S5" value="0.933076855989976" />
+      <entry key="S10" value="1.3267423480025538" />
+      <entry key="S30" value="1.755666737096362" />
+      <entry key="S60" value="2.060576316555063" />
+      <entry key="M2" value="2.7990341700637824" />
+      <entry key="M5" value="5.1056445684906" />
+      <entry key="M10" value="8.557993929794455" />
+      <entry key="M15" value="12.77687334533503" />
+      <entry key="M30" value="28.16737000463193" />
+      <entry key="H1" value="56.93752380148321" />
+      <entry key="H2" value="103.43374252531504" />
+      <entry key="H4" value="188.61680381542138" />
+      <entry key="D1" value="824.4988203991091" />
+      <entry key="W1" value="1285.27315049339" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
@@ -119,6 +120,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.StudentController.executor": "Run",
+    "Application.com.example.universitytask.models.dtos.requests.Main.executor": "Run",
     "Maven.java-workspace [clean,install].executor": "Run",
     "Maven.university-task [clean,install].executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -159,8 +161,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\java-workspace\rest\src\main\java\com\example\rest\models\config" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.universitytask.models.dtos.requests" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.example.universitytask.models.dtos.requests.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.rest.models.config.Main" />
       <module name="rest" />
@@ -180,6 +185,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.universitytask.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.universitytask.models.dtos.requests.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.universitytask.models.dtos.requests.Main" />
+      <module name="university-task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.universitytask.models.dtos.requests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,6 +235,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.universitytask.models.dtos.requests.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.RestApplication" />
         <item itemvalue="Spring Boot.UniversityTaskApplication" />
