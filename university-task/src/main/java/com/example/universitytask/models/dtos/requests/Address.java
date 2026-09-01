@@ -10,17 +10,20 @@ import java.util.Objects;
 //@EqualsAndHashCode
 //@AllArgsConstructor
 //@NoArgsConstructor
-@Data
+//@Data
 //@ToString(onlyExplicitlyIncluded = true)
 //@ToString(of = {"street","city"})
-@ToString(exclude = {"street","city"})
+//@ToString(exclude = {"street","city"})
+@Value
 public class Address {
-    private String street;
-//    @ToString.Exclude
-    private String city;
-//    @ToString.Include
-    private String state;
-    private int zip;
-
-
+    String street;
+    //    @ToString.Exclude
+    String city;
+    //    @ToString.Include
+    String state;
+    int zip;
 }
+
+
+
+
