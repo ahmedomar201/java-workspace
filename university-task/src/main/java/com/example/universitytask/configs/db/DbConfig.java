@@ -1,5 +1,7 @@
 package com.example.universitytask.configs.db;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -8,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableConfigurationProperties(DbProperties.class)
 public class DbConfig {
+
+    private static final Logger log = LoggerFactory.getLogger(DbConfig.class);
+
     /*@Value("${db.username}")
     private String username;
     @Value("${db.password}")
@@ -37,7 +42,7 @@ public class DbConfig {
 //    @ConditionalOnBean(ConnectionPool.class)
 //    @DependsOn("connectionPool")
     public DbConnector dbConnector() {
-        System.out.println("Creating the DB connector bean!!");
+        log.debug("Creating the DB connector bean!!");
         final ConnectionPool connectionPool = toConnectionPool(dbProperties.getConnectionPoolProperties());
 
         return new DbConnector(

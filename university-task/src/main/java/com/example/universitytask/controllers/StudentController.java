@@ -39,43 +39,43 @@ public class StudentController {
             return ResponseEntity.badRequest().body(errorMessages);
         }
 
-        final Optional<Student> optionalStudent = findByEmail(studentRegister.getEmail());
+        final Optional<Student> optionalStudent = findByEmail(studentRegister.email());
 
         if (optionalStudent.isPresent()) {
             return ResponseEntity.badRequest().body(
-                    List.of("already Registered " + studentRegister.getEmail())
+                    List.of("already Registered " + studentRegister.email())
             );
         }
 
 
         final String fullName =
-                buildFullName(studentRegister.getFirstName(), studentRegister.getSecondName());
+                buildFullName(studentRegister.firstName(), studentRegister.secondName());
         final String hashPassword;
         try {
-            hashPassword = hashPassword(studentRegister.getPassword());
+            hashPassword = hashPassword(studentRegister.password());
         } catch (CredentialsExceptions e) {
             return ResponseEntity.badRequest().build();
         }
         final Student student = new Student(UUID.randomUUID(),
                 fullName
-                , studentRegister.getAge(),
-                studentRegister.getEmail(),
+                , studentRegister.age(),
+                studentRegister.email(),
                 hashPassword, false,
                 0.0F, 0.0F);
         save(student);
         return ResponseEntity.ok(List.of(
-                "Successfully registered student with Email: " + studentRegister.getEmail()));
+                "Successfully registered student with Email: " + studentRegister.email()));
     }
 
     @PostMapping("login")
     public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
 
-        final Optional<Student> optionalStudent = findByEmail(studentLogin.getEmail());
+        final Optional<Student> optionalStudent = findByEmail(studentLogin.email());
 
         if (optionalStudent.isEmpty()) {
             return ResponseEntity.badRequest().body(
-                    "Student with Email: " + studentLogin.getEmail() + " not found");
+                    "Student with Email: " + studentLogin.email() + " not found");
         }
 
         //معناها هاتلي كل student اللي موجود جوه الـ Optional.
@@ -87,12 +87,12 @@ public class StudentController {
         }
         final String hashPassword;
         try {
-            hashPassword = hashPassword(studentLogin.getPassword());
+            hashPassword = hashPassword(studentLogin.password());
         } catch (CredentialsExceptions e) {
             return ResponseEntity.badRequest().build();
         }
 
-        if (hashPassword.equals(studentLogin.getPassword())) {
+        if (hashPassword.equals(studentLogin.password())) {
             foundStudent.setPassword(hashPassword);
         }
 
@@ -176,15 +176,15 @@ public class StudentController {
         final Student foundStudent = optionalStudent.get();
 
         final String newFullName =
-                buildFullName(studentUpdate.getFirstName(), studentUpdate.getSecondName());
+                buildFullName(studentUpdate.firstName(), studentUpdate.secondName());
 
-        final String newHashPassword = hashPassword(studentUpdate.getPassword());
+        final String newHashPassword = hashPassword(studentUpdate.password());
 
         foundStudent.setFullName(newFullName);
-        foundStudent.setEmail(studentUpdate.getEmail());
-        foundStudent.setAge(studentUpdate.getAge());
+        foundStudent.setEmail(studentUpdate.email());
+        foundStudent.setAge(studentUpdate.age());
         foundStudent.setPassword(newHashPassword);
-        foundStudent.setScore(studentUpdate.getScore());
+        foundStudent.setScore(studentUpdate.score());
 
         return ResponseEntity.ok(
                 "Successfully updated  with Email: " + foundStudent.getEmail());

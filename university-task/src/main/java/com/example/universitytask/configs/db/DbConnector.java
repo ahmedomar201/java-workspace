@@ -1,8 +1,15 @@
 package com.example.universitytask.configs.db;
 
-import java.util.Objects;
+import lombok.Data;
+import lombok.ToString;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
+@Data
+@ToString(of = "")
 public class DbConnector {
+    private static final Logger log = LoggerFactory.getLogger(DbConnector.class);
+
     private String username;
     private String password;
     private String database;
@@ -25,62 +32,12 @@ public class DbConnector {
             final String url,
             final ConnectionPool connectionPool
     ) {
-        System.out.println("Connecting to database " + database + "with username " + username + "and url " + url);
-        System.out.println("Successfully connected to database " + database + "with url " + url);
+
+        final String methodName="connect";
+        Object[] args = {methodName,username, password, database, url, connectionPool.toString()};
+        log.debug("[{}]Connecting to database with [{}] username [{}] and url [{}] ",args);
+        args=new Object[]{methodName,username,url,connectionPool.toString()};
+        log.debug("Successfully connected to database [{}] with url [{}] " ,args);
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getDatabase() {
-        return database;
-    }
-
-    public void setDatabase(String database) {
-        this.database = database;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public ConnectionPool getConnectionPool() {
-        return connectionPool;
-    }
-
-    public void setConnectionPool(ConnectionPool connectionPool) {
-        this.connectionPool = connectionPool;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof DbConnector that)) return false;
-        return Objects.equals(username, that.username)
-                && Objects.equals(password, that.password)
-                && Objects.equals(database, that.database)
-                && Objects.equals(url, that.url)
-                && Objects.equals(connectionPool, that.connectionPool);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(username, password, database, url, connectionPool);
-    }
 }
