@@ -6,18 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/SpellCheckerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/SpellCheckerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/ConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PaidSpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PaidSpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/TextEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/TextEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/StudentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/StudentValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/StringUtills.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/StringUtills.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +26,88 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ahmedomar201"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ahmedomar201&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/ahmedomar201/java-workspace.git",
-    "accountId": "f90ffc3a-29b1-42ea-b5cc-d841a98a636c"
+    "accountId": "3efd77ff-ca4a-47e2-92ea-14fcc973761a"
   }
 }]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.000000003458516" />
+      <entry key="S10" value="1.0000588311865897" />
+      <entry key="S30" value="1.0426506011607013" />
+      <entry key="S60" value="1.2954457173579665" />
+      <entry key="M2" value="2.008386753506179" />
+      <entry key="M5" value="3.4803510475753345" />
+      <entry key="M10" value="4.480504735601169" />
+      <entry key="M15" value="4.9164920752256975" />
+      <entry key="M30" value="5.419025886327647" />
+      <entry key="H1" value="5.698876835882246" />
+      <entry key="H2" value="5.846666980438891" />
+      <entry key="H4" value="5.922626006568891" />
+      <entry key="D1" value="5.987004803884114" />
+      <entry key="W1" value="5.9981410891928215" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="2.691111882813374E-25" />
+      <entry key="MS500" value="1.2189512885271428E-5" />
+      <entry key="S2" value="0.0590876437369277" />
+      <entry key="S5" value="0.32354855661760473" />
+      <entry key="S10" value="0.6125130529026719" />
+      <entry key="S30" value="1.4199159704795217" />
+      <entry key="S60" value="2.282851058532538" />
+      <entry key="M2" value="3.6204225350801718" />
+      <entry key="M5" value="5.97200641497008" />
+      <entry key="M10" value="7.557407274241993" />
+      <entry key="M15" value="8.253799088252496" />
+      <entry key="M30" value="9.060960481532476" />
+      <entry key="H1" value="9.512515710121036" />
+      <entry key="H2" value="9.75156615333987" />
+      <entry key="H4" value="9.874584032378362" />
+      <entry key="D1" value="9.978928537337257" />
+      <entry key="W1" value="9.996985627222054" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.7918260292070433E-11" />
+      <entry key="MS500" value="0.00774958393169013" />
+      <entry key="S2" value="0.33329721305481463" />
+      <entry key="S5" value="0.8822998593139435" />
+      <entry key="S10" value="1.3424783297117908" />
+      <entry key="S30" value="2.345869474456561" />
+      <entry key="S60" value="3.503357929455561" />
+      <entry key="M2" value="5.572408873149472" />
+      <entry key="M5" value="9.41278620582566" />
+      <entry key="M10" value="12.011758464886253" />
+      <entry key="M15" value="13.150926013263378" />
+      <entry key="M30" value="14.469166415011475" />
+      <entry key="H1" value="15.20566050307254" />
+      <entry key="H2" value="15.595281345600764" />
+      <entry key="H4" value="15.795712010304904" />
+      <entry key="D1" value="15.965680534943008" />
+      <entry key="W1" value="15.995090523658257" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3IlQW1xuI5bwylsaFRH9PUsyjYT" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -63,6 +118,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -77,6 +133,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>

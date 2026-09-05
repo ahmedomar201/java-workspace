@@ -1,5 +1,8 @@
 package com.example.universitytask.utills;
 
+import lombok.experimental.UtilityClass;
+
+@UtilityClass
 public class StringUtills {
 
 

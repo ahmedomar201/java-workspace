@@ -6,6 +6,7 @@ import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.dtos.requests.StudentUpdate;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,7 @@ import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
 import static com.example.universitytask.utills.NameBuilder.buildFullName;
 import static com.example.universitytask.utills.validators.StudentValidator.validateRegisterRequest;
 
+@Slf4j
 @RestController
 @RequestMapping("student")
 public class StudentController {
@@ -27,8 +29,8 @@ public class StudentController {
     @PostMapping("register")
     public ResponseEntity<List<String>> registerStudentApi(
             @RequestBody final StudentRegister studentRegister) {
-
-
+        final String methodName = "Register Student Api";
+        log.info("[{}]Implementing Registration flow[{}", methodName, studentRegister.email());
         final ResponseEntity<List<String>> errorsResponseEntities =
                 validateRegisterRequest(studentRegister);
 
@@ -36,6 +38,7 @@ public class StudentController {
         final List<String> errorMessages = errorsResponseEntities.getBody();
 
         if (!errorMessages.isEmpty()) {
+            log.error("[{}]errors in register student api[{}]",methodName,errorMessages);
             return ResponseEntity.badRequest().body(errorMessages);
         }
 
@@ -54,6 +57,7 @@ public class StudentController {
         try {
             hashPassword = hashPassword(studentRegister.password());
         } catch (CredentialsExceptions e) {
+            log.error("can't hash pass");
             return ResponseEntity.badRequest().build();
         }
         final Student student = new Student(UUID.randomUUID(),

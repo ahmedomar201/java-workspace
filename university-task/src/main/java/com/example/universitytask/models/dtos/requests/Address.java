@@ -15,6 +15,7 @@ import java.util.Objects;
 //@ToString(of = {"street","city"})
 //@ToString(exclude = {"street","city"})
 @Value
+@RequiredArgsConstructor
 public class Address {
     String street;
     //    @ToString.Exclude
