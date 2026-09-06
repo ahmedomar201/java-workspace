@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/SpellCheckerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/DbConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/DbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/DbProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/NewDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/configs/db/PostgresCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/BillPughSingletonDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/DoubleCheckLookingDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/EagerDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/EnumSingletonDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/LazyDbConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/singleton/ThreadSafeDbConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.000000003458516" />
-      <entry key="S10" value="1.0000588311865897" />
-      <entry key="S30" value="1.0426506011607013" />
-      <entry key="S60" value="1.2954457173579665" />
-      <entry key="M2" value="2.008386753506179" />
-      <entry key="M5" value="3.4803510475753345" />
-      <entry key="M10" value="4.480504735601169" />
-      <entry key="M15" value="4.9164920752256975" />
-      <entry key="M30" value="5.419025886327647" />
-      <entry key="H1" value="5.698876835882246" />
-      <entry key="H2" value="5.846666980438891" />
-      <entry key="H4" value="5.922626006568891" />
-      <entry key="D1" value="5.987004803884114" />
-      <entry key="W1" value="5.9981410891928215" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="5.156868230679072E-160" />
+      <entry key="S2" value="1.5069419004753045E-40" />
+      <entry key="S5" value="1.178253133644114E-16" />
+      <entry key="S10" value="1.085486651637455E-8" />
+      <entry key="S30" value="0.0023246847052463783" />
+      <entry key="S60" value="0.07076083551505735" />
+      <entry key="M2" value="0.6540789791501203" />
+      <entry key="M5" value="4.408211823917153" />
+      <entry key="M10" value="10.545401127743078" />
+      <entry key="M15" value="14.642891842879925" />
+      <entry key="M30" value="20.745628914666675" />
+      <entry key="H1" value="24.8832605625125" />
+      <entry key="H2" value="27.304545031701636" />
+      <entry key="H4" value="28.61595689186434" />
+      <entry key="D1" value="29.764098140242474" />
+      <entry key="W1" value="29.966169224381293" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.691111882813374E-25" />
-      <entry key="MS500" value="1.2189512885271428E-5" />
-      <entry key="S2" value="0.0590876437369277" />
-      <entry key="S5" value="0.32354855661760473" />
-      <entry key="S10" value="0.6125130529026719" />
-      <entry key="S30" value="1.4199159704795217" />
-      <entry key="S60" value="2.282851058532538" />
-      <entry key="M2" value="3.6204225350801718" />
-      <entry key="M5" value="5.97200641497008" />
-      <entry key="M10" value="7.557407274241993" />
-      <entry key="M15" value="8.253799088252496" />
-      <entry key="M30" value="9.060960481532476" />
-      <entry key="H1" value="9.512515710121036" />
-      <entry key="H2" value="9.75156615333987" />
-      <entry key="H4" value="9.874584032378362" />
-      <entry key="D1" value="9.978928537337257" />
-      <entry key="W1" value="9.996985627222054" />
+      <entry key="MS100" value="1.0000000100376722" />
+      <entry key="MS500" value="1.0251377615919348" />
+      <entry key="S2" value="1.3981820248526229" />
+      <entry key="S5" value="1.6918842312611453" />
+      <entry key="S10" value="1.8329206602498833" />
+      <entry key="S30" value="2.0786583753871986" />
+      <entry key="S60" value="2.6442606723005175" />
+      <entry key="M2" value="4.346733121428139" />
+      <entry key="M5" value="11.815157577080981" />
+      <entry key="M10" value="22.078015577394513" />
+      <entry key="M15" value="28.450535641708324" />
+      <entry key="M30" value="37.59152044768906" />
+      <entry key="H1" value="43.63733582781088" />
+      <entry key="H2" value="47.1348221294152" />
+      <entry key="H4" value="49.018770255747654" />
+      <entry key="D1" value="50.662797797780996" />
+      <entry key="W1" value="50.951653645080995" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.7918260292070433E-11" />
-      <entry key="MS500" value="0.00774958393169013" />
-      <entry key="S2" value="0.33329721305481463" />
-      <entry key="S5" value="0.8822998593139435" />
-      <entry key="S10" value="1.3424783297117908" />
-      <entry key="S30" value="2.345869474456561" />
-      <entry key="S60" value="3.503357929455561" />
-      <entry key="M2" value="5.572408873149472" />
-      <entry key="M5" value="9.41278620582566" />
-      <entry key="M10" value="12.011758464886253" />
-      <entry key="M15" value="13.150926013263378" />
-      <entry key="M30" value="14.469166415011475" />
-      <entry key="H1" value="15.20566050307254" />
-      <entry key="H2" value="15.595281345600764" />
-      <entry key="H4" value="15.795712010304904" />
-      <entry key="D1" value="15.965680534943008" />
-      <entry key="W1" value="15.995090523658257" />
+      <entry key="MS100" value="7.020474672780095E-6" />
+      <entry key="MS500" value="0.0952948726938208" />
+      <entry key="S2" value="0.7671980034279698" />
+      <entry key="S5" value="1.3291668303375088" />
+      <entry key="S10" value="1.6243052341039788" />
+      <entry key="S30" value="2.00079862835237" />
+      <entry key="S60" value="2.661692586610874" />
+      <entry key="M2" value="4.940688240007493" />
+      <entry key="M5" value="16.135052520284457" />
+      <entry key="M10" value="32.53645881223315" />
+      <entry key="M15" value="43.017873458290595" />
+      <entry key="M30" value="58.28677003113016" />
+      <entry key="H1" value="68.49123451803648" />
+      <entry key="H2" value="74.42347806545895" />
+      <entry key="H4" value="77.62645697777101" />
+      <entry key="D1" value="80.42547019456525" />
+      <entry key="W1" value="80.91761800222227" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -133,33 +115,33 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.com.example.designpatterns.builder.Main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.DesignPatternsApplication.executor": "Run",
-    "Spring Boot.UniversityTaskApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/builder",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.example.designpatterns.builder.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DesignPatternsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/builder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\builder" />

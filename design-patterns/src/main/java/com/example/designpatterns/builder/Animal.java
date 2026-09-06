@@ -1,30 +1,30 @@
 package com.example.designpatterns.builder;
 
 
-public class Animal {
-  private final String dog;
-  private final String cat;
-  private final String fox;
-  private final int lion;
+public record Animal(
+        String dog,
+        String cat,
+        String fox,
+        int lion) {
+
 
     private Animal(AnimalBuilder builder) {
-        this.dog = builder.dog;
-        this.cat = builder.cat;
-        this.fox = builder.fox;
-        this.lion = builder.lion;
+        this(builder.dog, builder.cat, builder.fox, builder.lion);
     }
 
     public static AnimalBuilder builder() {
 
         return new AnimalBuilder();
 
+
     }
 
     public static class AnimalBuilder {
-        String dog;
-        String cat;
-        String fox;
-        int lion;
+        private String dog;
+        private String cat;
+        private String fox;
+        private int lion;
+
 
 
         public AnimalBuilder dog(String dog) {
@@ -47,12 +47,12 @@ public class Animal {
             return this;
         }
 
+        // convert Animal to AnimalBuilder to use
         public Animal build() {
             return new Animal(this);
 
         }
 
     }
-
 
 }

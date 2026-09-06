@@ -7,13 +7,14 @@ public class Main {
         Address2 address2 = new Address2
                 ("slam", "helwan", "Cairo", 12345);
 
-//        final Address address =
-//                Address.builder().
-//                        street("mohy").city("cairo").state("dddd").zip(1).build();
+        final Address address =
+                Address.builder().
+                        street("mohy").city("cairo").state("dddd").zip(1).build();
 
 
         final Animal animal =
                 Animal.builder().dog("dooog").cat("caaaaaaat").fox("fooooox").lion(1).build();
+
 
 //
 //        address.setStreet("slam");

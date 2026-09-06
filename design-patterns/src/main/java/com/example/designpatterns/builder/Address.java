@@ -2,11 +2,12 @@ package com.example.designpatterns.builder;
 
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import lombok.Value;
 
 //@Getter
 //@Setter
-//@ToString
+@ToString
 //@EqualsAndHashCode
 //@AllArgsConstructor
 //@NoArgsConstructor
