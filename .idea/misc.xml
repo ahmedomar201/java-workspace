@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/rest/pom.xml" />
         <option value="$PROJECT_DIR$/university-task/pom.xml" />
+        <option value="$PROJECT_DIR$/design-patterns/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

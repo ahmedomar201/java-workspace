@@ -11,6 +11,15 @@
         <module name="university-task" />
         <module name="data-structures" />
       </profile>
+      <profile name="Annotation profile for java-workspace" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="design-patterns" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="26" />
@@ -20,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="data-structures" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="design-patterns" options="-parameters" />
       <module name="rest" options="-parameters" />
       <module name="university-task" options="-parameters" />
     </option>
