@@ -1,14 +1,14 @@
 package com.example.designpatterns.builder;
 
 
-public record Animal(
+public record AnimalLombok(
         String dog,
         String cat,
         String fox,
         int lion) {
 
 
-    private Animal(AnimalBuilder builder) {
+    private AnimalLombok(AnimalBuilder builder) {
         this(builder.dog, builder.cat, builder.fox, builder.lion);
     }
 
@@ -48,8 +48,8 @@ public record Animal(
         }
 
         // convert Animal to AnimalBuilder to use
-        public Animal build() {
-            return new Animal(this);
+        public AnimalLombok build() {
+            return new AnimalLombok(this);
 
         }
 

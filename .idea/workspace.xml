@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/Lion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/AnimalLombok.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/builder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
       <list>
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,7 +42,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ahmedomar201/java-workspace.git&quot;,
-    &quot;accountId&quot;: &quot;3efd77ff-ca4a-47e2-92ea-14fcc973761a&quot;
+    &quot;accountId&quot;: &quot;f90ffc3a-29b1-42ea-b5cc-d841a98a636c&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -131,7 +138,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/builder&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/factory&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -144,11 +151,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\factory" />
       <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\builder" />
       <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.designpatterns.builder.Main">
+  <component name="RunManager" selected="Spring Boot.DesignPatternsApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.universitytask.models.dtos.requests.Main" />
       <module name="university-task" />
@@ -205,8 +213,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.designpatterns.builder.Main" />
         <item itemvalue="Spring Boot.DesignPatternsApplication" />
+        <item itemvalue="Application.com.example.designpatterns.builder.Main" />
         <item itemvalue="Spring Boot.UniversityTaskApplication" />
         <item itemvalue="Application.Main" />
       </list>

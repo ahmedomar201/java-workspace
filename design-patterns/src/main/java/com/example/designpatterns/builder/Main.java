@@ -12,8 +12,8 @@ public class Main {
                         street("mohy").city("cairo").state("dddd").zip(1).build();
 
 
-        final Animal animal =
-                Animal.builder().dog("dooog").cat("caaaaaaat").fox("fooooox").lion(1).build();
+        final AnimalLombok animal =
+                AnimalLombok.builder().dog("dooog").cat("caaaaaaat").fox("fooooox").lion(1).build();
 
 
 //
