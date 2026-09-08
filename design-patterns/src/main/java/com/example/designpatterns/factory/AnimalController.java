@@ -13,11 +13,13 @@ public class AnimalController {
     @GetMapping("feed/{animalName}")
     public String feedApi(@PathVariable String animalName) {
 
+
         try {
-            final AnimalService animalService = AnimalFactory.retrieveAnimal(animalName);
+            final Animals animals = Animals.fromType(animalName);
+            final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
             animalService.feed();
         } catch (IllegalArgumentException e) {
-            return e.getMessage();
+            throw new RuntimeException(e);
         }
 
         return "Successfully feed " + animalName;
@@ -27,10 +29,11 @@ public class AnimalController {
     @GetMapping("makeSound/{animalName}")
     public String makeSoundApi(@PathVariable String animalName) {
         try {
-            final AnimalService animalService = AnimalFactory.retrieveAnimal(animalName);
+            final Animals animals = Animals.fromType(animalName);
+            final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
             animalService.makeSound();
         } catch (IllegalArgumentException e) {
-            return e.getMessage();
+            throw new RuntimeException(e);
         }
 
         return "Successfully makeSound " + animalName;

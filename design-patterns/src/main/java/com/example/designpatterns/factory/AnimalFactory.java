@@ -6,19 +6,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class AnimalFactory {
 
-    private static final String dog = "dog";
-    private static final String lion = "lion";
 
-    public static AnimalService retrieveAnimal(final String type) throws IllegalArgumentException {
+    public static AnimalService retrieveAnimal(final Animals animals) {
 
-        if (dog.equalsIgnoreCase(type)) {
-            return new Lion();
-        }
-        if (lion.equalsIgnoreCase(type)) {
+        if (Animals.Dog.equals(animals)) {
             return new Dog();
         }
-
-        throw new IllegalArgumentException("invalid type");
+        return new Lion();
 
     }
 
