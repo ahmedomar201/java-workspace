@@ -18,7 +18,7 @@ public class AnimalController {
             final Animals animals = Animals.fromType(animalName);
             final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
             animalService.feed();
-        } catch (IllegalArgumentException e) {
+        } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
 
@@ -32,7 +32,7 @@ public class AnimalController {
             final Animals animals = Animals.fromType(animalName);
             final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
             animalService.makeSound();
-        } catch (IllegalArgumentException e) {
+        } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
 

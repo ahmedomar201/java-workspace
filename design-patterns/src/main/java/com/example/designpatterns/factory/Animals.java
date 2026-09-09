@@ -3,7 +3,6 @@ package com.example.designpatterns.factory;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 @Getter
@@ -15,15 +14,22 @@ public enum Animals {
     private final String type;
 
 
-    public static Animals fromType(final String type) throws IllegalArgumentException {
+    public static Animals fromType(final String type) throws AnimalException {
 
-        Arrays.stream(Animals.values()).filter(animals -> type.equalsIgnoreCase(animals.getType()))
-        for (Animals animals : Animals.values()) {
-            if (type.equalsIgnoreCase(animals.getType())) {
-                return animals;
-            }
-        }
-
-        throw new IllegalArgumentException("No such animals with type " + type);
+        return Arrays.stream(Animals.values())
+                .filter(animals -> animals.hasType(type))
+                .findFirst().orElseThrow(() ->
+                        new AnimalException(type+ " is not listed in our system"));
     }
+
+    private boolean hasType(final String type) {
+        return this.getType().equalsIgnoreCase(type);
+    }
+
+    public static class AnimalException extends RuntimeException {
+        public AnimalException(String message) {
+            super(message);
+        }
+    }
+
 }
