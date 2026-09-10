@@ -1,4 +1,4 @@
-package com.example.designpatterns.factory;
+package com.example.designpatterns.strategy;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("animal/factory")
+@RequestMapping("animal/stategy")
 public class AnimalController {
 
 
@@ -16,7 +16,7 @@ public class AnimalController {
 
         try {
             final Animals animals = Animals.fromType(animalName);
-            final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
+            final AnimalService animalService = AnimalProcessor.retrieveAnimal(animals);
             animalService.feed();
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
@@ -30,7 +30,7 @@ public class AnimalController {
     public String makeSoundApi(@PathVariable String animalName) {
         try {
             final Animals animals = Animals.fromType(animalName);
-            final AnimalService animalService = AnimalFactory.retrieveAnimal(animals);
+            final AnimalService animalService = AnimalProcessor.retrieveAnimal(animals);
             animalService.makeSound();
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);

@@ -1,4 +1,4 @@
-package com.example.designpatterns.factory;
+package com.example.designpatterns.strategy;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
