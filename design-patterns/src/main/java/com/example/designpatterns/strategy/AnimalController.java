@@ -5,19 +5,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("animal/stategy")
+@RestController("animalControllerStrategy")
+@RequestMapping("strategy/animal")
 public class AnimalController {
 
+    private AnimalProcessor animalProcessor;
 
     @GetMapping("feed/{animalName}")
     public String feedApi(@PathVariable String animalName) {
 
-
         try {
-            final Animals animals = Animals.fromType(animalName);
-            final AnimalService animalService = AnimalProcessor.retrieveAnimal(animals);
-            animalService.feed();
+            animalProcessor.feedAnimal();
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
@@ -28,10 +26,9 @@ public class AnimalController {
 
     @GetMapping("makeSound/{animalName}")
     public String makeSoundApi(@PathVariable String animalName) {
+
         try {
-            final Animals animals = Animals.fromType(animalName);
-            final AnimalService animalService = AnimalProcessor.retrieveAnimal(animals);
-            animalService.makeSound();
+            animalProcessor.makeSound();
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
