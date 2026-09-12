@@ -10,8 +10,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class LionStrategy implements AnimalService {
 
-    public LionStrategy(){
+    private final String type = "lion";
+
+    public LionStrategy() {
         log.debug("LionStrategy is bean");
+    }
+
+    @Override
+    public boolean isType(final String type) {
+        return this.type.equalsIgnoreCase(type);
     }
 
     @Override

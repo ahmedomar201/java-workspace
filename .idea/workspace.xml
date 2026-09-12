@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.227384357214028E-117" />
-      <entry key="MS500" value="4.166913320519946E-24" />
-      <entry key="S2" value="1.7999068307722182E-6" />
-      <entry key="S5" value="0.007273390019206158" />
-      <entry key="S10" value="0.1205006349620444" />
-      <entry key="S30" value="0.9889596280090621" />
-      <entry key="S60" value="2.479883242766643" />
-      <entry key="M2" value="4.835344057115398" />
-      <entry key="M5" value="8.070969235542842" />
-      <entry key="M10" value="10.421207138390622" />
-      <entry key="M15" value="11.753548021315439" />
-      <entry key="M30" value="13.971036784646804" />
-      <entry key="H1" value="18.14586357027393" />
-      <entry key="H2" value="33.44805331391525" />
-      <entry key="H4" value="61.89687376615548" />
-      <entry key="D1" value="120.20487012307584" />
-      <entry key="W1" value="136.11601586061514" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.424939612656803E-79" />
+      <entry key="S2" value="4.464024335207988E-20" />
+      <entry key="S5" value="3.4483803008926926E-8" />
+      <entry key="S10" value="3.2110464407366604E-4" />
+      <entry key="S30" value="0.16251954007991265" />
+      <entry key="S60" value="0.9824454101739208" />
+      <entry key="M2" value="2.8077061721334595" />
+      <entry key="M5" value="6.596437131014076" />
+      <entry key="M10" value="12.538011618089985" />
+      <entry key="M15" value="17.584042544513327" />
+      <entry key="M30" value="27.115632873475143" />
+      <entry key="H1" value="37.227072200546736" />
+      <entry key="H2" value="53.046002947636616" />
+      <entry key="H4" value="82.02170452880425" />
+      <entry key="D1" value="155.0812322846272" />
+      <entry key="W1" value="177.7748907944892" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.000000000000011" />
-      <entry key="MS500" value="1.0017195409600783" />
-      <entry key="S2" value="1.3535114772405636" />
-      <entry key="S5" value="2.2382488781235517" />
-      <entry key="S10" value="2.981492181820049" />
-      <entry key="S30" value="4.44769696589746" />
-      <entry key="S60" value="6.012147599394325" />
-      <entry key="M2" value="7.979224264542512" />
-      <entry key="M5" value="10.639878778742217" />
-      <entry key="M10" value="12.631332990141281" />
-      <entry key="M15" value="13.782542574002136" />
-      <entry key="M30" value="16.15057916062998" />
-      <entry key="H1" value="22.13544355759009" />
-      <entry key="H2" value="42.813619362979395" />
-      <entry key="H4" value="79.87024711118892" />
-      <entry key="D1" value="154.88965561423421" />
-      <entry key="W1" value="175.3013579989524" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000013543199144" />
+      <entry key="S2" value="1.0341138170602016" />
+      <entry key="S5" value="1.258947483063676" />
+      <entry key="S10" value="1.513709329904513" />
+      <entry key="S30" value="2.0344536361242556" />
+      <entry key="S60" value="3.0489936643653968" />
+      <entry key="M2" value="5.162917728131024" />
+      <entry key="M5" value="9.242972429346464" />
+      <entry key="M10" value="14.152586198142846" />
+      <entry key="M15" value="17.541764713774537" />
+      <entry key="M30" value="23.411963517054552" />
+      <entry key="H1" value="30.93174650511302" />
+      <entry key="H2" value="47.96902632048499" />
+      <entry key="H4" value="83.52738953810315" />
+      <entry key="D1" value="175.79722690594875" />
+      <entry key="W1" value="204.62805575031913" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0010040174088438317" />
-      <entry key="MS500" value="0.2518706581148516" />
-      <entry key="S2" value="0.968001486385938" />
-      <entry key="S5" value="1.9696526016727616" />
-      <entry key="S10" value="2.904705054966274" />
-      <entry key="S30" value="5.316120549991598" />
-      <entry key="S60" value="8.390933849257966" />
-      <entry key="M2" value="12.730141690018852" />
-      <entry key="M5" value="18.656049369839415" />
-      <entry key="M10" value="23.01679508096106" />
-      <entry key="M15" value="25.509060311049808" />
-      <entry key="M30" value="30.105159621257783" />
-      <entry key="H1" value="40.269838055996594" />
-      <entry key="H2" value="76.25002280209605" />
-      <entry key="H4" value="141.755794751017" />
-      <entry key="D1" value="275.09074453294437" />
-      <entry key="W1" value="311.41675948413916" />
+      <entry key="MS100" value="8.936069921543125E-5" />
+      <entry key="MS500" value="0.15496351310245346" />
+      <entry key="S2" value="0.6424174059760316" />
+      <entry key="S5" value="1.0163061202471493" />
+      <entry key="S10" value="1.3476170149844966" />
+      <entry key="S30" value="2.1168102264836333" />
+      <entry key="S60" value="3.9704565649610357" />
+      <entry key="M2" value="7.91660113508171" />
+      <entry key="M5" value="15.79722216489936" />
+      <entry key="M10" value="26.655265739597006" />
+      <entry key="M15" value="35.09529128118056" />
+      <entry key="M30" value="50.50612938049477" />
+      <entry key="H1" value="68.14408876039599" />
+      <entry key="H2" value="101.00296214218908" />
+      <entry key="H4" value="165.53791036942727" />
+      <entry key="D1" value="330.8743021983577" />
+      <entry key="W1" value="382.40224918408256" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -127,7 +125,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DesignPatternsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DesignPatternsApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
