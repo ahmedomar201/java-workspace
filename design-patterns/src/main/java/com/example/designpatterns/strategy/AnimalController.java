@@ -1,5 +1,6 @@
 package com.example.designpatterns.strategy;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,30 +10,35 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("strategy/animal")
 public class AnimalController {
 
-    private AnimalProcessor animalProcessor;
+    private final AnimalProcessor1 animalProcessor1;
 
-    @GetMapping("feed/{animalName}")
-    public String feedApi(@PathVariable String animalName) {
+    @Autowired
+    public AnimalController(AnimalProcessor1 animalProcessor1) {
+        this.animalProcessor1 = animalProcessor1;
+    }
+
+    @GetMapping("feed/{animalType}")
+    public String feedApi(@PathVariable String animalType) {
 
         try {
-            animalProcessor.feedAnimal();
+            animalProcessor1.feedAnimal(animalType);
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
 
-        return "Successfully feed " + animalName;
+        return "Successfully feed " + animalType;
     }
 
 
-    @GetMapping("makeSound/{animalName}")
-    public String makeSoundApi(@PathVariable String animalName) {
+    @GetMapping("makeSound/{animalType}")
+    public String makeSoundApi(@PathVariable String animalType) {
 
         try {
-            animalProcessor.makeSound();
+            animalProcessor1.makeSound(animalType);
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
 
-        return "Successfully makeSound " + animalName;
+        return "Successfully makeSound " + animalType;
     }
 }

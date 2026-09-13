@@ -6,23 +6,23 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class DogStrategy implements AnimalService {
+public class CatStrategy implements AnimalService {
 
 
-    private static final String TYPE = "dog";
+    private static final String TYPE = "cat";
 
     @Override
     public boolean isType(final String type) {
         return TYPE.equalsIgnoreCase(type);
     }
 
-    public DogStrategy() {
-        log.debug("DogStrategy is bean");
+    public CatStrategy() {
+        log.debug("CatStrategy is bean");
     }
 
     @Override
     public void feed() {
-        log.info("🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴");
+        log.info("🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕");
     }
 
     @Override
