@@ -10,7 +10,8 @@ import java.util.Arrays;
 public enum Animals {
 
     Lion("lion"),
-    Dog("dog");
+    Dog("dog"),
+    Cat("cat");
     private final String type;
 
 
@@ -24,6 +25,10 @@ public enum Animals {
 
     private boolean hasType(final String type) {
         return this.getType().equalsIgnoreCase(type);
+    }
+
+    public boolean hasType(final Animals animals) {
+        return this.getType().equalsIgnoreCase(animals.getType());
     }
 
     public static class AnimalException extends RuntimeException {

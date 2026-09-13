@@ -21,7 +21,9 @@ public class AnimalController {
     public String feedApi(@PathVariable String animalType) {
 
         try {
-            animalProcessor1.feedAnimal(animalType);
+            final Animals animals = Animals.fromType(animalType);
+
+            animalProcessor1.feedAnimal(animals);
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }
@@ -34,7 +36,9 @@ public class AnimalController {
     public String makeSoundApi(@PathVariable String animalType) {
 
         try {
-            animalProcessor1.makeSound(animalType);
+            final Animals animals = Animals.fromType(animalType);
+
+            animalProcessor1.makeSound(animals);
         } catch (Animals.AnimalException e) {
             throw new RuntimeException(e);
         }

@@ -2,7 +2,7 @@ package com.example.designpatterns.strategy;
 
 public interface AnimalService {
 
-    boolean isType(String type);
+    boolean isType(Animals type);
 
     public void feed();
 

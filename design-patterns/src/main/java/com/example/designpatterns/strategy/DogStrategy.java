@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class DogStrategy implements AnimalService {
 
 
-    private static final String TYPE = "dog";
+    private static final Animals DOG = Animals.Dog;
 
     @Override
-    public boolean isType(final String type) {
-        return TYPE.equalsIgnoreCase(type);
+    public boolean isType(final Animals animals) {
+        return DOG.hasType(animals);
     }
 
     public DogStrategy() {

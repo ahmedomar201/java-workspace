@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/CatStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/Animals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/CatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/CatStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" afterDir="false" />
     </list>
@@ -49,60 +51,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.424939612656803E-79" />
-      <entry key="S2" value="4.464024335207988E-20" />
-      <entry key="S5" value="3.4483803008926926E-8" />
-      <entry key="S10" value="3.2110464407366604E-4" />
-      <entry key="S30" value="0.16251954007991265" />
-      <entry key="S60" value="0.9824454101739208" />
-      <entry key="M2" value="2.8077061721334595" />
-      <entry key="M5" value="6.596437131014076" />
-      <entry key="M10" value="12.538011618089985" />
-      <entry key="M15" value="17.584042544513327" />
-      <entry key="M30" value="27.115632873475143" />
-      <entry key="H1" value="37.227072200546736" />
-      <entry key="H2" value="53.046002947636616" />
-      <entry key="H4" value="82.02170452880425" />
-      <entry key="D1" value="155.0812322846272" />
-      <entry key="W1" value="177.7748907944892" />
+      <entry key="MS500" value="1.5972523820263067E-256" />
+      <entry key="S2" value="1.1241994956518177E-64" />
+      <entry key="S5" value="2.632311944483052E-26" />
+      <entry key="S10" value="1.6224401204614771E-13" />
+      <entry key="S30" value="5.4540974382314054E-5" />
+      <entry key="S60" value="0.007385186145005242" />
+      <entry key="M2" value="0.08593914088773749" />
+      <entry key="M5" value="0.39621291251637264" />
+      <entry key="M10" value="1.3491177305220152" />
+      <entry key="M15" value="3.5138119628499207" />
+      <entry key="M30" value="13.058744759912443" />
+      <entry key="H1" value="29.363796114314756" />
+      <entry key="H2" value="51.72967307265493" />
+      <entry key="H4" value="85.36591726075937" />
+      <entry key="D1" value="169.187755481122" />
+      <entry key="W1" value="195.9730522661496" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000013543199144" />
-      <entry key="S2" value="1.0341138170602016" />
-      <entry key="S5" value="1.258947483063676" />
-      <entry key="S10" value="1.513709329904513" />
-      <entry key="S30" value="2.0344536361242556" />
-      <entry key="S60" value="3.0489936643653968" />
-      <entry key="M2" value="5.162917728131024" />
-      <entry key="M5" value="9.242972429346464" />
-      <entry key="M10" value="14.152586198142846" />
-      <entry key="M15" value="17.541764713774537" />
-      <entry key="M30" value="23.411963517054552" />
-      <entry key="H1" value="30.93174650511302" />
-      <entry key="H2" value="47.96902632048499" />
-      <entry key="H4" value="83.52738953810315" />
-      <entry key="D1" value="175.79722690594875" />
-      <entry key="W1" value="204.62805575031913" />
+      <entry key="MS100" value="1.0000000026159825" />
+      <entry key="MS500" value="1.019233400667796" />
+      <entry key="S2" value="1.4418550550877534" />
+      <entry key="S5" value="2.0178381879136653" />
+      <entry key="S10" value="2.407468136313353" />
+      <entry key="S30" value="2.7735185589816194" />
+      <entry key="S60" value="2.8912007192378804" />
+      <entry key="M2" value="3.03304928275822" />
+      <entry key="M5" value="3.4124872777953996" />
+      <entry key="M10" value="5.0349711194663636" />
+      <entry key="M15" value="8.450076307644345" />
+      <entry key="M30" value="20.859088838567963" />
+      <entry key="H1" value="39.07969631318578" />
+      <entry key="H2" value="64.0838910890304" />
+      <entry key="H4" value="104.45819653792041" />
+      <entry key="D1" value="208.92654933150052" />
+      <entry key="W1" value="242.65955811868835" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.936069921543125E-5" />
-      <entry key="MS500" value="0.15496351310245346" />
-      <entry key="S2" value="0.6424174059760316" />
-      <entry key="S5" value="1.0163061202471493" />
-      <entry key="S10" value="1.3476170149844966" />
-      <entry key="S30" value="2.1168102264836333" />
-      <entry key="S60" value="3.9704565649610357" />
-      <entry key="M2" value="7.91660113508171" />
-      <entry key="M5" value="15.79722216489936" />
-      <entry key="M10" value="26.655265739597006" />
-      <entry key="M15" value="35.09529128118056" />
-      <entry key="M30" value="50.50612938049477" />
-      <entry key="H1" value="68.14408876039599" />
-      <entry key="H2" value="101.00296214218908" />
-      <entry key="H4" value="165.53791036942727" />
-      <entry key="D1" value="330.8743021983577" />
-      <entry key="W1" value="382.40224918408256" />
+      <entry key="MS100" value="0.0053732102293790746" />
+      <entry key="MS500" value="0.3562899408434994" />
+      <entry key="S2" value="1.0633820824594185" />
+      <entry key="S5" value="1.7369576190041174" />
+      <entry key="S10" value="2.2151523255336247" />
+      <entry key="S30" value="2.6917109957387058" />
+      <entry key="S60" value="2.8537948032747087" />
+      <entry key="M2" value="3.0898897487703563" />
+      <entry key="M5" value="3.787747196929093" />
+      <entry key="M10" value="6.365879955721522" />
+      <entry key="M15" value="11.94382644925645" />
+      <entry key="M30" value="33.89411730752074" />
+      <entry key="H1" value="68.42168961712943" />
+      <entry key="H2" value="115.79578668826036" />
+      <entry key="H4" value="189.80945582525348" />
+      <entry key="D1" value="378.1092886752225" />
+      <entry key="W1" value="438.6317734990822" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -119,33 +121,33 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.com.example.designpatterns.builder.Main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.DesignPatternsApplication.executor": "Run",
-    "Spring Boot.UniversityTaskApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/strategy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.example.designpatterns.builder.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DesignPatternsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UniversityTaskApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/strategy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\strategy" />
