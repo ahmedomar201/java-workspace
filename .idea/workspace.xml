@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/Animals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/CatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/CatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/LionStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

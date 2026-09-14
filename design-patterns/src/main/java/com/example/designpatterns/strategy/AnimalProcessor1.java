@@ -1,6 +1,5 @@
 package com.example.designpatterns.strategy;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -10,20 +9,20 @@ import java.util.Optional;
 
 @Slf4j
 @Component
-@RequiredArgsConstructor
+
 //delegator class
 public class AnimalProcessor1 {
 
     //constructor injection
     private final List<AnimalService> animalService;
 
-//    public AnimalProcessor1(List<AnimalService> animalService) {
-//        this.animalService = animalService;
-//        log.debug("AnimalProcessor is bean [{}]", animalService.getClass().getSimpleName());
-//    }
+    @Autowired
+    public AnimalProcessor1(List<AnimalService> animalService) {
+        this.animalService = animalService;
+        log.debug("AnimalProcessor is bean [{}]", animalService.getClass().getSimpleName());
+    }
 
     //AnimalProcessor1 Delegate any animal class (DogStrategy,LionStrategy) to feed or makeSound
-
     public void feedAnimal(final Animals animals) throws Animals.AnimalException {
         getFirstAnimalService(animalService, animals)
                 .ifPresentOrElse(AnimalService::feed, () -> {

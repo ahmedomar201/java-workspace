@@ -2,10 +2,11 @@ package com.example.designpatterns.strategy;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Component
@@ -14,34 +15,49 @@ import java.util.Optional;
 public class AnimalProcessor2 {
 
     //constructor injection
-    private final List<AnimalService> animalService;
+    private final Map<Animals, AnimalService> animalService;
 
-//    public AnimalProcessor1(List<AnimalService> animalService) {
-//        this.animalService = animalService;
-//        log.debug("AnimalProcessor is bean [{}]", animalService.getClass().getSimpleName());
-//    }
+    @Autowired
+    public AnimalProcessor2(List<AnimalService> animalServices) {
+        this.animalService = Arrays.stream(Animals.values())
+                .collect(Collectors.toUnmodifiableMap(
+                        animal -> animal,
+                        animal -> getFirstAnimalService(animalServices, animal)
+                                .orElseThrow(() -> new IllegalStateException(
+                                        "No AnimalService found for animal type: " + animal
+                                ))
+                ));
+    }
 
     //AnimalProcessor1 Delegate any animal class (DogStrategy,LionStrategy) to feed or makeSound
-
     public void feedAnimal(final Animals animals) throws Animals.AnimalException {
-        getFirstAnimalService(animalService, animals)
+        getAnimalService(animalService, animals)
                 .ifPresentOrElse(AnimalService::feed, () -> {
                             log.error("AnimalProcessor1.feedAnimal: type [{}] is invalid", animals);
                             throw new Animals.AnimalException(
-                                    "AnimalProcessor1.feedAnimal: type [" + animals + "] is invalid");
+                                    String.format("[%s]: type [%s] is invalid", animals.getType())
+                            );
                         }
                 );
     }
 
 
     public void makeSound(final Animals animals) throws Animals.AnimalException {
-        getFirstAnimalService(animalService, animals)
+        getAnimalService(animalService, animals)
                 .ifPresentOrElse(AnimalService::makeSound, () -> {
                             log.error("AnimalProcessor1.makeSound: type [{}] is invalid", animals);
                             throw new Animals.AnimalException(
-                                    "AnimalProcessor1.makeSound: type [" + animals + "] is invalid");
+                                    String.format("[%s]: type [%s] is invalid", animals.getType())
+                            );
                         }
                 );
+    }
+
+    private static Optional<AnimalService> getAnimalService(
+            final Map<Animals, AnimalService> animalServices,
+            final Animals animal
+    ) {
+        return Optional.ofNullable(animalServices.get(animal));
     }
 
     private static Optional<AnimalService> getFirstAnimalService(
