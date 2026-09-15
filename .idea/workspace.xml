@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor4.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

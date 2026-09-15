@@ -1,7 +1,6 @@
 package com.example.designpatterns.strategy;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AnimalController {
 
-    private final AnimalProcessor2 animalProcessor1;
+    private final AnimalProcessor5 animalProcessor1;
 
     @GetMapping("feed/{animalType}")
     public String feedApi(@PathVariable String animalType) {
