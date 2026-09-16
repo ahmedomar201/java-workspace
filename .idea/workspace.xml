@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/objectprovider/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/objectprovider/SmsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor4.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor5.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/AnimalProcessor5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/strategy/DogStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +34,12 @@
     &quot;assignee&quot;: &quot;ahmedomar201&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ahmedomar201/java-workspace.git&quot;,
-    &quot;accountId&quot;: &quot;3efd77ff-ca4a-47e2-92ea-14fcc973761a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ahmedomar201/java-workspace.git",
+    "accountId": "f90ffc3a-29b1-42ea-b5cc-d841a98a636c"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
