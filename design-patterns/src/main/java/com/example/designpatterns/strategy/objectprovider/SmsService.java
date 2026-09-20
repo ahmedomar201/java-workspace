@@ -2,5 +2,5 @@ package com.example.designpatterns.strategy.objectprovider;
 
 public interface SmsService {
 
-    void send();
+    void send(String message);
 }
