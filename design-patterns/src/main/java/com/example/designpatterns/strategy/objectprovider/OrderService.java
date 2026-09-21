@@ -3,6 +3,8 @@ package com.example.designpatterns.strategy.objectprovider;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class OrderService {
 
@@ -14,6 +16,8 @@ public class OrderService {
     }
 
     public void send(String message) {
-        smsServiceProvider.getIfAvailable().send(message);
+        final SmsService smsService = smsServiceProvider.getIfAvailable();
+        Optional.ofNullable(smsService)
+                        .ifPresent(s -> s.send(message));
     }
 }

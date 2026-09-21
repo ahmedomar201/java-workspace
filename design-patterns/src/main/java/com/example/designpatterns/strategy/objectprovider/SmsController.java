@@ -19,5 +19,4 @@ public class SmsController {
     public void sendMessage(@PathVariable String message) {
         orderService.send(message);
     }
-
 }
