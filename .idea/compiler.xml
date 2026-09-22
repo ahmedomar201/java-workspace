@@ -17,6 +17,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="design-patterns" />
       </profile>
@@ -31,6 +32,7 @@
       <module name="demo" options="-parameters" />
       <module name="design-patterns" options="-parameters" />
       <module name="rest" options="-parameters" />
+      <module name="service" options="-parameters" />
       <module name="university-task" options="-parameters" />
     </option>
   </component>
