@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/mappers/StudentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ConsumerImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/LinkedListMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/MyInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/data-structures-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/SpellCheckerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/SpellCheckerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +115,7 @@
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
@@ -121,12 +132,18 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.com.example.designpatterns.builder.Main.executor": "Run",
+    "Maven.java-workspace [clean].executor": "Run",
+    "Maven.rest [clean,install].executor": "Run",
     "Maven.service [clean,install].executor": "Run",
+    "Maven.university-task [clean,compile].executor": "Run",
+    "Maven.university-task [clean,install].executor": "Run",
+    "Maven.university-task [clean,package].executor": "Run",
+    "Maven.university-task [clean].executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.DesignPatternsApplication.executor": "Debug",
+    "Spring Boot.DesignPatternsApplication.executor": "Run",
     "Spring Boot.UniversityTaskApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -134,7 +151,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/design-patterns/src/main/java/com/example/designpatterns/strategy",
+    "last_opened_file_path": "C:/Users/ahmed/java-workspace/service/src/main/java/com/example/service/models/dtos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -143,21 +160,28 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/ahmed/java-workspace/service/src/main/java/com/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\strategy" />
-      <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\factory" />
-      <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns\builder" />
-      <recent name="C:\Users\ahmed\java-workspace\design-patterns\src\main\java\com\example\designpatterns" />
+      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\models\dtos" />
+      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\errors\exceptions" />
+      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\controllers" />
+      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service" />
+      <recent name="C:\Users\ahmed\java-workspace\service\src\test\java\com\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.service.repositories" />
+      <recent name="com.example.service.models.entities" />
       <recent name="com.example.designpatterns.strategy" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DesignPatternsApplication">
+  <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.universitytask.models.dtos.requests.Main" />
       <module name="university-task" />
@@ -214,9 +238,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UniversityTaskApplication" />
         <item itemvalue="Spring Boot.DesignPatternsApplication" />
         <item itemvalue="Application.com.example.designpatterns.builder.Main" />
-        <item itemvalue="Spring Boot.UniversityTaskApplication" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -224,8 +248,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>
@@ -242,15 +266,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/com/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
