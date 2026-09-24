@@ -1,6 +1,7 @@
 package com.example.universitytask.controllers;
 
 import com.example.universitytask.models.dtos.requests.StudentUpdate;
+import com.example.universitytask.models.dtos.responses.GenericResponse;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.utills.mappers.StudentMapper;
@@ -39,14 +40,15 @@ public class StudentController {
     }
 
     @GetMapping("findById/{id}")
-    public ResponseEntity<?> findByIdApi(@PathVariable final UUID id) {
-        final Optional<Student> optionalStudent = findById(id);
+    public ResponseEntity<GenericResponse<StudentResponse>> findByIdApi(@PathVariable UUID id) {
+        final Optional<Student> optionalFoundStudent = findById(id);
 
-        if (optionalStudent.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
+        if (optionalFoundStudent.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new GenericResponse<>("Student not found", null));
         }
 
-        return ResponseEntity.ok(StudentMapper.toStudentResponse(optionalStudent.get()));
+        final StudentResponse studentResponse = StudentMapper.toStudentResponse(optionalFoundStudent.get());
+        return ResponseEntity.ok(new GenericResponse<>("Student found", studentResponse));
     }
 
     @PutMapping("update/{id}")

@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/mappers/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/responses/GenericResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ArrayListMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/ConsumerImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/LinkedListMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/classes/com/example/datastructures/list/MyInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/data-structures-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/SpellCheckerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/rest/models/SpellCheckerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
     </list>
@@ -30,8 +18,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,189 +25,80 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;ahmedomar201&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ahmedomar201/java-workspace.git&quot;,
-    &quot;accountId&quot;: &quot;f90ffc3a-29b1-42ea-b5cc-d841a98a636c&quot;
-  }
-}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.0028948992967865E-208" />
-      <entry key="MS500" value="3.314933629056886E-42" />
-      <entry key="S2" value="4.272496007864386E-11" />
-      <entry key="S5" value="7.610921005729388E-5" />
-      <entry key="S10" value="0.010667873574600924" />
-      <entry key="S30" value="0.36016950496353833" />
-      <entry key="S60" value="1.0887939862015823" />
-      <entry key="M2" value="2.1808151075213016" />
-      <entry key="M5" value="3.528779779218955" />
-      <entry key="M10" value="4.2652405333330865" />
-      <entry key="M15" value="4.9623079144504745" />
-      <entry key="M30" value="9.744723333687412" />
-      <entry key="H1" value="23.08474311664874" />
-      <entry key="H2" value="45.687373135615594" />
-      <entry key="H4" value="80.7402712477661" />
-      <entry key="D1" value="170.85502642701496" />
-      <entry key="W1" value="200.41701791409412" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000016075166" />
-      <entry key="S5" value="1.0003381589164333" />
-      <entry key="S10" value="1.0256894860873391" />
-      <entry key="S30" value="1.5924899395872991" />
-      <entry key="S60" value="2.422726509185505" />
-      <entry key="M2" value="3.3151327056536495" />
-      <entry key="M5" value="4.19691192762596" />
-      <entry key="M10" value="4.852397771699039" />
-      <entry key="M15" value="5.958246311246996" />
-      <entry key="M30" value="12.889227635438187" />
-      <entry key="H1" value="29.187647490716923" />
-      <entry key="H2" value="55.45772920538107" />
-      <entry key="H4" value="97.70597398058345" />
-      <entry key="D1" value="209.81548921815" />
-      <entry key="W1" value="246.9717007362173" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000024944335" />
+      <entry key="M2" value="1.0001479240671785" />
+      <entry key="M5" value="1.1132402915781416" />
+      <entry key="M10" value="2.186011402232535" />
+      <entry key="M15" value="3.7899852539418815" />
+      <entry key="M30" value="7.998731103347822" />
+      <entry key="H1" value="12.411454844282991" />
+      <entry key="H2" value="15.685784766060108" />
+      <entry key="H4" value="17.693115677902043" />
+      <entry key="D1" value="19.592777044240385" />
+      <entry key="W1" value="19.941241065399556" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="7.703363536144453E-174" />
+      <entry key="S10" value="2.775493386076725E-87" />
+      <entry key="S30" value="1.4056586626941531E-29" />
+      <entry key="S60" value="3.881787178199E-15" />
+      <entry key="M2" value="9.355013827798388E-8" />
+      <entry key="M5" value="0.0051890971532122954" />
+      <entry key="M10" value="0.2321565450692679" />
+      <entry key="M15" value="0.8354449966602824" />
+      <entry key="M30" value="3.023728406244167" />
+      <entry key="H1" value="5.763752862019369" />
+      <entry key="H2" value="7.9613244265969065" />
+      <entry key="H4" value="9.35779037788381" />
+      <entry key="D1" value="10.70748060963891" />
+      <entry key="W1" value="10.957725937790883" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.221373199745434E-4" />
-      <entry key="MS500" value="0.2113930718443791" />
-      <entry key="S2" value="0.6780671237787824" />
-      <entry key="S5" value="0.8564065316022434" />
-      <entry key="S10" value="0.9582089666195147" />
-      <entry key="S30" value="1.8973489218107624" />
-      <entry key="S60" value="3.457690930245185" />
-      <entry key="M2" value="5.450454546747455" />
-      <entry key="M5" value="7.698368848329246" />
-      <entry key="M10" value="9.100747289355361" />
-      <entry key="M15" value="10.906441766287102" />
-      <entry key="M30" value="22.618939149322816" />
-      <entry key="H1" value="52.25583889314087" />
-      <entry key="H2" value="101.12956649723145" />
-      <entry key="H4" value="178.43246462867202" />
-      <entry key="D1" value="380.6654692361938" />
-      <entry key="W1" value="447.387865703581" />
+      <entry key="MS100" value="5.455503603868261E-4" />
+      <entry key="MS500" value="0.22251893331312408" />
+      <entry key="S2" value="0.6868181167148112" />
+      <entry key="S5" value="0.8604719090790413" />
+      <entry key="S10" value="0.9276162509783026" />
+      <entry key="S30" value="0.9752653237078641" />
+      <entry key="S60" value="0.9875552281344198" />
+      <entry key="M2" value="0.9939058458466741" />
+      <entry key="M5" value="1.1158087253624722" />
+      <entry key="M10" value="2.4158918289817883" />
+      <entry key="M15" value="4.622558400887683" />
+      <entry key="M30" value="11.018799583085773" />
+      <entry key="H1" value="18.172048151592573" />
+      <entry key="H2" value="23.64500608308693" />
+      <entry key="H4" value="27.049689603054407" />
+      <entry key="D1" value="30.300028477004492" />
+      <entry key="W1" value="30.89893356515697" />
     </decayedShown>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6,
-  &quot;fromUser&quot;: false
-}</component>
-  <component name="ProjectId" id="3IlQW1xuI5bwylsaFRH9PUsyjYT" />
-  <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
-    <option name="autoscrollToSource" value="true" />
-    <option name="openDirectoriesWithSingleClick" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.com.example.designpatterns.builder.Main.executor": "Run",
-    "Maven.java-workspace [clean].executor": "Run",
-    "Maven.rest [clean,install].executor": "Run",
-    "Maven.service [clean,install].executor": "Run",
-    "Maven.university-task [clean,compile].executor": "Run",
-    "Maven.university-task [clean,install].executor": "Run",
-    "Maven.university-task [clean,package].executor": "Run",
-    "Maven.university-task [clean].executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.DesignPatternsApplication.executor": "Run",
     "Spring Boot.UniversityTaskApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/service/src/main/java/com/example/service/models/dtos",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/ahmed/java-workspace/service/src/main/java/com/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "to.speed.mode.migration.done": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\models\dtos" />
-      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\errors\exceptions" />
-      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service\controllers" />
-      <recent name="C:\Users\ahmed\java-workspace\service\src\main\java\com\example\service" />
-      <recent name="C:\Users\ahmed\java-workspace\service\src\test\java\com\example" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.service.repositories" />
-      <recent name="com.example.service.models.entities" />
-      <recent name="com.example.designpatterns.strategy" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.universitytask.models.dtos.requests.Main" />
-      <module name="university-task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.universitytask.models.dtos.requests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.example.designpatterns.builder.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpatterns.builder.Main" />
-      <module name="design-patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.designpatterns.builder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="design-patterns" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designpatterns.DesignPatternsApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.designpatterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="university-task" />
@@ -239,35 +116,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UniversityTaskApplication" />
-        <item itemvalue="Spring Boot.DesignPatternsApplication" />
-        <item itemvalue="Application.com.example.designpatterns.builder.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4d3937b7-1c1d-426d-a299-d1faf3ac2c32" name="Changes" comment="" />
-      <created>1788336708750</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1788336708750</updated>
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

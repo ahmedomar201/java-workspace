@@ -7,17 +7,20 @@ import java.util.*;
 
 import static com.example.universitytask.utills.StringUtills.isNullOrBlank;
 
-public class StudentValidator {
+public final class StudentValidator {
 
+    private StudentValidator() {
 
-    public static ResponseEntity<List<String>>validateRegisterRequest(
+        throw new AssertionError("Cannot be instantiated");
+    }
+
+    public static ResponseEntity<List<String>> validateRegisterRequest(
             final StudentRegister studentRegister) {
 
         final List<String> errors = new LinkedList<>();
         if (isNullOrBlank(studentRegister.firstName())) {
 
             errors.add("First name is required");
-
 
         }
 
@@ -36,7 +39,6 @@ public class StudentValidator {
         if (isAgeMisAligned(studentRegister.age())) {
 
             errors.add("Age is required");
-
 
         }
 

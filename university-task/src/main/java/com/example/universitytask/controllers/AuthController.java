@@ -3,6 +3,7 @@ package com.example.universitytask.controllers;
 import com.example.universitytask.errors.exceptions.CredentialsExceptions;
 import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
+import com.example.universitytask.models.dtos.responses.GenericResponse;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.utills.mappers.StudentMapper;
@@ -104,46 +105,46 @@ public class AuthController {
     }
 
     @PostMapping("logout")
-    public ResponseEntity<String> logoutStudentApi(
-            @RequestParam final String email) {
+    public ResponseEntity<GenericResponse<String>> logoutApi(@RequestParam String email) {
+        final Optional<Student> optionalFoundStudent = findByEmail(email);
 
-        final Optional<Student> optionalStudent = findByEmail(email);
-
-        if (optionalStudent.isEmpty()) {
-            return ResponseEntity.badRequest().body(
-                    "Student with Email: " + email + " not Registered");
-
+        if (optionalFoundStudent.isEmpty()) {
+            return ResponseEntity.badRequest().body(new GenericResponse<>("Student with email: " + email + " not registered", null));
         }
 
-        final Student foundStudent = optionalStudent.get();
+        final Student foundStudent = optionalFoundStudent.get();
 
         if (!foundStudent.isLoggedIn()) {
-            return ResponseEntity.badRequest().body("student not logged in");
+            return ResponseEntity.badRequest().body(new GenericResponse<>("Student not logged in", null));
         }
+
         foundStudent.setLoggedIn(false);
 
-        return ResponseEntity.ok(
-                "Successfully logged out with Email: " + foundStudent.getEmail());
+        return ResponseEntity.ok(new GenericResponse<>("Successfully logged out!", null));
     }
 
     @PostMapping("saveAll")
-    public ResponseEntity<String> saveAllStudent(@RequestBody final List<StudentRegister> students) {
+    public ResponseEntity<?> saveAllStudent(@RequestBody final List<StudentRegister> students) {
         final List<Student> registerStudent = new ArrayList<>();
         students.forEach(student -> {
                     Optional<Student> optionalStudent = findByEmail(student.email());
-                    if ( optionalStudent.isPresent()) {
+                    if (optionalStudent.isPresent()) {
                         registerStudent.add(optionalStudent.get());
                         return;
                     }
                     registerStudentApi(student);
                 }
         );
-        if ( registerStudent.isEmpty()) {
+        if (registerStudent.isEmpty()) {
             return ResponseEntity.ok("Save all student Successfully");
         }
-    final List<StudentResponse>rejectedStudents=registerStudent.stream().map(
+        final List<StudentResponse> rejectedStudentsList = registerStudent.stream().map(
                 StudentMapper::toStudentResponse
         ).toList();
-        return ResponseEntity.ok().body(rejectedStudents.toString());
+
+        final GenericResponse<List<StudentResponse>> genericResponse =
+                new GenericResponse<>("those list are rejected to be inserted", rejectedStudentsList);
+
+        return ResponseEntity.ok().body(genericResponse);
     }
 }

@@ -7,11 +7,14 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.Optional;
 
-public class CredentialsHelper {
+public final class CredentialsHelper {
 
+    private CredentialsHelper() {
+        throw new AssertionError("Cannot be instantiated");
+    }
 
     //عملت hash لل password
-    public static String hashPassword(final String password)throws CredentialsExceptions {
+    public  static String hashPassword(final String password)throws CredentialsExceptions {
         Optional.ofNullable(password).orElseThrow(()->new CredentialsExceptions("Invalid password"));
         byte[] hash;
         try {
