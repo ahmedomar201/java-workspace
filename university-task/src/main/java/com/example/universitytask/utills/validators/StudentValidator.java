@@ -1,11 +1,11 @@
 package com.example.universitytask.utills.validators;
 
 import com.example.universitytask.models.dtos.requests.StudentRegister;
-import org.springframework.http.ResponseEntity;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
-import static com.example.universitytask.utills.StringUtills.isNullOrBlank;
+import static com.example.universitytask.utills.StringUtils.isNullOrBlank;
 
 public final class StudentValidator {
 
@@ -14,40 +14,32 @@ public final class StudentValidator {
         throw new AssertionError("Cannot be instantiated");
     }
 
-    public static ResponseEntity<List<String>> validateRegisterRequest(
+    public static List<String> validateRegisterRequest(
             final StudentRegister studentRegister) {
 
         final List<String> errors = new LinkedList<>();
+
         if (isNullOrBlank(studentRegister.firstName())) {
-
             errors.add("First name is required");
-
         }
 
         if (isNullOrBlank(studentRegister.secondName())) {
-
             errors.add("Second name is required");
-
         }
 
         if (isEmailInvalid(studentRegister.email())) {
-
             errors.add("Email is required");
-
         }
 
         if (isAgeMisAligned(studentRegister.age())) {
-
             errors.add("Age is required");
-
         }
 
         if (isPasswordInvalid(studentRegister.password())) {
-
             errors.add("Password is required");
-
         }
-        return ResponseEntity.badRequest().body(errors);
+
+        return errors;
     }
 
 

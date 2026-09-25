@@ -29,44 +29,7 @@ public class AuthController {
     @PostMapping("register")
     public ResponseEntity<List<String>> registerStudentApi(
             @RequestBody final StudentRegister studentRegister) {
-        final String methodName = "Register Student Api";
-        log.info("[{}]Implementing Registration flow[{}", methodName, studentRegister.email());
-        final ResponseEntity<List<String>> errorsResponseEntities =
-                validateRegisterRequest(studentRegister);
 
-        final List<String> errorMessages = errorsResponseEntities.getBody();
-
-        if (!errorMessages.isEmpty()) {
-            log.error("[{}]errors in register student api[{}]", methodName, errorMessages);
-            return ResponseEntity.badRequest().body(errorMessages);
-        }
-
-        final Optional<Student> optionalStudent = findByEmail(studentRegister.email());
-
-        if (optionalStudent.isPresent()) {
-            return ResponseEntity.badRequest().body(
-                    List.of("already Registered " + studentRegister.email())
-            );
-        }
-
-        final String fullName =
-                buildFullName(studentRegister.firstName(), studentRegister.secondName());
-        final String hashPassword;
-        try {
-            hashPassword = hashPassword(studentRegister.password());
-        } catch (CredentialsExceptions e) {
-            log.error("can't hash pass");
-            return ResponseEntity.badRequest().build();
-        }
-        final Student student = new Student(UUID.randomUUID(),
-                fullName
-                , studentRegister.age(),
-                studentRegister.email(),
-                hashPassword, false,
-                0.0F, 0.0F);
-        save(student);
-        return ResponseEntity.ok(List.of(
-                "Successfully registered student with Email: " + studentRegister.email()));
     }
 
     @PostMapping("login")

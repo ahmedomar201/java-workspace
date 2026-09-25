@@ -2,64 +2,57 @@ package com.example.universitytask.repositories;
 
 import com.example.universitytask.errors.exceptions.RegisterException;
 import com.example.universitytask.models.entities.Student;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Optional;
+import java.util.UUID;
 
+@Repository
+@RequiredArgsConstructor
 public class StudentRepository {
 
-    //ConcurrentHashMap استخدمتها عشان لو 2 ريكوست جاييين في نفس الوقت thread الاول ميقطعش thread التاني
+    private final DbService dbService;
 
-    public static final Map<UUID, Student> STUDENT_DB = new ConcurrentHashMap<>();
-
-    public static Optional<Student> findByEmail(final String email)
+    public Optional<Student> findByEmail(final String email)
             throws RegisterException {
-        return STUDENT_DB.values().stream().filter(
-                student -> student.getEmail().equals(email)
-        ).findFirst();
+        return dbService.findByEmail(email);
     }
 
-
-    public static Optional<Student> findById(final UUID id)
+    public Optional<Student> findById(final UUID id)
             throws RegisterException {
-        return Optional.ofNullable(STUDENT_DB.get(id));
+        return dbService.findById(id);
     }
 
-
-    public static Collection<Student> getAllSortedByAge() {
-
-        return STUDENT_DB.values().stream().sorted(
-                (student1, student2) -> {
-                    return Integer.compare(student2.getAge(), student1.getAge());
-                }
-        ).toList();
+    public Collection<Student> findAllSortedByAge() {
+        return dbService.findAll()
+                .stream()
+                .sorted(Comparator.comparingInt(Student::getAge))
+                .toList();
     }
 
-    public static Collection<Student> getAllSucceedStudent() {
-
-        return STUDENT_DB.values().stream().filter(
-                student ->
-                  ((student.getScore()/ student.getFinalScore())>0.5F)
-
-        ).toList();
+    public Collection<Student> findAllSucceeded() {
+        return dbService.findAll()
+                .stream()
+                .filter(Student::isPassedExam)
+                .toList();
     }
 
-
-    public static void save(final Student student) {
-        STUDENT_DB.put(student.getId(), student);
+    public void save(final Student student) {
+        dbService.saveOrUpdate(student);
     }
 
-
-    public static void delete(final UUID id) {
-        STUDENT_DB.remove(id);
+    public void delete(final UUID id) {
+        dbService.delete(id);
     }
 
-    public static void deleteAll() {
-        STUDENT_DB.clear();
+    public void deleteAll() {
+        dbService.clear();
     }
 
-
-    public static void update(final Student student) {
-        STUDENT_DB.put(student.getId(), student);
+    public void update(final Student student) {
+        dbService.saveOrUpdate(student);
     }
 }
