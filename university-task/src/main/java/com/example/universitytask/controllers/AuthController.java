@@ -6,7 +6,9 @@ import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.dtos.responses.GenericResponse;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
+import com.example.universitytask.services.AuthStudentService;
 import com.example.universitytask.utills.mappers.StudentMapper;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,21 +16,28 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
-import static com.example.universitytask.repositories.StudentRepository.findByEmail;
-import static com.example.universitytask.repositories.StudentRepository.save;
-import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
-import static com.example.universitytask.utills.NameBuilder.buildFullName;
-import static com.example.universitytask.utills.validators.StudentValidator.validateRegisterRequest;
 
 @Slf4j
 @RestController
 @RequestMapping("auth")
+@RequiredArgsConstructor
 public class AuthController {
+    private final AuthStudentService authStudentService;
+
     @PostMapping("register")
     public ResponseEntity<List<String>> registerStudentApi(
             @RequestBody final StudentRegister studentRegister) {
+
+        final String methodName = "Register Student Api";
+        log.info("[{}]Implementing Registration flow[{}", methodName, studentRegister.email());
+
+        authStudentService.signup(studentRegister);
+
+        log.info("{}, Successfully registered student with email [{}]", methodName, studentRegister.email());
+
+        return ResponseEntity.ok(List.of(
+                "Successfully registered student with Email: " + studentRegister.email()));
 
     }
 
@@ -36,32 +45,6 @@ public class AuthController {
     public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
 
-        final Optional<Student> optionalStudent = findByEmail(studentLogin.email());
-
-        if (optionalStudent.isEmpty()) {
-            return ResponseEntity.badRequest().body(
-                    "Student with Email: " + studentLogin.email() + " not found");
-        }
-
-        //معناها هاتلي كل student اللي موجود جوه الـ Optional.
-        //عشان اعرف استخدمها في مثلا email or password
-        final Student foundStudent = optionalStudent.get();
-
-        if (foundStudent.isLoggedIn()) {
-            return ResponseEntity.badRequest().body("Student already logged in");
-        }
-        final String hashPassword;
-        try {
-            hashPassword = hashPassword(studentLogin.password());
-        } catch (CredentialsExceptions e) {
-            return ResponseEntity.badRequest().build();
-        }
-
-        if (hashPassword.equals(studentLogin.password())) {
-            foundStudent.setPassword(hashPassword);
-        }
-
-        foundStudent.setLoggedIn(true);
 
         return ResponseEntity.ok(
                 "Successfully logged in with Email: " + foundStudent.getEmail());
