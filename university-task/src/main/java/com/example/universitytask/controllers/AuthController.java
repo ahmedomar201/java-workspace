@@ -1,21 +1,20 @@
 package com.example.universitytask.controllers;
 
-import com.example.universitytask.errors.exceptions.CredentialsExceptions;
+import com.example.universitytask.errors.exceptions.*;
 import com.example.universitytask.models.dtos.requests.StudentLogin;
 import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.dtos.responses.GenericResponse;
-import com.example.universitytask.models.dtos.responses.StudentResponse;
-import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.services.AuthStudentService;
-import com.example.universitytask.utills.mappers.StudentMapper;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+
+import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 
 
 @Slf4j
@@ -26,13 +25,19 @@ public class AuthController {
     private final AuthStudentService authStudentService;
 
     @PostMapping("register")
-    public ResponseEntity<List<String>> registerStudentApi(
+    public ResponseEntity<Collection<String>> registerStudentApi(
             @RequestBody final StudentRegister studentRegister) {
 
         final String methodName = "Register Student Api";
         log.info("[{}]Implementing Registration flow[{}", methodName, studentRegister.email());
 
-        authStudentService.signup(studentRegister);
+        try {
+            authStudentService.signup(studentRegister);
+        } catch (final RegisterException e) {
+            return ResponseEntity.badRequest().body(List.of(e.getMessage()));
+        } catch (final ValidationException e) {
+            return ResponseEntity.badRequest().body(e.getErrors());
+        }
 
         log.info("{}, Successfully registered student with email [{}]", methodName, studentRegister.email());
 
@@ -44,53 +49,41 @@ public class AuthController {
     @PostMapping("login")
     public ResponseEntity<String> loginStudentApi(
             @RequestBody final StudentLogin studentLogin) {
+        try {
+            authStudentService.login(studentLogin);
+        } catch (final LoginException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (final CredentialsExceptions e) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("password does not match");
+        }
 
-
-        return ResponseEntity.ok(
-                "Successfully logged in with Email: " + foundStudent.getEmail());
+        return ResponseEntity.ok("student with email: " + studentLogin.email() + "logged in successfully");
     }
 
     @PostMapping("logout")
-    public ResponseEntity<GenericResponse<String>> logoutApi(@RequestParam String email) {
-        final Optional<Student> optionalFoundStudent = findByEmail(email);
+    public ResponseEntity<GenericResponse<String>> logoutApi(@RequestParam final String email) {
 
-        if (optionalFoundStudent.isEmpty()) {
-            return ResponseEntity.badRequest().body(new GenericResponse<>("Student with email: " + email + " not registered", null));
+        try {
+            authStudentService.logout(email);
+        } catch (final LogoutException e) {
+            return ResponseEntity.badRequest().body(new GenericResponse<>(e.getMessage(), null));
         }
-
-        final Student foundStudent = optionalFoundStudent.get();
-
-        if (!foundStudent.isLoggedIn()) {
-            return ResponseEntity.badRequest().body(new GenericResponse<>("Student not logged in", null));
-        }
-
-        foundStudent.setLoggedIn(false);
 
         return ResponseEntity.ok(new GenericResponse<>("Successfully logged out!", null));
     }
 
     @PostMapping("saveAll")
-    public ResponseEntity<?> saveAllStudent(@RequestBody final List<StudentRegister> students) {
-        final List<Student> registerStudent = new ArrayList<>();
-        students.forEach(student -> {
-                    Optional<Student> optionalStudent = findByEmail(student.email());
-                    if (optionalStudent.isPresent()) {
-                        registerStudent.add(optionalStudent.get());
-                        return;
-                    }
-                    registerStudentApi(student);
-                }
-        );
-        if (registerStudent.isEmpty()) {
-            return ResponseEntity.ok("Save all student Successfully");
+    public ResponseEntity<?> saveAllStudent(@RequestBody final List<StudentRegister> studentRegisters) {
+
+        try {
+            final Object response = authStudentService.saveAll(studentRegisters);
+
+            return ResponseEntity.ok(response);
+        } catch (RegisterException e) {
+            return ResponseEntity.badRequest().body(List.of(e.getMessage()));
+        } catch (ValidationException e) {
+            return ResponseEntity.badRequest().body(e.getErrors());
         }
-        final List<StudentResponse> rejectedStudentsList = registerStudent.stream().map(
-                StudentMapper::toStudentResponse
-        ).toList();
-
-        final GenericResponse<List<StudentResponse>> genericResponse =
-                new GenericResponse<>("those list are rejected to be inserted", rejectedStudentsList);
-
-        return ResponseEntity.ok().body(genericResponse);
     }
+
 }

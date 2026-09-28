@@ -10,10 +10,8 @@ import java.util.List;
 @Getter
 public class RegisterException extends RuntimeException {
 
-    private final Collection<String>errors;
-    public RegisterException(String message,String LogMessage,String...errors) {
+    public RegisterException(String message,String LogMessage) {
         super(message);
-        this.errors= List.of(errors);
         log.error(LogMessage);
     }
 }
