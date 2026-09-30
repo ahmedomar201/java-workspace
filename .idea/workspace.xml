@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/example/service/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/design-patterns/src/main/java/com/example/designpatterns/factory/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

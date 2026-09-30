@@ -1,7 +1,6 @@
 package com.example.universitytask.services;
 
 import com.example.universitytask.models.dtos.requests.StudentUpdate;
-import com.example.universitytask.models.dtos.responses.GenericResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -41,15 +40,14 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public GenericResponse<StudentResponse> findById(final UUID id)throws NoSuchElementException {
+    public StudentResponse findById(final UUID id)throws NoSuchElementException {
         final Optional<Student> optionalFoundStudent = studentRepository.findById(id);
 
         if (optionalFoundStudent.isEmpty()) {
             throw new NoSuchElementException("student not found");
         }
 
-        final StudentResponse studentResponse = StudentMapper.toStudentResponse(optionalFoundStudent.get());
-        return new GenericResponse<>("Student found", studentResponse);
+        return StudentMapper.toStudentResponse(optionalFoundStudent.get());
     }
 
     @Override

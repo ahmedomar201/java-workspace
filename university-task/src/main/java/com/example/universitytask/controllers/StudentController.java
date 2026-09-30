@@ -3,9 +3,7 @@ package com.example.universitytask.controllers;
 import com.example.universitytask.models.dtos.requests.StudentUpdate;
 import com.example.universitytask.models.dtos.responses.GenericResponse;
 import com.example.universitytask.models.dtos.responses.StudentResponse;
-import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.services.StudentService;
-import com.example.universitytask.utills.mappers.StudentMapper;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,11 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
-import java.util.Optional;
+import java.util.NoSuchElementException;
 import java.util.UUID;
-
-import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
-import static com.example.universitytask.utills.NameBuilder.buildFullName;
 
 @Slf4j
 @RestController
@@ -31,30 +26,27 @@ public class StudentController {
     @GetMapping("getAll")
     public ResponseEntity<?> getAllStudent() {
 
-        final Collection<Student> studentList = getAllSortedByAge();
+        final Collection<StudentResponse> studentResponses;
 
-        if (studentList.isEmpty()) {
-
-            return ResponseEntity.badRequest().body("not found Student");
+        try {
+            studentResponses = studentService.getAllStudent();
+        } catch (final NoSuchElementException e) {
+            return ResponseEntity.notFound().build();
         }
-        final Collection<StudentResponse> studentResponses = studentList.stream().map(
-                        StudentMapper::toStudentResponse)
-                .toList();
-
         return ResponseEntity.ok(studentResponses);
-
     }
 
     @GetMapping("findById/{id}")
     public ResponseEntity<GenericResponse<StudentResponse>> findByIdApi(@PathVariable UUID id) {
-        final Optional<Student> optionalFoundStudent = findById(id);
 
-        if (optionalFoundStudent.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body
-                    (new GenericResponse<>("Student not found", null));
+        final StudentResponse studentResponse;
+        try {
+            studentResponse = studentService.findById(id);
+        } catch (final NoSuchElementException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(new GenericResponse<>("Student not found", null));
         }
 
-        final StudentResponse studentResponse = StudentMapper.toStudentResponse(optionalFoundStudent.get());
         return ResponseEntity.ok(new GenericResponse<>("Student found", studentResponse));
     }
 
@@ -62,50 +54,34 @@ public class StudentController {
     public ResponseEntity<String> updateStudentApi(
             @PathVariable final UUID id, @RequestBody final StudentUpdate studentUpdate) {
 
-        final Optional<Student> optionalStudent = findById(id);
-
-        if (optionalStudent.isEmpty()) {
+        try {
+            studentService.updateStudent(id, studentUpdate);
+        } catch (final NoSuchElementException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
         }
 
-        final Student foundStudent = optionalStudent.get();
-
-        final String newFullName =
-                buildFullName(studentUpdate.firstName(), studentUpdate.secondName());
-
-        final String newHashPassword = hashPassword(studentUpdate.password());
-
-        foundStudent.setFullName(newFullName);
-        foundStudent.setEmail(studentUpdate.email());
-        foundStudent.setAge(studentUpdate.age());
-        foundStudent.setPassword(newHashPassword);
-        foundStudent.setScore(studentUpdate.score());
-
-        return ResponseEntity.ok(
-                "Successfully updated  with Email: " + foundStudent.getEmail());
-
-
+        return ResponseEntity.ok("Successfully updated  with Email: " + studentUpdate.email());
     }
 
     @DeleteMapping("delete")
     public ResponseEntity<?> deleteStudent(@RequestParam final UUID id) {
 
-        final Optional<Student> optionalStudent = findById(id);
+        final StudentResponse studentResponse;
 
-        if (optionalStudent.isEmpty()) {
+        try {
+            studentResponse = studentService.findById(id);
+            studentService.deleteStudent(id);
+        } catch (final NoSuchElementException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("student not found");
         }
-        delete(id);
 
         return ResponseEntity.ok(
-                "Successfully deleted Student with Email: " + optionalStudent.get().getEmail());
-
-
+                "Successfully deleted Student with Email: " + studentResponse.email());
     }
 
     @DeleteMapping("deleteAll")
     public ResponseEntity<?> deleteAllStudent() {
-        deleteAll();
+    studentService.deleteAllStudent();
         return ResponseEntity.ok(
                 "Successfully deleted All Student with Email: ");
     }
@@ -113,15 +89,12 @@ public class StudentController {
     @GetMapping("getAllSucceedStudent")
     public ResponseEntity<?> findAllSucceedStudentApi() {
 
-        final Collection<Student> allSucceedStudent = getAllSucceedStudent();
-
-        if (allSucceedStudent.isEmpty()) {
-
+        final Collection<StudentResponse> studentResponses;
+        try {
+            studentResponses = studentService.findAllSucceedStudent();
+        } catch (final NoSuchElementException e) {
             return ResponseEntity.badRequest().body("not found Student");
         }
-        final Collection<StudentResponse> studentResponses = allSucceedStudent.stream().map(
-                        StudentMapper::toStudentResponse)
-                .toList();
 
         return ResponseEntity.ok(studentResponses);
 
