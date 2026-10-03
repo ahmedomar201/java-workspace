@@ -1,5 +1,6 @@
 package com.example.universitytask.errors.exceptions;
 
+import com.example.universitytask.utills.times.TimeHelper;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -10,7 +11,7 @@ import java.sql.Timestamp;
 public class LoginException extends RuntimeException {
     private final String description;
 
-//    private final Timestamp currentTimestamp = TimeHelper.currentTimestamp();
+    private final Timestamp currentTimestamp = TimeHelper.currentTimestamp();
 
     public static final int CODE = 5000;
     public static final String MESSAGE = "loginError";

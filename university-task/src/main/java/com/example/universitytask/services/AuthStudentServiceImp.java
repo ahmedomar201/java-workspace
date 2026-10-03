@@ -54,7 +54,7 @@ public class AuthStudentServiceImp implements AuthStudentService {
         final String hashPassword;
         try {
             hashPassword = hashPassword(studentRegister.password());
-        } catch (final CredentialsExceptions e) {
+        } catch (final CredentialsException e) {
             final String logMessage =
                     String.format("%s, Cannot hash the [%s] user password due to: [%s]",
                             methodName, studentRegister.email(), e.getMessage());
@@ -73,7 +73,7 @@ public class AuthStudentServiceImp implements AuthStudentService {
     }
 
     @Override
-    public void login(final StudentLogin studentLogin) throws LoginException, CredentialsExceptions {
+    public void login(final StudentLogin studentLogin) throws LoginException, CredentialsException {
 
         final Student foundStudent = studentRepository
                 .findByEmail(studentLogin.email())
@@ -105,7 +105,7 @@ public class AuthStudentServiceImp implements AuthStudentService {
     }
 
     @Override
-    public Object saveAll(final List<StudentRegister> students)
+    public GenericResponse<?> saveAll(final List<StudentRegister> students)
             throws RegisterException, ValidationException {
 
         final List<Student> registerStudent = new ArrayList<>();
@@ -120,7 +120,8 @@ public class AuthStudentServiceImp implements AuthStudentService {
                 }
         );
         if (registerStudent.isEmpty()) {
-            return "Save all student Successfully";
+
+            return new GenericResponse<>("Save all student Successfully", Optional.empty());
         }
         final List<StudentResponse> rejectedStudentsList = registerStudent.stream().map(
                 StudentMapper::toStudentResponse
@@ -129,8 +130,6 @@ public class AuthStudentServiceImp implements AuthStudentService {
         return new GenericResponse<>(
                 "those list are rejected to be inserted",
                 rejectedStudentsList);
-
-
     }
 
 }
