@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("factory/animal")
 public class AnimalController {
 
-
     @GetMapping("feed/{animalName}")
     public String feedApi(@PathVariable String animalName) {
-
 
         try {
             final Animals animals = Animals.fromType(animalName);

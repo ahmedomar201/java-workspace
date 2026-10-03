@@ -1,20 +1,17 @@
 package com.example.universitytask.services;
 
-import com.example.universitytask.errors.exceptions.StudentException;
 import com.example.universitytask.models.dtos.requests.StudentUpdate;
+import com.example.universitytask.models.dtos.responses.GenericResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import java.util.*;
 
 import com.example.universitytask.models.dtos.responses.StudentResponse;
 import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.repositories.StudentRepository;
 import com.example.universitytask.utills.mappers.StudentMapper;
-
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
-import java.util.Optional;
 
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
 import static com.example.universitytask.utills.NameBuilder.buildFullName;
@@ -27,7 +24,7 @@ public class StudentServiceImp implements StudentService {
     private final StudentRepository studentRepository;
 
     @Override
-    public List<StudentResponse> getAllStudent()throws StudentException {
+    public List<StudentResponse> getAllStudent()throws NoSuchElementException {
         final String methodName = "findAllSortedByAge";
         final Collection<Student> studentList = studentRepository.findAllSortedByAge();
 
@@ -35,7 +32,7 @@ public class StudentServiceImp implements StudentService {
 
         if (studentList.isEmpty()) {
             log.error("{}, No students found in the DB!", methodName);
-            throw new StudentException("Student not found");
+            throw new NoSuchElementException("Student not found");
         }
 
         return studentList.stream().map(
@@ -44,23 +41,24 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public StudentResponse findById(final UUID id)throws StudentException {
+    public GenericResponse<StudentResponse> findById(final UUID id)throws NoSuchElementException {
         final Optional<Student> optionalFoundStudent = studentRepository.findById(id);
 
         if (optionalFoundStudent.isEmpty()) {
-            throw new StudentException("student not found");
+            throw new NoSuchElementException("student not found");
         }
 
-        return StudentMapper.toStudentResponse(optionalFoundStudent.get());
+        final StudentResponse studentResponse = StudentMapper.toStudentResponse(optionalFoundStudent.get());
+        return new GenericResponse<>("Student found", studentResponse);
     }
 
     @Override
-    public List<StudentResponse> findAllSucceedStudent()throws StudentException {
+    public List<StudentResponse> findAllSucceedStudent()throws NoSuchElementException {
 
         final Collection<Student> allSucceedStudent = studentRepository.findAllSucceeded();
 
         if (allSucceedStudent.isEmpty()) {
-            throw new StudentException("student not found");
+            throw new NoSuchElementException("student not found");
         }
 
         return allSucceedStudent.stream().map(
@@ -71,12 +69,12 @@ public class StudentServiceImp implements StudentService {
 
     @Override
     public void updateStudent(
-            final UUID id, final StudentUpdate studentUpdate)throws StudentException {
+            final UUID id, final StudentUpdate studentUpdate)throws NoSuchElementException {
 
         final Optional<Student> optionalStudent = studentRepository.findById(id);
 
         if (optionalStudent.isEmpty()) {
-            throw new StudentException("student not found");
+            throw new NoSuchElementException("student not found");
         }
 
         final Student foundStudent = optionalStudent.get();
@@ -91,6 +89,8 @@ public class StudentServiceImp implements StudentService {
         foundStudent.setAge(studentUpdate.age());
         foundStudent.setPassword(newHashPassword);
         foundStudent.setScore(studentUpdate.score());
+
+
     }
 
     @Override
@@ -99,7 +99,7 @@ public class StudentServiceImp implements StudentService {
         final Optional<Student> optionalStudent = studentRepository.findById(id);
 
         if (optionalStudent.isEmpty()) {
-            throw new StudentException("student not found");
+            throw new NoSuchElementException("student not found");
         }
 
         studentRepository.delete(id);
