@@ -5,48 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/AuthStudentHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/UniversityTaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/UniversityTaskApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/SpellCheckerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/SpellCheckerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/ConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/DbProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/NewDbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/NewDbConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/PostgresCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/configs/db/PostgresCondition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/CredentialsExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/CredentialsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/LoginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/LoginException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/LogoutException.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/LogoutException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/RegisterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/RegisterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/ValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/StudentExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/StudentExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/FreeSpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/FreeSpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PaidSpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PaidSpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PremiumSpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/PremiumSpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/SpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/TextEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/di/TextEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/responses/GenericResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/responses/GenericResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/repositories/StudentRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/repositories/StudentRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/StudentServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/CredentialsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/CredentialsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/IdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/IdHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/builders/StudentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/builders/StudentBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/mappers/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/mappers/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/test/java/com/example/universitytask/UniversityTaskApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/test/java/com/example/universitytask/UniversityTaskApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/StudentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/StudentValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
+      <entry key="MS100" value="4.540779419852108E-126" />
+      <entry key="MS500" value="8.539374909692429E-26" />
+      <entry key="S2" value="5.405757011310687E-7" />
+      <entry key="S5" value="0.003112738361263938" />
+      <entry key="S10" value="0.05580034968477365" />
+      <entry key="S30" value="0.40572074969776495" />
+      <entry key="S60" value="0.818069469973362" />
+      <entry key="M2" value="1.4120004346998891" />
+      <entry key="M5" value="2.3823253234185313" />
+      <entry key="M10" value="3.384082002784195" />
+      <entry key="M15" value="4.3235695806327366" />
+      <entry key="M30" value="7.476402084464047" />
+      <entry key="H1" value="14.912834852509805" />
+      <entry key="H2" value="28.55589572297737" />
+      <entry key="H4" value="47.232520577025554" />
+      <entry key="D1" value="86.21750754903414" />
+      <entry key="W1" value="97.8404265986942" />
+    </decayedCancelled>
+    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000030500098" />
-      <entry key="M5" value="1.000944247271063" />
-      <entry key="M10" value="1.0919420867796452" />
-      <entry key="M15" value="1.5207170231571485" />
-      <entry key="M30" value="4.74383275523034" />
-      <entry key="H1" value="12.962045253787405" />
-      <entry key="H2" value="26.110495208797207" />
-      <entry key="H4" value="42.815010525187255" />
-      <entry key="D1" value="75.76395633570722" />
-      <entry key="W1" value="85.2509101229286" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="3.0432770016352516E-186" />
-      <entry key="S10" value="1.7446124735024774E-93" />
-      <entry key="S30" value="1.2522295242981366E-31" />
-      <entry key="S60" value="4.199188913746991E-16" />
-      <entry key="M2" value="3.197236018825725E-8" />
-      <entry key="M5" value="0.0031238299285892253" />
-      <entry key="M10" value="0.20463860201732315" />
-      <entry key="M15" value="0.966537421843891" />
-      <entry key="M30" value="5.676061655102617" />
-      <entry key="H1" value="16.492585599953802" />
-      <entry key="H2" value="31.635412985024644" />
-      <entry key="H4" value="47.548073919047546" />
-      <entry key="D1" value="73.78708267434807" />
-      <entry key="W1" value="80.73685427240032" />
+      <entry key="S5" value="1.000000000000006" />
+      <entry key="S10" value="1.0000001092588238" />
+      <entry key="S30" value="1.0077265258456989" />
+      <entry key="S60" value="1.1475817283352143" />
+      <entry key="M2" value="1.820188750470081" />
+      <entry key="M5" value="3.925184474366144" />
+      <entry key="M10" value="6.297829810143979" />
+      <entry key="M15" value="8.2180268918258" />
+      <entry key="M30" value="13.493426771811947" />
+      <entry key="H1" value="24.044697063761397" />
+      <entry key="H2" value="40.9482639074481" />
+      <entry key="H4" value="60.41345474496976" />
+      <entry key="D1" value="94.17009085682069" />
+      <entry key="W1" value="103.32746512990737" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9201876506248751" />
-      <entry key="MS500" value="0.9835020740262483" />
-      <entry key="S2" value="0.9958497530944581" />
-      <entry key="S5" value="0.9983378297043665" />
-      <entry key="S10" value="0.999168569213607" />
-      <entry key="S30" value="0.9997227795604651" />
-      <entry key="S60" value="0.9998613801725047" />
-      <entry key="M2" value="0.9999307224700379" />
-      <entry key="M5" value="1.0040266044999333" />
-      <entry key="M10" value="1.2960529848091753" />
-      <entry key="M15" value="2.485507592146262" />
-      <entry key="M30" value="10.414140016642902" />
-      <entry key="H1" value="29.44549278986469" />
-      <entry key="H2" value="57.736823687097086" />
-      <entry key="H4" value="90.3562606501669" />
-      <entry key="D1" value="149.5493121529289" />
-      <entry key="W1" value="165.98749614994256" />
+      <entry key="MS100" value="6.641773706788058E-6" />
+      <entry key="MS500" value="0.09214182608069382" />
+      <entry key="S2" value="0.5509527107226438" />
+      <entry key="S5" value="0.789731609159943" />
+      <entry key="S10" value="0.9309525502209619" />
+      <entry key="S30" value="1.3433045619014194" />
+      <entry key="S60" value="1.9173529178223492" />
+      <entry key="M2" value="3.1964726805719628" />
+      <entry key="M5" value="6.281564411056428" />
+      <entry key="M10" value="9.662616365977438" />
+      <entry key="M15" value="12.525332000260418" />
+      <entry key="M30" value="20.956866530757527" />
+      <entry key="H1" value="38.94559772728598" />
+      <entry key="H2" value="69.49345757366783" />
+      <entry key="H4" value="107.63789331289928" />
+      <entry key="D1" value="180.38549055176222" />
+      <entry key="W1" value="201.16756189842633" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -173,6 +136,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
@@ -205,8 +169,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>
@@ -222,5 +186,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

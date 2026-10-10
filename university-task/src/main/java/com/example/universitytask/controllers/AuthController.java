@@ -5,6 +5,7 @@ import com.example.universitytask.models.dtos.requests.StudentRegister;
 import com.example.universitytask.models.dtos.responses.GenericResponse;
 import com.example.universitytask.services.AuthStudentService;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,7 +25,7 @@ public class AuthController {
 
     @PostMapping("register")
     public String registerStudentApi(
-            @RequestBody final StudentRegister studentRegister) {
+            @RequestBody @Valid final StudentRegister studentRegister) {
 
         final String methodName = "Register Student Api";
         log.info("[{}]Implementing Registration flow[{}", methodName, studentRegister.email());
@@ -39,7 +40,7 @@ public class AuthController {
 
     @PostMapping("login")
     public String loginStudentApi(
-            @RequestBody final StudentLogin studentLogin) {
+            @RequestBody @Valid final StudentLogin studentLogin) {
 
         authStudentService.login(studentLogin);
 

@@ -19,7 +19,6 @@ import java.util.Optional;
 
 import static com.example.universitytask.utills.CredentialsHelper.hashPassword;
 import static com.example.universitytask.utills.NameBuilder.buildFullName;
-import static com.example.universitytask.utills.validators.StudentValidator.validateRegisterRequest;
 
 @Slf4j
 @Service
@@ -31,13 +30,6 @@ public class AuthStudentServiceImp implements AuthStudentService {
     @Override
     public void signup(final StudentRegister studentRegister) throws RegisterException, ValidationException {
         final String methodName = "signup";
-        final List<String> errors =
-                validateRegisterRequest(studentRegister);
-
-        if (!errors.isEmpty()) {
-            final String logMessage = ("%s Errors");
-            throw new ValidationException("signup Exception", logMessage, errors);
-        }
 
         final Optional<Student> optionalStudent =
                 studentRepository.findByEmail(studentRegister.email());
