@@ -1,22 +1,24 @@
 package com.example.universitytask.models.dtos.requests;
 
+import com.example.universitytask.utills.validators.custominterface.Age;
 import jakarta.validation.constraints.*;
 
 public record StudentRegister(
-        @NotBlank(message = "first name must be not blank")
-        @Size(min = 2, max = 15, message = "First name be between 2 and 3")
+        @NotBlank(message = "{validation.first-name.blank}")
+        @Size(min = 2, max = 15, message = "{validation.first-name.error.message}")
         String firstName,
-        @NotBlank(message = "second name must be not blank")
-        @Size(min = 2, max = 15, message = "second name be between 2 and 3")
+        @NotBlank(message = "{validation.second-name.blank}")
+        @Size(min = 2, max = 15, message = "{validation.second-name.size}")
         String secondName,
-        @Max(message = "Age must be at most 25 years old", value = 25)
-        @Min(message = "Age must be at least 18 years old", value = 18)
+//        @Max(message = "{validation.age.max}", value = 25)
+//        @Min(message = "{validation.age.min}", value = 18)
+        @Age
         int age,
-        @Email(message = "Email must be valid")
+        @Email(message = "{validation.email.pattern}")
         String email,
         @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9\\s])\\S{9,31}$",
                 message = "{validation.password.pattern}")
         String password
 ) {
-    
+
 }

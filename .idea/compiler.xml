@@ -22,14 +22,11 @@
         <module name="design-patterns" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="demo" target="26" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="data-structures" options="-parameters" />
-      <module name="demo" options="-parameters" />
       <module name="design-patterns" options="-parameters" />
       <module name="rest" options="-parameters" />
       <module name="service" options="-parameters" />
