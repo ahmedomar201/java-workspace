@@ -2,6 +2,7 @@ package com.example.universitytask.errors.handers;
 
 import com.example.universitytask.errors.exceptions.StudentException;
 import com.example.universitytask.errors.models.ErrorResponse;
+import com.example.universitytask.errors.models.GenericResponse;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -12,13 +13,11 @@ import java.util.Optional;
 public class StudentExceptionHandler {
 
     @ExceptionHandler(exception = StudentException.class)
-    public ErrorResponse<?> handleStudentException(final StudentException e) {
-        return new ErrorResponse<>(
+    public GenericResponse<ErrorResponse> handleStudentException(final StudentException e) {
+        return new GenericResponse<>(
                 StudentException.CODE,
-                StudentException.MESSAGE,
-                e.getDescription(),
                 e.getCurrentTimestamp(),
-                Optional.empty()
+                new ErrorResponse(StudentException.MESSAGE, e.getDescription())
         );
     }
 

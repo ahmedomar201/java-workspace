@@ -10,11 +10,11 @@ import java.util.List;
 
 public interface AuthStudentService {
 
-    void signup(StudentRegister studentRegister) throws RegisterException, ValidationException;
+    void signup(StudentRegister studentRegister) throws RegisterException;
 
     void login(StudentLogin studentLogin) throws LoginException, CredentialsException;
 
     void logout(@Email(message = "{validation.email.pattern}")String email) throws LogoutException;
 
-    GenericResponse<?> saveAll(List<StudentRegister> students) throws RegisterException, ValidationException;
+    GenericResponse<?> saveAll(List<StudentRegister> students) throws RegisterException;
 }

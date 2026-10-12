@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/custominterface/Age.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/utills/validators/custominterface/AgeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/resources/validations_ar.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-task/src/main/resources/validations_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/models/GenericResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/data-structures/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/models/dtos/requests/StudentRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/exceptions/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/AuthStudentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/AuthStudentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/StudentExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/StudentExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/ValidationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/handers/ValidationExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/models/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/errors/models/ErrorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/university-task/src/main/java/com/example/universitytask/services/AuthStudentServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,7 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -55,60 +53,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.6761809848000346E-81" />
-      <entry key="S2" value="7.192483431686867E-21" />
-      <entry key="S5" value="8.764992484698894E-9" />
-      <entry key="S10" value="9.362153857258966E-5" />
-      <entry key="S30" value="0.04540726922748882" />
-      <entry key="S60" value="0.21333399895465968" />
-      <entry key="M2" value="0.49999689346948395" />
-      <entry key="M5" value="1.5981570149305617" />
-      <entry key="M10" value="3.474841114631818" />
-      <entry key="M15" value="4.954453785446304" />
-      <entry key="M30" value="8.547897759538998" />
-      <entry key="H1" value="15.587660585796181" />
-      <entry key="H2" value="29.214123054160968" />
-      <entry key="H4" value="49.228768542081255" />
-      <entry key="D1" value="93.68585405945194" />
-      <entry key="W1" value="107.42679240844264" />
+      <entry key="MS500" value="8.487002264905461E-66" />
+      <entry key="S2" value="5.581640401072572E-17" />
+      <entry key="S5" value="4.4288061159743775E-7" />
+      <entry key="S10" value="0.0011633634980201288" />
+      <entry key="S30" value="0.2568874860146669" />
+      <entry key="S60" value="1.0245546959749008" />
+      <entry key="M2" value="2.21886211465194" />
+      <entry key="M5" value="4.487420856104067" />
+      <entry key="M10" value="6.656823127807303" />
+      <entry key="M15" value="8.600671994961147" />
+      <entry key="M30" value="16.632754163087963" />
+      <entry key="H1" value="34.38971708544787" />
+      <entry key="H2" value="61.08519027205349" />
+      <entry key="H4" value="93.97742264837213" />
+      <entry key="D1" value="163.77784750556586" />
+      <entry key="W1" value="185.83071777057896" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000255" />
-      <entry key="MS500" value="1.0019129302687244" />
-      <entry key="S2" value="1.209134067764795" />
-      <entry key="S5" value="1.534773655014737" />
-      <entry key="S10" value="1.7316153981912386" />
-      <entry key="S30" value="1.9702966952618084" />
-      <entry key="S60" value="2.2180530614925216" />
-      <entry key="M2" value="2.613975343927141" />
-      <entry key="M5" value="4.18020872874291" />
-      <entry key="M10" value="6.5552897948925875" />
-      <entry key="M15" value="8.434775535087756" />
-      <entry key="M30" value="13.548261255060167" />
-      <entry key="H1" value="23.84822090435257" />
-      <entry key="H2" value="41.808406262898764" />
-      <entry key="H4" value="64.22332122883066" />
-      <entry key="D1" value="105.39549779533688" />
-      <entry key="W1" value="116.8887941401197" />
+      <entry key="MS100" value="1.0000000124437798" />
+      <entry key="MS500" value="1.0262416091545044" />
+      <entry key="S2" value="1.4024830688253211" />
+      <entry key="S5" value="1.6949095616631271" />
+      <entry key="S10" value="1.8411054059382752" />
+      <entry key="S30" value="2.2732556728446136" />
+      <entry key="S60" value="2.9958724881018677" />
+      <entry key="M2" value="4.190767398549063" />
+      <entry key="M5" value="7.334628751317196" />
+      <entry key="M10" value="10.59938995836225" />
+      <entry key="M15" value="13.192737422300793" />
+      <entry key="M30" value="21.266556679004655" />
+      <entry key="H1" value="36.40670624564133" />
+      <entry key="H2" value="60.70977995014532" />
+      <entry key="H4" value="92.59581542020608" />
+      <entry key="D1" value="157.19851428384888" />
+      <entry key="W1" value="176.41948475161377" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8121625618030366E-4" />
-      <entry key="MS500" value="0.1785344999524183" />
-      <entry key="S2" value="0.7263568320690805" />
-      <entry key="S5" value="1.199110046473557" />
-      <entry key="S10" value="1.5156362016526956" />
-      <entry key="S30" value="1.9231436404257407" />
-      <entry key="S60" value="2.37403443594053" />
-      <entry key="M2" value="3.0775545444126857" />
-      <entry key="M5" value="5.754664017465856" />
-      <entry key="M10" value="10.011457543814807" />
-      <entry key="M15" value="13.37309676509136" />
-      <entry key="M30" value="22.08307971821007" />
-      <entry key="H1" value="39.42412739466137" />
-      <entry key="H2" value="71.01179087937669" />
-      <entry key="H4" value="113.44363034636594" />
-      <entry key="D1" value="199.07901563823407" />
-      <entry key="W1" value="224.31521661404835" />
+      <entry key="MS100" value="0.007651721085116543" />
+      <entry key="MS500" value="0.3836934230330856" />
+      <entry key="S2" value="1.0659120742896175" />
+      <entry key="S5" value="1.5100014740509675" />
+      <entry key="S10" value="1.7368151342797362" />
+      <entry key="S30" value="2.478194973376167" />
+      <entry key="S60" value="3.9782158763716238" />
+      <entry key="M2" value="6.374155661180838" />
+      <entry key="M5" value="11.791001518829171" />
+      <entry key="M10" value="17.23091368796018" />
+      <entry key="M15" value="21.769904047786063" />
+      <entry key="M30" value="37.874586124282075" />
+      <entry key="H1" value="70.77165877650901" />
+      <entry key="H2" value="121.77380989575181" />
+      <entry key="H4" value="186.5575018056556" />
+      <entry key="D1" value="320.97213984299754" />
+      <entry key="W1" value="362.2495342978951" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -126,6 +124,7 @@
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,package].executor": "Run",
+    "Maven.university-task [clean,compile].executor": "Run",
     "Maven.university-task [clean,install].executor": "Run",
     "Maven.university-task [clean,package].executor": "Run",
     "Maven.university-task [clean].executor": "Run",
@@ -153,6 +152,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.28846154",
     "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "to.speed.mode.migration.done": "true"
   }
@@ -165,7 +165,31 @@
       <recent name="com.example.universitytask.errors.exceptions" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UniversityTaskApplication">
+    <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="design-patterns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designpatterns.DesignPatternsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rest.RestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="university-task" />

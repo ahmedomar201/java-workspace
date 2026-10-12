@@ -28,7 +28,7 @@ public class AuthStudentServiceImp implements AuthStudentService {
     private final StudentRepository studentRepository;
 
     @Override
-    public void signup(final StudentRegister studentRegister) throws RegisterException, ValidationException {
+    public void signup(final StudentRegister studentRegister) throws RegisterException {
         final String methodName = "signup";
 
         final Optional<Student> optionalStudent =
@@ -98,7 +98,7 @@ public class AuthStudentServiceImp implements AuthStudentService {
 
     @Override
     public GenericResponse<?> saveAll(final List<StudentRegister> students)
-            throws RegisterException, ValidationException {
+            throws RegisterException {
 
         final List<Student> registerStudent = new ArrayList<>();
         students.forEach(student -> {
