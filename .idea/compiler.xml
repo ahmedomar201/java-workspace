@@ -18,8 +18,18 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="design-patterns" />
+      </profile>
+      <profile name="Annotation profile for functional-programming" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="functional-programming" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
@@ -28,6 +38,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="data-structures" options="-parameters" />
       <module name="design-patterns" options="-parameters" />
+      <module name="functional-programming" options="-parameters" />
       <module name="rest" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="university-task" options="-parameters" />
