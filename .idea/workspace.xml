@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/streams/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/FirstFunctional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +21,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,60 +50,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.487002264905461E-66" />
-      <entry key="S2" value="5.581640401072572E-17" />
-      <entry key="S5" value="4.4288061159743775E-7" />
-      <entry key="S10" value="0.0011633634980201288" />
-      <entry key="S30" value="0.2568874860146669" />
-      <entry key="S60" value="1.0245546959749008" />
-      <entry key="M2" value="2.21886211465194" />
-      <entry key="M5" value="4.487420856104067" />
-      <entry key="M10" value="6.656823127807303" />
-      <entry key="M15" value="8.600671994961147" />
-      <entry key="M30" value="16.632754163087963" />
-      <entry key="H1" value="34.38971708544787" />
-      <entry key="H2" value="61.08519027205349" />
-      <entry key="H4" value="93.97742264837213" />
-      <entry key="D1" value="163.77784750556586" />
-      <entry key="W1" value="185.83071777057896" />
+      <entry key="MS500" value="1.5097602797246155E-79" />
+      <entry key="S2" value="1.9711832442012242E-20" />
+      <entry key="S5" value="1.3118743796127472E-8" />
+      <entry key="S10" value="1.1495425728223717E-4" />
+      <entry key="S30" value="0.06830118156534834" />
+      <entry key="S60" value="0.5779994999821045" />
+      <entry key="M2" value="2.478603133084805" />
+      <entry key="M5" value="8.597104529813285" />
+      <entry key="M10" value="16.329366244151107" />
+      <entry key="M15" value="22.693349913930405" />
+      <entry key="M30" value="37.38348359656266" />
+      <entry key="H1" value="60.05695208751497" />
+      <entry key="H2" value="95.76757032102667" />
+      <entry key="H4" value="142.38284094596293" />
+      <entry key="D1" value="244.48452719903398" />
+      <entry key="W1" value="277.6713572361602" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000124437798" />
-      <entry key="MS500" value="1.0262416091545044" />
-      <entry key="S2" value="1.4024830688253211" />
-      <entry key="S5" value="1.6949095616631271" />
-      <entry key="S10" value="1.8411054059382752" />
-      <entry key="S30" value="2.2732556728446136" />
-      <entry key="S60" value="2.9958724881018677" />
-      <entry key="M2" value="4.190767398549063" />
-      <entry key="M5" value="7.334628751317196" />
-      <entry key="M10" value="10.59938995836225" />
-      <entry key="M15" value="13.192737422300793" />
-      <entry key="M30" value="21.266556679004655" />
-      <entry key="H1" value="36.40670624564133" />
-      <entry key="H2" value="60.70977995014532" />
-      <entry key="H4" value="92.59581542020608" />
-      <entry key="D1" value="157.19851428384888" />
-      <entry key="W1" value="176.41948475161377" />
+      <entry key="MS100" value="1.0000333951935214" />
+      <entry key="MS500" value="1.128442777197842" />
+      <entry key="S2" value="1.8739386304319683" />
+      <entry key="S5" value="2.713511514197733" />
+      <entry key="S10" value="3.3030546345956546" />
+      <entry key="S30" value="4.1390197770060455" />
+      <entry key="S60" value="4.756715609710857" />
+      <entry key="M2" value="5.876024729207779" />
+      <entry key="M5" value="8.286590896365237" />
+      <entry key="M10" value="11.517992929089079" />
+      <entry key="M15" value="14.993662945967275" />
+      <entry key="M30" value="24.389489561980444" />
+      <entry key="H1" value="40.01715589003267" />
+      <entry key="H2" value="67.12433979272957" />
+      <entry key="H4" value="106.54284507074993" />
+      <entry key="D1" value="196.0737140803718" />
+      <entry key="W1" value="224.60481847236056" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.007651721085116543" />
-      <entry key="MS500" value="0.3836934230330856" />
-      <entry key="S2" value="1.0659120742896175" />
-      <entry key="S5" value="1.5100014740509675" />
-      <entry key="S10" value="1.7368151342797362" />
-      <entry key="S30" value="2.478194973376167" />
-      <entry key="S60" value="3.9782158763716238" />
-      <entry key="M2" value="6.374155661180838" />
-      <entry key="M5" value="11.791001518829171" />
-      <entry key="M10" value="17.23091368796018" />
-      <entry key="M15" value="21.769904047786063" />
-      <entry key="M30" value="37.874586124282075" />
-      <entry key="H1" value="70.77165877650901" />
-      <entry key="H2" value="121.77380989575181" />
-      <entry key="H4" value="186.5575018056556" />
-      <entry key="D1" value="320.97213984299754" />
-      <entry key="W1" value="362.2495342978951" />
+      <entry key="MS100" value="0.005373445363308472" />
+      <entry key="MS500" value="0.39933018126197345" />
+      <entry key="S2" value="1.4343460511838408" />
+      <entry key="S5" value="2.407592139972004" />
+      <entry key="S10" value="3.0952911709582542" />
+      <entry key="S30" value="4.106246712022372" />
+      <entry key="S60" value="5.270757968591276" />
+      <entry key="M2" value="8.308514529393388" />
+      <entry key="M5" value="16.850112984784257" />
+      <entry key="M10" value="27.818204285740073" />
+      <entry key="M15" value="37.6585691865939" />
+      <entry key="M30" value="61.746904282054466" />
+      <entry key="H1" value="100.05093210577208" />
+      <entry key="H2" value="162.87115475231147" />
+      <entry key="H4" value="248.90883161390244" />
+      <entry key="D1" value="440.55313086148755" />
+      <entry key="W1" value="502.2753451080616" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -116,6 +118,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,package].executor": "Run",
@@ -125,8 +128,8 @@
     "Maven.university-task [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth0": "820",
+    "RequestMappingsPanelWidth1": "820",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -139,7 +142,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/java-workspace/university-task/src/main/resources",
+    "last_opened_file_path": "C:/Users/ahmed/java-workspace/functional-programming/src/main/java/org/example/functionalprogramming/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -155,9 +158,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\java-workspace\functional-programming\src\main\java\org\example\functionalprogramming\utils" />
       <recent name="C:\Users\ahmed\java-workspace\university-task\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.functionalprogramming.utils" />
       <recent name="com.example.universitytask.errors.exceptions" />
     </key>
   </component>
@@ -175,6 +180,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="FunctionalProgrammingApplication" value="STOPPED" />
               <entry key="UniversityTaskApplication" value="STOPPED" />
             </map>
           </value>
@@ -182,7 +188,20 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FunctionalProgrammingApplication">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.streams.Main" />
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="design-patterns" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designpatterns.DesignPatternsApplication" />
@@ -220,6 +239,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.UniversityTaskApplication" />
       </list>
     </recent_temporary>
