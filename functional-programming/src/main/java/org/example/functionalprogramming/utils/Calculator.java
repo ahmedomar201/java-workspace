@@ -3,8 +3,8 @@ package org.example.functionalprogramming.utils;
 
 public class Calculator {
 
-    public static int add1(final int num1) {
-        return num1 ;
+    public  static int add(final int num1, final int num2) {
+        return num1 + num2;
     }
 
     public static float add(final float num1, final float num2) {

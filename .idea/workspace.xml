@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/streams/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/FirstFunctional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/ToStringFromEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/FirstFunctional.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/FirstFunctional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/utils/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +24,8 @@
         <option value="Exception" />
         <option value="AnnotationType" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,61 +50,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.5097602797246155E-79" />
-      <entry key="S2" value="1.9711832442012242E-20" />
-      <entry key="S5" value="1.3118743796127472E-8" />
-      <entry key="S10" value="1.1495425728223717E-4" />
-      <entry key="S30" value="0.06830118156534834" />
-      <entry key="S60" value="0.5779994999821045" />
-      <entry key="M2" value="2.478603133084805" />
-      <entry key="M5" value="8.597104529813285" />
-      <entry key="M10" value="16.329366244151107" />
-      <entry key="M15" value="22.693349913930405" />
-      <entry key="M30" value="37.38348359656266" />
-      <entry key="H1" value="60.05695208751497" />
-      <entry key="H2" value="95.76757032102667" />
-      <entry key="H4" value="142.38284094596293" />
-      <entry key="D1" value="244.48452719903398" />
-      <entry key="W1" value="277.6713572361602" />
+      <entry key="MS100" value="2.194842054231583E-54" />
+      <entry key="MS500" value="1.8547298202163983E-11" />
+      <entry key="S2" value="0.0020752487629202205" />
+      <entry key="S5" value="0.08449442706425787" />
+      <entry key="S10" value="0.2906792511760336" />
+      <entry key="S30" value="0.6624530078620653" />
+      <entry key="S60" value="0.8250386617054162" />
+      <entry key="M2" value="1.197664155488018" />
+      <entry key="M5" value="4.331189763565957" />
+      <entry key="M10" value="10.46822221629379" />
+      <entry key="M15" value="14.901884770966484" />
+      <entry key="M30" value="21.875431925621623" />
+      <entry key="H1" value="28.289584328168704" />
+      <entry key="H2" value="44.98199737836086" />
+      <entry key="H4" value="88.4015402926684" />
+      <entry key="D1" value="244.45256559179012" />
+      <entry key="W1" value="307.44350976939336" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000333951935214" />
-      <entry key="MS500" value="1.128442777197842" />
-      <entry key="S2" value="1.8739386304319683" />
-      <entry key="S5" value="2.713511514197733" />
-      <entry key="S10" value="3.3030546345956546" />
-      <entry key="S30" value="4.1390197770060455" />
-      <entry key="S60" value="4.756715609710857" />
-      <entry key="M2" value="5.876024729207779" />
-      <entry key="M5" value="8.286590896365237" />
-      <entry key="M10" value="11.517992929089079" />
-      <entry key="M15" value="14.993662945967275" />
-      <entry key="M30" value="24.389489561980444" />
-      <entry key="H1" value="40.01715589003267" />
-      <entry key="H2" value="67.12433979272957" />
-      <entry key="H4" value="106.54284507074993" />
-      <entry key="D1" value="196.0737140803718" />
-      <entry key="W1" value="224.60481847236056" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000047849003453" />
+      <entry key="S60" value="1.0024981861635338" />
+      <entry key="M2" value="1.1143481288459913" />
+      <entry key="M5" value="3.438218168495723" />
+      <entry key="M10" value="8.801138014779006" />
+      <entry key="M15" value="12.686293217739022" />
+      <entry key="M30" value="18.69021481818472" />
+      <entry key="H1" value="23.918591823035225" />
+      <entry key="H2" value="36.36681030848389" />
+      <entry key="H4" value="70.1168998228171" />
+      <entry key="D1" value="198.97222158726976" />
+      <entry key="W1" value="251.53706067258605" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005373445363308472" />
-      <entry key="MS500" value="0.39933018126197345" />
-      <entry key="S2" value="1.4343460511838408" />
-      <entry key="S5" value="2.407592139972004" />
-      <entry key="S10" value="3.0952911709582542" />
-      <entry key="S30" value="4.106246712022372" />
-      <entry key="S60" value="5.270757968591276" />
-      <entry key="M2" value="8.308514529393388" />
-      <entry key="M5" value="16.850112984784257" />
-      <entry key="M10" value="27.818204285740073" />
-      <entry key="M15" value="37.6585691865939" />
-      <entry key="M30" value="61.746904282054466" />
-      <entry key="H1" value="100.05093210577208" />
-      <entry key="H2" value="162.87115475231147" />
-      <entry key="H4" value="248.90883161390244" />
-      <entry key="D1" value="440.55313086148755" />
-      <entry key="W1" value="502.2753451080616" />
+      <entry key="MS100" value="1.326580642732005E-4" />
+      <entry key="MS500" value="0.1677052781128694" />
+      <entry key="S2" value="0.6412044086826323" />
+      <entry key="S5" value="0.9058648462086346" />
+      <entry key="S10" value="1.1780051526018345" />
+      <entry key="S30" value="1.6117402715390117" />
+      <entry key="S60" value="1.7992844109511168" />
+      <entry key="M2" value="2.294141863455044" />
+      <entry key="M5" value="7.7474836090522485" />
+      <entry key="M10" value="19.24357842670195" />
+      <entry key="M15" value="27.564011562924975" />
+      <entry key="M30" value="40.54820287806309" />
+      <entry key="H1" value="52.196963772061686" />
+      <entry key="H2" value="81.33952303334739" />
+      <entry key="H4" value="158.50847023616234" />
+      <entry key="D1" value="443.41978395665967" />
+      <entry key="W1" value="558.9796656043893" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -119,6 +120,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.org.example.functionalprogramming.utils.Main.executor": "Run",
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,compile].executor": "Run",
     "Maven.java-workspace [clean,package].executor": "Run",
@@ -188,13 +190,26 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.org.example.functionalprogramming.utils.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.streams.Main" />
       <module name="functional-programming" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.functionalprogramming.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.functionalprogramming.utils.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.utils.Main" />
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,6 +254,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.functionalprogramming.utils.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.UniversityTaskApplication" />
       </list>
