@@ -12,7 +12,7 @@ public record StudentRegister(
         String secondName,
 //        @Max(message = "{validation.age.max}", value = 25)
 //        @Min(message = "{validation.age.min}", value = 18)
-        @Age
+        @Age(min = 18,max = 25)
         int age,
         @Email(message = "{validation.email.pattern}")
         String email,

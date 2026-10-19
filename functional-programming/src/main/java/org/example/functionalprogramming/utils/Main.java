@@ -31,8 +31,8 @@ public class Main {
 
         final Function<String, String> function = toFunction(Main::buildFullName, employee1);
 
-        final String info = Function.( "the");
-        System.out.println("info = " + info);
+//        final String info = Function.( "the");
+//        System.out.println("info = " + info);
     }
 
     private static int ProcessIntegers(FirstFunctional functional) {
