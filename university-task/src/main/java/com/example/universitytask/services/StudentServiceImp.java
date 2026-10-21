@@ -73,6 +73,8 @@ public class StudentServiceImp implements StudentService {
     public void updateStudent(
             final UUID id, final StudentUpdate studentUpdate) throws StudentException {
 
+        studentUpdate.validate();
+
         final Optional<Student> optionalStudent = studentRepository.findById(id);
 
         if (optionalStudent.isEmpty()) {

@@ -9,6 +9,7 @@ import com.example.universitytask.models.entities.Student;
 import com.example.universitytask.repositories.StudentRepository;
 import com.example.universitytask.utills.builders.StudentBuilder;
 import com.example.universitytask.utills.mappers.StudentMapper;
+import com.example.universitytask.utills.validators.ValidationRules;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,8 +29,11 @@ public class AuthStudentServiceImp implements AuthStudentService {
     private final StudentRepository studentRepository;
 
     @Override
-    public void signup(final StudentRegister studentRegister) throws RegisterException {
+    public void signup(final StudentRegister studentRegister) throws RegisterException,
+            ValidationRules.ValidationException {
         final String methodName = "signup";
+
+        studentRegister.validate();
 
         final Optional<Student> optionalStudent =
                 studentRepository.findByEmail(studentRegister.email());
@@ -71,6 +75,8 @@ public class AuthStudentServiceImp implements AuthStudentService {
                 .findByEmail(studentLogin.email())
                 .orElseThrow(() -> new LoginException(
                         "Student with Email: " + studentLogin.email() + " not found"));
+
+        studentLogin.validate();
 
         if (foundStudent.isLoggedIn()) {
             throw new LoginException("Student with Email: " + studentLogin.email() + " is already logged in");

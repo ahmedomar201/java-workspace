@@ -3,6 +3,7 @@ package com.example.universitytask.errors.handers;
 import com.example.universitytask.errors.models.ErrorResponse;
 import com.example.universitytask.errors.models.GenericResponse;
 
+import com.example.universitytask.utills.validators.ValidationRules;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.ElementKind;
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static com.example.universitytask.utills.times.TimeHelper.currentTimestamp;
@@ -23,6 +24,32 @@ import static com.example.universitytask.utills.times.TimeHelper.currentTimestam
 
 @RestControllerAdvice
 public class ValidationExceptionHandler {
+
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(exception = ValidationRules.RuleException.class)
+    public GenericResponse<ErrorResponse> handleRuleException(final ValidationRules.RuleException e) {
+
+        final ErrorResponse errorResponse = new ErrorResponse(e.getMessage(), e.getDescription());
+
+        return new GenericResponse<>(
+                ValidationRules.ValidationException.CODE, currentTimestamp(), errorResponse);
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(exception = ValidationRules.ValidationException.class)
+    public GenericResponse<List<ErrorResponse>> handleValidationException(
+            final ValidationRules.ValidationException e) {
+
+        final List<ErrorResponse> errorResponseList = e.getErrors()
+                .entrySet()
+                .stream()
+                .map(ValidationExceptionHandler::toErrorResponse)
+                .toList();
+
+        return new GenericResponse<>(
+                ValidationRules.ValidationException.CODE, currentTimestamp(), errorResponseList);
+    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(exception = MethodArgumentNotValidException.class)
@@ -72,6 +99,10 @@ public class ValidationExceptionHandler {
 
     private ErrorResponse from(final FieldError fieldError) {
         return new ErrorResponse(fieldError.getField(), fieldError.getDefaultMessage());
+    }
+
+    private static ErrorResponse toErrorResponse(final Map.Entry<String, String> entry) {
+        return new ErrorResponse(entry.getKey(), entry.getValue());
     }
 }
 

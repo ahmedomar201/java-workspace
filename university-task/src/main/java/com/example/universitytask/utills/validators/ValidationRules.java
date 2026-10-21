@@ -5,76 +5,104 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.sql.Timestamp;
-import java.util.HashMap;
+import java.util.EnumMap;
 import java.util.Map;
+import java.util.Optional;
 
 import static com.example.universitytask.utills.StringUtils.isNullOrBlank;
 
 public final class ValidationRules {
-    private static final Map<String, ValidatorService<String>> STRING_VALIDATOR_Rules = new HashMap<>();
+    private static final Map<ValidationItems, ValidatorService<String>> Rules =
+            new EnumMap<>(ValidationItems.class);
 
     static {
-        STRING_VALIDATOR_Rules.putIfAbsent("firstName", ValidationRules::isFirstName);
-        STRING_VALIDATOR_Rules.putIfAbsent("secondName", ValidationRules::isSecondName);
-        STRING_VALIDATOR_Rules.putIfAbsent("age", ValidationRules::isAgeValid);
-        STRING_VALIDATOR_Rules.putIfAbsent("email", ValidationRules::isEmailValid);
-        STRING_VALIDATOR_Rules.putIfAbsent("password", ValidationRules::isPasswordValid);
+        Rules.putIfAbsent(ValidationItems.FIRST_NAME, ValidationRules::isFirstName);
+        Rules.putIfAbsent(ValidationItems.SECOND_NAME, ValidationRules::isSecondName);
+        Rules.putIfAbsent(ValidationItems.AGE, ValidationRules::isAgeValid);
+        Rules.putIfAbsent(ValidationItems.EMAIL, ValidationRules::isEmailValid);
+        Rules.putIfAbsent(ValidationItems.PASSWORD, ValidationRules::isPasswordValid);
+        Rules.putIfAbsent(ValidationItems.SCORE, ValidationRules::ValidateScore);
     }
+
 
     private ValidationRules() {
 
         throw new AssertionError("Utility class");
     }
 
-    public static void validate(final String rule) throws ValidationException {
+    public static void validate(final ValidationItems rule, final String ruleValue) throws ValidationException {
 
-        if (isNullOrBlank(rule)) {
+        if (isNullOrBlank(ruleValue)) {
             throw new ValidationException("Rule is null or blank");
         }
 
+        final ValidatorService<String> validatorService = findRule(rule).orElseThrow(() ->
+                new ValidationException("Rule is null or blank"));
 
+        validatorService.validate(ruleValue);
+    }
 
-        if (isNullOrBlank(rule)) {
-            return false;
+    private static Optional<ValidatorService<String>> findRule(final ValidationItems rule) {
+
+        return Optional.ofNullable(Rules.get(rule));
+    }
+
+    private static void isFirstName(final String firstName) throws RuleException {
+
+        if (firstName.length() < 2 || firstName.length() > 15) {
+            throw new RuleException("firstName", "First Name must be between 2 and 15");
         }
-
-
-        return STRING_VALIDATOR_Rules.get(rule).isValid(rule);
     }
 
-    private static ValidatorService<String> containRule(final String rule) {
+    private static void isSecondName(final String secondName) throws RuleException {
 
-        final ValidatorService<String> validatorService = STRING_VALIDATOR_Rules.get(rule);
-
-        return validatorService != null;
-
+        if (secondName.length() < 2 || secondName.length() > 15) {
+            throw new RuleException("secondName", "Second Name must be between 2 and 15");
+        }
     }
 
-    private static boolean isFirstName(final String firstName) {
-
-        return firstName.length() >= 2 && firstName.length() <= 15;
-    }
-
-    private static boolean isSecondName(final String secondName) {
-
-        return secondName.length() >= 2 && secondName.length() <= 15;
-    }
-
-    private static boolean isAgeValid(final String age) {
+    private static void isAgeValid(final String age) throws RuleException {
 
         final int intAge = Integer.parseInt(age);
-
-        return intAge >= 18 && intAge <= 25;
+        if (intAge < 18 || intAge > 25) {
+            throw new RuleException("age", "Age is incompatible");
+        }
     }
 
-    private static boolean isEmailValid(final String email) {
+    private static void isEmailValid(final String email) throws RuleException {
 
-        return email.contains("@") && email.contains(".");
+        if (!email.contains("@") || !email.contains(".")) {
+            throw new RuleException("email", "Email must be valid");
+        }
     }
 
-    private static boolean isPasswordValid(final String password) {
+    private static void isPasswordValid(final String password) throws RuleException {
 
-        return password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9\\s])\\S{9,31}$");
+        if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9\\s])\\S{9,31}$")) {
+            throw new RuleException("password", "Password doesn't meet the criteria");
+        }
+    }
+
+    private static void ValidateScore(String score) {
+        final float floatScore = Float.parseFloat(score);
+        if (floatScore < 50 || floatScore > 100) {
+            throw new ValidationException("Score is not valid");
+        }
+    }
+
+    @Getter
+    @EqualsAndHashCode(callSuper = false)
+    public static class RuleException extends RuntimeException {
+
+        private final String message;
+        private final String description;
+
+        public RuleException(final String message, final String description) {
+            super(description);
+
+            this.message = message;
+            this.description = description;
+        }
     }
 
     @Getter
