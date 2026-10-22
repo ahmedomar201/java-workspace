@@ -5,6 +5,9 @@ import com.example.universitytask.utills.validators.ValidationRules;
 import com.example.universitytask.utills.validators.custominterface.Age;
 import jakarta.validation.constraints.*;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public record StudentRegister(
 //        @NotBlank(message = "{validation.first-name.blank}")
 //        @Size(min = 2, max = 15, message = "{validation.first-name.error.message}")
@@ -25,13 +28,36 @@ public record StudentRegister(
 
     public void validate() throws ValidationRules.ValidationException {
 
-        ValidationRules.validate(ValidationItems.FIRST_NAME, firstName);
-        ValidationRules.validate(ValidationItems.SECOND_NAME, secondName);
-        ValidationRules.validate(ValidationItems.AGE, String.valueOf(age));
-        ValidationRules.validate(ValidationItems.EMAIL, email);
-        ValidationRules.validate(ValidationItems.PASSWORD, password);
+        final Map<String, String> errors = new LinkedHashMap<>();
 
+        try {
+            ValidationRules.validate(ValidationItems.FIRST_NAME, firstName);
+        } catch (final ValidationRules.RuleException e) {
+            errors.putIfAbsent(e.getMessage(), e.getDescription());
+        }
+        try {
+            ValidationRules.validate(ValidationItems.SECOND_NAME, secondName);
+        } catch (final ValidationRules.RuleException e) {
+            errors.putIfAbsent(e.getMessage(), e.getDescription());
+        }
+        try {
+            ValidationRules.validate(ValidationItems.AGE, String.valueOf(age));
+        } catch (ValidationRules.RuleException e) {
+            errors.putIfAbsent(e.getMessage(), e.getDescription());
+        }
+        try {
+            ValidationRules.validate(ValidationItems.EMAIL, email);
+        } catch (ValidationRules.RuleException e) {
+            errors.putIfAbsent(e.getMessage(), e.getDescription());
+        }
+        try {
+            ValidationRules.validate(ValidationItems.PASSWORD, password);
+        } catch (ValidationRules.RuleException e) {
+            errors.putIfAbsent(e.getMessage(), e.getDescription());
+        }
 
+        if (!errors.isEmpty()) {
+            throw new ValidationRules.ValidationException(errors);
+        }
     }
-
 }

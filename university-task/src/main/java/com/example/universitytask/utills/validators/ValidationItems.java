@@ -8,5 +8,4 @@ public enum ValidationItems {
     EMAIL,
     PASSWORD,
     SCORE
-
 }

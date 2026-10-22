@@ -30,14 +30,14 @@ public final class ValidationRules {
         throw new AssertionError("Utility class");
     }
 
-    public static void validate(final ValidationItems rule, final String ruleValue) throws ValidationException {
+    public static void validate(final ValidationItems rule, final String ruleValue) throws RuleException {
 
         if (isNullOrBlank(ruleValue)) {
-            throw new ValidationException("Rule is null or blank");
+            throw new RuleException(rule.name(),"Rule is null or blank");
         }
 
         final ValidatorService<String> validatorService = findRule(rule).orElseThrow(() ->
-                new ValidationException("Rule is null or blank"));
+                new RuleException(rule.name(),"Rule is null or blank"));
 
         validatorService.validate(ruleValue);
     }
@@ -72,7 +72,7 @@ public final class ValidationRules {
     private static void isEmailValid(final String email) throws RuleException {
 
         if (!email.contains("@") || !email.contains(".")) {
-            throw new RuleException("email", "Email must be valid");
+            throw new RuleException("email","Email must be valid");
         }
     }
 
@@ -86,7 +86,7 @@ public final class ValidationRules {
     private static void ValidateScore(String score) {
         final float floatScore = Float.parseFloat(score);
         if (floatScore < 50 || floatScore > 100) {
-            throw new ValidationException("Score is not valid");
+            throw new RuleException("score","Score is not valid");
         }
     }
 
@@ -109,16 +109,14 @@ public final class ValidationRules {
     @EqualsAndHashCode(callSuper = false)
     public static class ValidationException extends RuntimeException {
 
-        private final String description;
+        private final Map<String, String> errors;
+
         private final Timestamp currentTimestamp = TimeHelper.currentTimestamp();
 
-        public static final int CODE = 2000;
-        public static final String MESSAGE = "studentError";
+        public static final int CODE = 9001;
 
-        public ValidationException(String description) {
-            super(description);
-
-            this.description = description;
+        public ValidationException(Map<String, String> errors) {
+            this.errors = errors;
         }
     }
 
