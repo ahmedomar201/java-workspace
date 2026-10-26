@@ -12,7 +12,7 @@ public record StudentLogin(
 //                message = "{validation.password.pattern}")
         String password
 ) {
-    public void validate() throws ValidationRules.ValidationException {
+    public void validate() throws ValidationRules.RuleException {
 
         ValidationRules.validate(ValidationItems.EMAIL, email);
         ValidationRules.validate(ValidationItems.PASSWORD, password);

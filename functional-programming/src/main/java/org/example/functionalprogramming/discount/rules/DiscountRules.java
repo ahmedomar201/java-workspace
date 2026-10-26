@@ -6,6 +6,6 @@ import java.math.BigDecimal;
 
 public interface DiscountRules {
 
-    BigDecimal applyDiscount(OrderReceipt orderReceipt);
+    BigDecimal applyDiscount(OrderReceipt orderReceipt,BigDecimal price);
 
 }

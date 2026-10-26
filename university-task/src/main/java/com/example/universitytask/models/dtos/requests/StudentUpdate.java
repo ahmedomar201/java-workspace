@@ -12,7 +12,7 @@ public record StudentUpdate(
         float score
 ) {
 
-    public void validate() throws ValidationRules.ValidationException {
+    public void validate() throws ValidationRules.RuleException {
 
         ValidationRules.validate(ValidationItems.FIRST_NAME, firstName);
         ValidationRules.validate(ValidationItems.SECOND_NAME, secondName);
