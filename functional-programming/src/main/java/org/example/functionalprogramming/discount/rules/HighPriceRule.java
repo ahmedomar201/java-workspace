@@ -1,9 +1,11 @@
 package org.example.functionalprogramming.discount.rules;
 
 import org.example.functionalprogramming.discount.models.dtos.OrderReceipt;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class HighPriceRule implements DiscountRules {
     private static final BigDecimal FIFTY_THOUSANDS = BigDecimal.valueOf(50000);
 
