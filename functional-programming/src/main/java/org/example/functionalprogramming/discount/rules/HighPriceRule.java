@@ -12,10 +12,10 @@ public class HighPriceRule implements DiscountRules {
     @Override
     public BigDecimal applyDiscount(final OrderReceipt orderReceipt, final BigDecimal price) {
 
-        if (isPriceLessAmount(orderReceipt.totalPrice(), FIFTY_THOUSANDS)) {
+        if (isPriceLessAmount(price, FIFTY_THOUSANDS)) {
             return price;
         }
-        return orderReceipt.totalPrice().multiply(BigDecimal.valueOf(0.9));
+        return price.multiply(BigDecimal.valueOf(0.9));
     }
 
     private static boolean isPriceLessAmount(final BigDecimal price, final BigDecimal amount) {

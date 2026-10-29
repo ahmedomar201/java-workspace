@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/controllers/DiscountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/DiscountEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/DiscountRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/DiscountRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/models/dtos/ProductItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/models/dtos/ProductItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/HighPriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/HighPriceRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/LaptopRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/LaptopRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/QuantityRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/QuantityRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/utills/SubCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/utills/SubCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000003143974" />
-      <entry key="S2" value="1.0049405612514932" />
-      <entry key="S5" value="1.167779436818142" />
-      <entry key="S10" value="1.570761660198015" />
-      <entry key="S30" value="2.3123082714280194" />
-      <entry key="S60" value="2.619377599703828" />
-      <entry key="M2" value="2.7994626066694517" />
-      <entry key="M5" value="2.917186833097256" />
-      <entry key="M10" value="2.9610304394812563" />
-      <entry key="M15" value="3.010216743956302" />
-      <entry key="M30" value="3.6686105471554886" />
-      <entry key="H1" value="6.997768336488472" />
-      <entry key="H2" value="19.57682968922802" />
-      <entry key="H4" value="62.11644652253705" />
-      <entry key="D1" value="378.6480575694933" />
-      <entry key="W1" value="604.8327217246368" />
+      <entry key="MS100" value="1.293436334769024E-11" />
+      <entry key="MS500" value="0.00664276687550153" />
+      <entry key="S2" value="0.2854876021014924" />
+      <entry key="S5" value="0.6056683800013731" />
+      <entry key="S10" value="0.7782469916429958" />
+      <entry key="S30" value="0.9198262871621234" />
+      <entry key="S60" value="0.9590757463110635" />
+      <entry key="M2" value="0.9793241272996391" />
+      <entry key="M5" value="0.9916881995552036" />
+      <entry key="M10" value="1.001860214290387" />
+      <entry key="M15" value="1.0513193646335066" />
+      <entry key="M30" value="1.5662038250924994" />
+      <entry key="H1" value="3.681838718568037" />
+      <entry key="H2" value="12.228486339919815" />
+      <entry key="H4" value="46.47240558447398" />
+      <entry key="D1" value="360.23202639624384" />
+      <entry key="W1" value="603.5949785121019" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="6.741437492175596E-187" />
-      <entry key="S30" value="3.116603331507761E-62" />
-      <entry key="S60" value="5.6641489927972935E-31" />
-      <entry key="M2" value="2.710002058901181E-15" />
-      <entry key="M5" value="7.408567972097537E-6" />
-      <entry key="M10" value="0.010759043044710172" />
-      <entry key="M15" value="0.12904585216363856" />
-      <entry key="M30" value="1.8992063341770453" />
-      <entry key="H1" value="9.532193995769665" />
-      <entry key="H2" value="29.96506500563495" />
-      <entry key="H4" value="77.56880379748823" />
-      <entry key="D1" value="353.6375914269031" />
-      <entry key="W1" value="541.9420766380154" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0000000000000724" />
+      <entry key="M5" value="1.0000084069453006" />
+      <entry key="M10" value="1.0041021542549697" />
+      <entry key="M15" value="1.0326586185093962" />
+      <entry key="M30" value="1.357338761689346" />
+      <entry key="H1" value="3.935546584006922" />
+      <entry key="H2" value="16.66371467769455" />
+      <entry key="H4" value="56.44785624903636" />
+      <entry key="D1" value="335.7379038990194" />
+      <entry key="W1" value="540.2534493291928" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.4312458755720735E-4" />
-      <entry key="MS500" value="0.213454428689683" />
-      <entry key="S2" value="0.6832124232857159" />
-      <entry key="S5" value="0.9999000550933589" />
-      <entry key="S10" value="1.4499701592326866" />
-      <entry key="S30" value="2.2487374291667646" />
-      <entry key="S60" value="2.582630141500689" />
-      <entry key="M2" value="2.7796185813479783" />
-      <entry key="M5" value="2.90886990598935" />
-      <entry key="M10" value="2.967534069949913" />
-      <entry key="M15" value="3.1362162900556414" />
-      <entry key="M30" value="5.564798795555603" />
-      <entry key="H1" value="16.52524275252911" />
-      <entry key="H2" value="49.53496743201915" />
-      <entry key="H4" value="139.67594779643267" />
-      <entry key="D1" value="732.2778459557304" />
-      <entry key="W1" value="1146.7730458896037" />
+      <entry key="MS100" value="2.4649704426599384E-6" />
+      <entry key="MS500" value="0.08054408495550676" />
+      <entry key="S2" value="0.7898527159083463" />
+      <entry key="S5" value="1.360761052485536" />
+      <entry key="S10" value="1.6459107616537239" />
+      <entry key="S30" value="1.8732640434455878" />
+      <entry key="S60" value="1.9354706173796064" />
+      <entry key="M2" value="1.9674391535030549" />
+      <entry key="M5" value="1.9869225882881825" />
+      <entry key="M10" value="2.0035534571105282" />
+      <entry key="M15" value="2.08227748513263" />
+      <entry key="M30" value="2.922185028480851" />
+      <entry key="H1" value="7.6153207499021125" />
+      <entry key="H2" value="28.888178969149934" />
+      <entry key="H4" value="102.91338740906637" />
+      <entry key="D1" value="695.9625055602884" />
+      <entry key="W1" value="1143.8466785689548" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -137,13 +131,13 @@
     "Maven.university-task [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "820",
-    "RequestMappingsPanelWidth1": "820",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.FunctionalProgrammingApplication.executor": "Run",
+    "Spring Boot.FunctionalProgrammingApplication.executor": "Debug",
     "Spring Boot.UniversityTaskApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -157,7 +151,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.28846154",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -288,6 +282,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/controllers/DiscountController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/models/dtos/ProductItem.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

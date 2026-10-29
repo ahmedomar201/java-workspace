@@ -6,11 +6,11 @@ import org.example.functionalprogramming.discount.utills.SubCategory;
 import java.math.BigDecimal;
 
 public record ProductItem(
+        Category category,
+        SubCategory subCategory,
         String productCode,
         int quantity,
-        BigDecimal price,
-        Category category,
-        SubCategory subCategory
+        BigDecimal price
 ) {
 
     public BigDecimal totalPrice() {
