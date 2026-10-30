@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/models/dtos/ProductItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/models/dtos/ProductItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/HighPriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/HighPriceRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/QuantityRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/rules/QuantityRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/service/DiscountServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +50,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.293436334769024E-11" />
-      <entry key="MS500" value="0.00664276687550153" />
-      <entry key="S2" value="0.2854876021014924" />
-      <entry key="S5" value="0.6056683800013731" />
-      <entry key="S10" value="0.7782469916429958" />
-      <entry key="S30" value="0.9198262871621234" />
-      <entry key="S60" value="0.9590757463110635" />
-      <entry key="M2" value="0.9793241272996391" />
-      <entry key="M5" value="0.9916881995552036" />
-      <entry key="M10" value="1.001860214290387" />
-      <entry key="M15" value="1.0513193646335066" />
-      <entry key="M30" value="1.5662038250924994" />
-      <entry key="H1" value="3.681838718568037" />
-      <entry key="H2" value="12.228486339919815" />
-      <entry key="H4" value="46.47240558447398" />
-      <entry key="D1" value="360.23202639624384" />
-      <entry key="W1" value="603.5949785121019" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.1844309393536192E-219" />
+      <entry key="S10" value="3.655106977486348E-110" />
+      <entry key="S30" value="4.6234337303803054E-37" />
+      <entry key="S60" value="1.1364817577002634E-18" />
+      <entry key="M2" value="2.70303795880621E-9" />
+      <entry key="M5" value="0.0019102972823908757" />
+      <entry key="M10" value="0.2156258395906229" />
+      <entry key="M15" value="1.0905732965283976" />
+      <entry key="M30" value="5.73130205999521" />
+      <entry key="H1" value="14.02586052655559" />
+      <entry key="H2" value="26.75547943319954" />
+      <entry key="H4" value="60.33222356668707" />
+      <entry key="D1" value="374.5145667832071" />
+      <entry key="W1" value="629.1111159194525" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
@@ -75,35 +76,35 @@
       <entry key="S10" value="1.0" />
       <entry key="S30" value="1.0" />
       <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000000000724" />
-      <entry key="M5" value="1.0000084069453006" />
-      <entry key="M10" value="1.0041021542549697" />
-      <entry key="M15" value="1.0326586185093962" />
-      <entry key="M30" value="1.357338761689346" />
-      <entry key="H1" value="3.935546584006922" />
-      <entry key="H2" value="16.66371467769455" />
-      <entry key="H4" value="56.44785624903636" />
-      <entry key="D1" value="335.7379038990194" />
-      <entry key="W1" value="540.2534493291928" />
+      <entry key="M2" value="1.0000000006997285" />
+      <entry key="M5" value="1.0005983259601785" />
+      <entry key="M10" value="1.0866689240680885" />
+      <entry key="M15" value="1.4826749936280934" />
+      <entry key="M30" value="3.802499702568037" />
+      <entry key="H1" value="8.769273040297684" />
+      <entry key="H2" value="21.109372063891737" />
+      <entry key="H4" value="57.74604327734943" />
+      <entry key="D1" value="338.40755579160907" />
+      <entry key="W1" value="553.1858278207643" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.4649704426599384E-6" />
-      <entry key="MS500" value="0.08054408495550676" />
-      <entry key="S2" value="0.7898527159083463" />
-      <entry key="S5" value="1.360761052485536" />
-      <entry key="S10" value="1.6459107616537239" />
-      <entry key="S30" value="1.8732640434455878" />
-      <entry key="S60" value="1.9354706173796064" />
-      <entry key="M2" value="1.9674391535030549" />
-      <entry key="M5" value="1.9869225882881825" />
-      <entry key="M10" value="2.0035534571105282" />
-      <entry key="M15" value="2.08227748513263" />
-      <entry key="M30" value="2.922185028480851" />
-      <entry key="H1" value="7.6153207499021125" />
-      <entry key="H2" value="28.888178969149934" />
-      <entry key="H4" value="102.91338740906637" />
-      <entry key="D1" value="695.9625055602884" />
-      <entry key="W1" value="1143.8466785689548" />
+      <entry key="MS100" value="3.2473906556852266E-10" />
+      <entry key="MS500" value="0.012656304275500718" />
+      <entry key="S2" value="0.3354105562205653" />
+      <entry key="S5" value="0.6459972820088744" />
+      <entry key="S10" value="0.8037395610574823" />
+      <entry key="S30" value="0.929761977494245" />
+      <entry key="S60" value="0.964241659281658" />
+      <entry key="M2" value="0.9819580774749254" />
+      <entry key="M5" value="0.9952446978999615" />
+      <entry key="M10" value="1.298227429270824" />
+      <entry key="M15" value="2.5693762653604475" />
+      <entry key="M30" value="9.5287989930914" />
+      <entry key="H1" value="22.789641616083546" />
+      <entry key="H2" value="47.85894597286186" />
+      <entry key="H4" value="118.07077605524083" />
+      <entry key="D1" value="712.9145801865238" />
+      <entry key="W1" value="1182.2951453211522" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -120,6 +121,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.org.example.functionalprogramming.utils.Main.executor": "Run",
+    "JUnit.CalculatorTest.AddTwoPositiveNumbers.executor": "Run",
+    "JUnit.CalculatorTest.executor": "Run",
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,package].executor": "Run",
@@ -137,7 +140,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.FunctionalProgrammingApplication.executor": "Debug",
+    "Spring Boot.FunctionalProgrammingApplication.executor": "Run",
     "Spring Boot.UniversityTaskApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -192,7 +195,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FunctionalProgrammingApplication">
+  <component name="RunManager" selected="JUnit.CalculatorTest.AddTwoPositiveNumbers">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.streams.Main" />
       <module name="functional-programming" />
@@ -215,6 +218,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.CalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.AddTwoPositiveNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.CalculatorTest" />
+      <option name="METHOD_NAME" value="AddTwoPositiveNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,6 +290,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.AddTwoPositiveNumbers" />
+        <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="Application.org.example.functionalprogramming.utils.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.UniversityTaskApplication" />

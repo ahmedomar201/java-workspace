@@ -24,6 +24,8 @@
         <module>university-task</module>
         <module>design-patterns</module>
         <module>service</module>
+        <module>functional-programming</module>
+
 
     </modules>
 
