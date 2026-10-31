@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/main/java/org/example/functionalprogramming/discount/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.1844309393536192E-219" />
-      <entry key="S10" value="3.655106977486348E-110" />
-      <entry key="S30" value="4.6234337303803054E-37" />
-      <entry key="S60" value="1.1364817577002634E-18" />
-      <entry key="M2" value="2.70303795880621E-9" />
-      <entry key="M5" value="0.0019102972823908757" />
-      <entry key="M10" value="0.2156258395906229" />
-      <entry key="M15" value="1.0905732965283976" />
-      <entry key="M30" value="5.73130205999521" />
-      <entry key="H1" value="14.02586052655559" />
-      <entry key="H2" value="26.75547943319954" />
-      <entry key="H4" value="60.33222356668707" />
-      <entry key="D1" value="374.5145667832071" />
-      <entry key="W1" value="629.1111159194525" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000006997285" />
-      <entry key="M5" value="1.0005983259601785" />
-      <entry key="M10" value="1.0866689240680885" />
-      <entry key="M15" value="1.4826749936280934" />
-      <entry key="M30" value="3.802499702568037" />
-      <entry key="H1" value="8.769273040297684" />
-      <entry key="H2" value="21.109372063891737" />
-      <entry key="H4" value="57.74604327734943" />
-      <entry key="D1" value="338.40755579160907" />
-      <entry key="W1" value="553.1858278207643" />
+      <entry key="S5" value="1.000000154219822" />
+      <entry key="S10" value="1.0004457683786627" />
+      <entry key="S30" value="1.1652176757175492" />
+      <entry key="S60" value="2.234915621914666" />
+      <entry key="M2" value="5.001671065463778" />
+      <entry key="M5" value="10.374833331993814" />
+      <entry key="M10" value="14.816922583837385" />
+      <entry key="M15" value="17.113414241124502" />
+      <entry key="M30" value="20.22958353956333" />
+      <entry key="H1" value="24.37625687132387" />
+      <entry key="H2" value="34.28049860472012" />
+      <entry key="H4" value="57.35839843722829" />
+      <entry key="D1" value="352.77506559533214" />
+      <entry key="W1" value="671.5644548853026" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="7.321982105761146E-108" />
+      <entry key="S2" value="1.6449669091629582E-27" />
+      <entry key="S5" value="1.934462762502563E-11" />
+      <entry key="S10" value="4.492393045185904E-6" />
+      <entry key="S30" value="0.025658479358591876" />
+      <entry key="S60" value="0.3127708557469121" />
+      <entry key="M2" value="1.2303042315488528" />
+      <entry key="M5" value="3.385799299530183" />
+      <entry key="M10" value="5.439446883550855" />
+      <entry key="M15" value="6.553138049839133" />
+      <entry key="M30" value="8.06474250920674" />
+      <entry key="H1" value="9.619175098146172" />
+      <entry key="H2" value="13.221746983424913" />
+      <entry key="H4" value="28.24185205875082" />
+      <entry key="D1" value="283.9608552754136" />
+      <entry key="W1" value="554.7830971352789" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.2473906556852266E-10" />
-      <entry key="MS500" value="0.012656304275500718" />
-      <entry key="S2" value="0.3354105562205653" />
-      <entry key="S5" value="0.6459972820088744" />
-      <entry key="S10" value="0.8037395610574823" />
-      <entry key="S30" value="0.929761977494245" />
-      <entry key="S60" value="0.964241659281658" />
-      <entry key="M2" value="0.9819580774749254" />
-      <entry key="M5" value="0.9952446978999615" />
-      <entry key="M10" value="1.298227429270824" />
-      <entry key="M15" value="2.5693762653604475" />
-      <entry key="M30" value="9.5287989930914" />
-      <entry key="H1" value="22.789641616083546" />
-      <entry key="H2" value="47.85894597286186" />
-      <entry key="H4" value="118.07077605524083" />
-      <entry key="D1" value="712.9145801865238" />
-      <entry key="W1" value="1182.2951453211522" />
+      <entry key="MS100" value="0.721964597761248" />
+      <entry key="MS500" value="0.9369214468724255" />
+      <entry key="S2" value="0.9838429889437325" />
+      <entry key="S5" value="0.9935057506486538" />
+      <entry key="S10" value="0.9971930399912112" />
+      <entry key="S30" value="1.1841751469363078" />
+      <entry key="S60" value="2.519718510045995" />
+      <entry key="M2" value="6.185387529135703" />
+      <entry key="M5" value="13.713770124356618" />
+      <entry key="M10" value="20.219317128943764" />
+      <entry key="M15" value="23.636866743686916" />
+      <entry key="M30" value="28.276147690978757" />
+      <entry key="H1" value="33.98513857019338" />
+      <entry key="H2" value="47.496255669883524" />
+      <entry key="H4" value="85.59545862173242" />
+      <entry key="D1" value="636.7294590441297" />
+      <entry key="W1" value="1226.345732398041" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -123,6 +119,7 @@
     "Application.org.example.functionalprogramming.utils.Main.executor": "Run",
     "JUnit.CalculatorTest.AddTwoPositiveNumbers.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
+    "JUnit.CalculatorTest.testAddNumbers.executor": "Run",
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,package].executor": "Run",
@@ -188,14 +185,13 @@
           <value>
             <map>
               <entry key="FunctionalProgrammingApplication" value="STOPPED" />
-              <entry key="UniversityTaskApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.AddTwoPositiveNumbers">
+  <component name="RunManager" selected="JUnit.CalculatorTest.testAddNumbers">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.streams.Main" />
       <module name="functional-programming" />
@@ -253,6 +249,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.testAddNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.CalculatorTest" />
+      <option name="METHOD_NAME" value="testAddNumbers(int,int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="design-patterns" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designpatterns.DesignPatternsApplication" />
@@ -274,27 +286,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="university-task" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.universitytask.UniversityTaskApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.universitytask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.testAddNumbers" />
         <item itemvalue="JUnit.CalculatorTest.AddTwoPositiveNumbers" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="Application.org.example.functionalprogramming.utils.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Spring Boot.UniversityTaskApplication" />
       </list>
     </recent_temporary>
   </component>
