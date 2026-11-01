@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c2c5700-be0b-4eb9-9216-f9d9d90e499c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/service/DiscountServiceImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/functional-programming/src/test/java/org/example/functionalprogramming/discount/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.000000154219822" />
-      <entry key="S10" value="1.0004457683786627" />
-      <entry key="S30" value="1.1652176757175492" />
-      <entry key="S60" value="2.234915621914666" />
-      <entry key="M2" value="5.001671065463778" />
-      <entry key="M5" value="10.374833331993814" />
-      <entry key="M10" value="14.816922583837385" />
-      <entry key="M15" value="17.113414241124502" />
-      <entry key="M30" value="20.22958353956333" />
-      <entry key="H1" value="24.37625687132387" />
-      <entry key="H2" value="34.28049860472012" />
-      <entry key="H4" value="57.35839843722829" />
-      <entry key="D1" value="352.77506559533214" />
-      <entry key="W1" value="671.5644548853026" />
+      <entry key="MS100" value="5.328357503578697E-199" />
+      <entry key="MS500" value="2.2147192025433986E-40" />
+      <entry key="S2" value="1.2199152707763335E-10" />
+      <entry key="S5" value="1.0827591615626842E-4" />
+      <entry key="S10" value="0.010405571399796764" />
+      <entry key="S30" value="0.218317679018081" />
+      <entry key="S60" value="0.46803342361239425" />
+      <entry key="M2" value="0.7629141889349009" />
+      <entry key="M5" value="2.2613383183074713" />
+      <entry key="M10" value="4.6536930135951176" />
+      <entry key="M15" value="6.161039978050959" />
+      <entry key="M30" value="9.330603040035083" />
+      <entry key="H1" value="16.523935544592412" />
+      <entry key="H2" value="30.89547511744605" />
+      <entry key="H4" value="57.27461191129684" />
+      <entry key="D1" value="352.39565477520733" />
+      <entry key="W1" value="690.3000375392844" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.321982105761146E-108" />
-      <entry key="S2" value="1.6449669091629582E-27" />
-      <entry key="S5" value="1.934462762502563E-11" />
-      <entry key="S10" value="4.492393045185904E-6" />
-      <entry key="S30" value="0.025658479358591876" />
-      <entry key="S60" value="0.3127708557469121" />
-      <entry key="M2" value="1.2303042315488528" />
-      <entry key="M5" value="3.385799299530183" />
-      <entry key="M10" value="5.439446883550855" />
-      <entry key="M15" value="6.553138049839133" />
-      <entry key="M30" value="8.06474250920674" />
-      <entry key="H1" value="9.619175098146172" />
-      <entry key="H2" value="13.221746983424913" />
-      <entry key="H4" value="28.24185205875082" />
-      <entry key="D1" value="283.9608552754136" />
-      <entry key="W1" value="554.7830971352789" />
+      <entry key="MS100" value="1.0000002835290707" />
+      <entry key="MS500" value="1.049036506118547" />
+      <entry key="S2" value="1.4705761388439902" />
+      <entry key="S5" value="1.7407398209998624" />
+      <entry key="S10" value="1.9023205557668308" />
+      <entry key="S30" value="2.4926820553502966" />
+      <entry key="S60" value="3.0139690048454946" />
+      <entry key="M2" value="3.4867553767237824" />
+      <entry key="M5" value="4.7310618157933195" />
+      <entry key="M10" value="6.4690738363049265" />
+      <entry key="M15" value="7.577504187898709" />
+      <entry key="M30" value="10.471638185770951" />
+      <entry key="H1" value="17.758198812998923" />
+      <entry key="H2" value="29.732573704409678" />
+      <entry key="H4" value="49.517897789734874" />
+      <entry key="D1" value="303.5149678927646" />
+      <entry key="W1" value="590.6070012794096" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.721964597761248" />
-      <entry key="MS500" value="0.9369214468724255" />
-      <entry key="S2" value="0.9838429889437325" />
-      <entry key="S5" value="0.9935057506486538" />
-      <entry key="S10" value="0.9971930399912112" />
-      <entry key="S30" value="1.1841751469363078" />
-      <entry key="S60" value="2.519718510045995" />
-      <entry key="M2" value="6.185387529135703" />
-      <entry key="M5" value="13.713770124356618" />
-      <entry key="M10" value="20.219317128943764" />
-      <entry key="M15" value="23.636866743686916" />
-      <entry key="M30" value="28.276147690978757" />
-      <entry key="H1" value="33.98513857019338" />
-      <entry key="H2" value="47.496255669883524" />
-      <entry key="H4" value="85.59545862173242" />
-      <entry key="D1" value="636.7294590441297" />
-      <entry key="W1" value="1226.345732398041" />
+      <entry key="MS100" value="0.0034242410988907603" />
+      <entry key="MS500" value="0.32135697494078785" />
+      <entry key="S2" value="0.8391541012129765" />
+      <entry key="S5" value="1.2687342783017999" />
+      <entry key="S10" value="1.6021509453512615" />
+      <entry key="S30" value="2.5548262989585577" />
+      <entry key="S60" value="3.38422559939156" />
+      <entry key="M2" value="4.191048234745335" />
+      <entry key="M5" value="6.953598872125055" />
+      <entry key="M10" value="11.092098347965852" />
+      <entry key="M15" value="13.713465702982589" />
+      <entry key="M30" value="19.784717045324072" />
+      <entry key="H1" value="34.26812982164051" />
+      <entry key="H2" value="60.617071101104834" />
+      <entry key="H4" value="106.7841728501856" />
+      <entry key="D1" value="655.903549333228" />
+      <entry key="W1" value="1280.9050790536512" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -120,6 +120,9 @@
     "JUnit.CalculatorTest.AddTwoPositiveNumbers.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testAddNumbers.executor": "Run",
+    "JUnit.DiscountServiceImpTest.executor": "Run",
+    "JUnit.DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleAndQuantityApplied_then500DiscountAnd5PercentApplied.executor": "Run",
+    "JUnit.DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleApplied_then500DiscountApplied.executor": "Run",
     "Maven.data-structures [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,compile].executor": "Run",
     "Maven.functional-programming [clean,package].executor": "Run",
@@ -191,48 +194,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.testAddNumbers">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.streams.Main" />
-      <module name="functional-programming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.functionalprogramming.streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.functionalprogramming.utils.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.utils.Main" />
-      <module name="functional-programming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.functionalprogramming.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="functional-programming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.functionalprogramming.discount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount" />
-      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DiscountServiceImpTest">
     <configuration name="CalculatorTest.AddTwoPositiveNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="functional-programming" />
       <extension name="coverage">
@@ -265,6 +227,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiscountServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.service.DiscountServiceImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleAndQuantityApplied_then500DiscountAnd5PercentApplied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.service.DiscountServiceImpTest" />
+      <option name="METHOD_NAME" value="testApplyDiscount_whenLaptopRuleAndQuantityApplied_then500DiscountAnd5PercentApplied" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleApplied_then500DiscountApplied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="functional-programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.functionalprogramming.discount.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.functionalprogramming.discount.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.functionalprogramming.discount.service.DiscountServiceImpTest" />
+      <option name="METHOD_NAME" value="testApplyDiscount_whenLaptopRuleApplied_then500DiscountApplied" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="design-patterns" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designpatterns.DesignPatternsApplication" />
@@ -286,13 +295,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UniversityTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="university-task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.universitytask.UniversityTaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiscountServiceImpTest" />
+        <item itemvalue="JUnit.DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleAndQuantityApplied_then500DiscountAnd5PercentApplied" />
+        <item itemvalue="JUnit.DiscountServiceImpTest.testApplyDiscount_whenLaptopRuleApplied_then500DiscountApplied" />
         <item itemvalue="JUnit.CalculatorTest.testAddNumbers" />
         <item itemvalue="JUnit.CalculatorTest.AddTwoPositiveNumbers" />
-        <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="Application.org.example.functionalprogramming.utils.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
